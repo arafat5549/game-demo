@@ -3,6 +3,7 @@
     "id": "history-advanced-1",
     "theme": "history",
     "subTheme": "ancient",
+    "knowledge": "ancient-oracle-bone",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "甲骨文是什么？",
@@ -20,13 +21,14 @@
       "title": "甲骨文",
       "body": "三千多年前的商朝人把占卜结果刻在龟甲和兽骨上，这就是甲骨文，是中国已发现的最早成体系文字，有四千多个字。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/北京人"
+      "sourceUrl": "https://baike.baidu.com/item/甲骨文"
     }
   },
   {
     "id": "history-advanced-2",
     "theme": "history",
     "subTheme": "ancient",
+    "knowledge": "ancient-liangzhu",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "良渚古城遗址证明约五千年前中国已有高度文明。",
@@ -42,13 +44,14 @@
       "title": "良渚古城",
       "body": "浙江的良渚古城遗址距今约 5300 年，有大型城墙、水利工程和精美玉器，证明长江下游早有发达文明，已被列入世界遗产。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/北京人"
+      "sourceUrl": "https://baike.baidu.com/item/良渚遗址"
     }
   },
   {
     "id": "history-advanced-3",
     "theme": "history",
     "subTheme": "qinshihuang",
+    "knowledge": "qinshihuang-county-system",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "秦始皇推行\"郡县制\"是干什么的？",
@@ -66,13 +69,14 @@
       "title": "郡县制",
       "body": "秦始皇废除分封，把全国划分为郡和县，官员由中央任命。这套制度让中央集权更稳固，被后来的朝代沿用两千多年。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/秦始皇"
+      "sourceUrl": "https://baike.baidu.com/item/郡县制"
     }
   },
   {
     "id": "history-advanced-4",
     "theme": "history",
     "subTheme": "qinshihuang",
+    "knowledge": "qinshihuang-unified-script",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "秦始皇统一了文字，把小篆定为标准字体。",
@@ -88,13 +92,14 @@
       "title": "书同文",
       "body": "战国时各国文字不同，秦始皇命李斯统一文字，以小篆为标准。从此各地的人能看懂同一份文书，文化大一统。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/秦始皇"
+      "sourceUrl": "https://baike.baidu.com/item/小篆"
     }
   },
   {
     "id": "history-advanced-5",
     "theme": "history",
     "subTheme": "zhugeliang",
+    "knowledge": "zhugeliang-memorial",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "《出师表》是谁写给谁的表文？",
@@ -112,13 +117,14 @@
       "title": "出师表",
       "body": "诸葛亮北伐前写下《出师表》劝诫后主刘禅，句句恳切。\"鞠躬尽瘁，死而后已\"就出自这里，成为千古名篇。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/诸葛亮"
+      "sourceUrl": "https://baike.baidu.com/item/出师表"
     }
   },
   {
     "id": "history-advanced-6",
     "theme": "history",
     "subTheme": "zhugeliang",
+    "knowledge": "zhugeliang-wooden-ox",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "传说诸葛亮发明了木牛流马，用于山地运粮。",
@@ -134,13 +140,14 @@
       "title": "木牛流马",
       "body": "传说诸葛亮北伐时发明\"木牛流马\"在山路运粮，像牛马一样驮货不用喂食。它到底是独轮车还是机械兽，至今还有争论。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/诸葛亮"
+      "sourceUrl": "https://baike.baidu.com/item/木牛流马"
     }
   },
   {
     "id": "history-advanced-7",
     "theme": "history",
     "subTheme": "inventions",
+    "knowledge": "inventions-printing",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "毕昇发明的活字印刷术，用的是哪种材料做的字？",
@@ -158,13 +165,14 @@
       "title": "毕昇与活字",
       "body": "北宋的毕昇把胶泥刻成单个字，烧硬后排版印刷，印完拆开还能再用，比整版雕版灵活得多，是印刷史上的一次革命。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/四大发明"
+      "sourceUrl": "https://baike.baidu.com/item/活字印刷术"
     }
   },
   {
     "id": "history-advanced-8",
     "theme": "history",
     "subTheme": "inventions",
+    "knowledge": "inventions-gunpowder",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "火药最初是炼丹师在炼丹时偶然发现的。",
@@ -180,13 +188,14 @@
       "title": "火药从炼丹来",
       "body": "唐代炼丹师把硫磺、硝石和木炭混在一起炼制，意外发现了会爆炸的火药。后来火药用于烟花、开矿和武器，传遍世界。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/四大发明"
+      "sourceUrl": "https://baike.baidu.com/item/火药"
     }
   },
   {
     "id": "history-advanced-9",
     "theme": "history",
     "subTheme": "zhenghe",
+    "knowledge": "zhenghe-treasure-ship",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "郑和宝船的长度大约是现在的多少米？",
@@ -204,13 +213,14 @@
       "title": "宝船有多大",
       "body": "根据记载，郑和宝船长约 120 米、宽约 50 米，有九桅十二帆，是当时世界最大的木船，比哥伦布的船大好几倍。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/郑和"
+      "sourceUrl": "https://baike.baidu.com/item/宝船"
     }
   },
   {
     "id": "history-advanced-10",
     "theme": "history",
     "subTheme": "zhenghe",
+    "knowledge": "zhenghe-expeditions",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "郑和下西洋的主要目的之一是宣扬国威、与各国交好。",
@@ -226,13 +236,14 @@
       "title": "下西洋的目的",
       "body": "郑和下西洋带着丝绸瓷器，与沿途国家交换礼物、建立友好关系，还带回各国使者来访，是和平的外交远航。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/郑和"
+      "sourceUrl": "https://baike.baidu.com/item/郑和下西洋"
     }
   },
   {
     "id": "history-advanced-11",
     "theme": "history",
     "subTheme": "relics",
+    "knowledge": "relics-simuwu-ding",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "司母戊鼎（后母戊鼎）是什么时期的青铜器？",
@@ -250,13 +261,14 @@
       "title": "司母戊鼎",
       "body": "司母戊鼎是商朝王室的祭祀大鼎，重 832 公斤，是目前发现最大的青铜器，现藏于中国国家博物馆，是镇馆之宝。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/兵马俑"
+      "sourceUrl": "https://baike.baidu.com/item/司母戊鼎"
     }
   },
   {
     "id": "history-advanced-12",
     "theme": "history",
     "subTheme": "relics",
+    "knowledge": "relics-siyangfangzun",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "四羊方尊上装饰着四只羊，是商朝青铜器。",
@@ -272,13 +284,14 @@
       "title": "四羊方尊",
       "body": "四羊方尊是商代晚期的青铜酒器，四角各铸一只卷角羊，工艺精美绝伦，是中国青铜器的代表作。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/兵马俑"
+      "sourceUrl": "https://baike.baidu.com/item/四羊方尊"
     }
   },
   {
     "id": "history-advanced-13",
     "theme": "history",
     "subTheme": "festivals",
+    "knowledge": "festivals-jingzhe",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "农历二十四节气中，\"惊蛰\"是什么意思？",
@@ -296,13 +309,14 @@
       "title": "惊蛰",
       "body": "惊蛰是春季第三个节气，古人认为春雷惊醒冬眠的昆虫动物。惊蛰后天气转暖，农民开始春耕。二十四节气是中国人观察自然的智慧。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/中秋节"
+      "sourceUrl": "https://baike.baidu.com/item/惊蛰"
     }
   },
   {
     "id": "history-advanced-14",
     "theme": "history",
     "subTheme": "festivals",
+    "knowledge": "festivals-new-year-eve",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "除夕守岁的习俗是全家熬夜迎接新年。",
@@ -318,7 +332,7 @@
       "title": "守岁",
       "body": "除夕夜，全家人围坐一起吃年夜饭、看春晚，聊天守岁到深夜，迎接新年到来。守岁寓意珍惜时光、祈福长寿。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/中秋节"
+      "sourceUrl": "https://baike.baidu.com/item/除夕"
     }
   }
 ]

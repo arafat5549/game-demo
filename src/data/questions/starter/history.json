@@ -3,6 +3,7 @@
     "id": "history-starter-1",
     "theme": "history",
     "subTheme": "ancient",
+    "knowledge": "ancient-greatwall",
     "difficulty": "starter",
     "type": "judge",
     "prompt": "长城在中国吗？",
@@ -18,13 +19,14 @@
       "title": "中国的长城",
       "body": "长城在中国，像一条长长的巨龙，趴在高山上。它有两千多年的历史，是中国人了不起的宝贝。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/北京人"
+      "sourceUrl": "https://baike.baidu.com/item/万里长城"
     }
   },
   {
     "id": "history-starter-2",
     "theme": "history",
     "subTheme": "qinshihuang",
+    "knowledge": "qinshihuang-chinese-language",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "中国人说什么话？",
@@ -42,13 +44,14 @@
       "title": "中国话",
       "body": "中国的小朋友说中国话，就是汉语。汉字是中国人写的字，一个一个字像小图画，全世界只有中国有。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/秦始皇"
+      "sourceUrl": "https://baike.baidu.com/item/汉语"
     }
   },
   {
     "id": "history-starter-3",
     "theme": "history",
     "subTheme": "zhugeliang",
+    "knowledge": "zhugeliang-spring-festival",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "春节大家会做什么？",
@@ -66,13 +69,14 @@
       "title": "春节",
       "body": "春节是最重要的节日。大家贴红春联、放鞭炮、吃年夜饭，小朋友还能收到红红的压岁钱，特别开心。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/诸葛亮"
+      "sourceUrl": "https://baike.baidu.com/item/春节"
     }
   },
   {
     "id": "history-starter-4",
     "theme": "history",
     "subTheme": "ancient",
+    "knowledge": "ancient-cave-home",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "很久以前的人住在哪里？",
@@ -90,13 +94,14 @@
       "title": "山洞里的家",
       "body": "很久很久以前，还没有房子。人们找到山洞当家，山洞能挡风挡雨，还能躲野兽。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/北京人"
+      "sourceUrl": "https://baike.baidu.com/item/山顶洞人"
     }
   },
   {
     "id": "history-starter-5",
     "theme": "history",
     "subTheme": "festivals",
+    "knowledge": "festivals-dragon-boat",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "端午节吃什么？",
@@ -114,13 +119,14 @@
       "title": "端午节",
       "body": "端午节要吃粽子。粽子是糯米包的，有甜甜的红枣馅，还有咸咸的肉馅，用粽叶包成三角形，特别好吃。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/中秋节"
+      "sourceUrl": "https://baike.baidu.com/item/端午节"
     }
   },
   {
     "id": "history-starter-6",
     "theme": "history",
     "subTheme": "relics",
+    "knowledge": "relics-china-size",
     "difficulty": "starter",
     "type": "judge",
     "prompt": "中国大不大？",
@@ -136,13 +142,14 @@
       "title": "中国有多大",
       "body": "中国很大很大，从最东边到最西边，坐飞机要飞好几个小时。中国有好多好多城市、高山和大河。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/兵马俑"
+      "sourceUrl": "https://baike.baidu.com/item/中国"
     }
   },
   {
     "id": "history-starter-7",
     "theme": "history",
     "subTheme": "inventions",
+    "knowledge": "inventions-mid-autumn",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "中秋节晚上看什么？",
@@ -160,13 +167,14 @@
       "title": "中秋节",
       "body": "中秋节是农历八月十五，那天晚上的月亮最圆最亮。全家人坐在一起吃月饼、看月亮，团团圆圆。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/四大发明"
+      "sourceUrl": "https://baike.baidu.com/item/中秋节"
     }
   },
   {
     "id": "history-starter-8",
     "theme": "history",
     "subTheme": "zhenghe",
+    "knowledge": "zhenghe-treasure-ship",
     "difficulty": "starter",
     "type": "judge",
     "prompt": "郑和是坐着大船去远方的吗？",
@@ -182,7 +190,7 @@
       "title": "郑和的大船",
       "body": "很久以前，有个叫郑和的船长，坐着很大的船出海，去过好多好多的国家，特别了不起。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/郑和"
+      "sourceUrl": "https://baike.baidu.com/item/宝船"
     }
   }
 ]

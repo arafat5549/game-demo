@@ -3,6 +3,7 @@
     "id": "history-ancient-1",
     "theme": "history",
     "subTheme": "ancient",
+    "knowledge": "ancient-fire-making",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "很久以前，中国人是怎么取火的？",
@@ -33,6 +34,7 @@
     "id": "history-ancient-2",
     "theme": "history",
     "subTheme": "ancient",
+    "knowledge": "ancient-cave-home",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "远古的中国人住在哪里？",
@@ -50,13 +52,14 @@
       "title": "山洞里的家",
       "body": "远古的人没有房子，他们找到又大又深的山洞当作家。山洞能挡风、挡雨，还能挡住野兽。他们在山洞里生火、睡觉、吃饭。北京周口店就有著名的\"山顶洞人\"住过的山洞。",
       "source": "来源：中国国家博物馆·远古中国展厅",
-      "sourceUrl": "https://baike.baidu.com/item/北京人"
+      "sourceUrl": "https://baike.baidu.com/item/山顶洞人"
     }
   },
   {
     "id": "history-ancient-3",
     "theme": "history",
     "subTheme": "ancient",
+    "knowledge": "ancient-beijing-man",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "\"北京人\"生活在多少年以前？",
@@ -87,6 +90,7 @@
     "id": "history-ancient-4",
     "theme": "history",
     "subTheme": "ancient",
+    "knowledge": "ancient-stone-tools",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "远古的人用什么来打猎？",
@@ -104,13 +108,14 @@
       "title": "石头做的工具",
       "body": "远古的人把石头敲一敲、磨一磨，做成尖尖的石头刀、石头斧头，再把石头绑在木棒上，就成了打猎的武器。用这些简单的工具，他们能猎到野鹿、野猪。考古学家把这些石头工具叫\"石器\"。",
       "source": "来源：中国国家博物馆·远古中国展厅",
-      "sourceUrl": "https://baike.baidu.com/item/北京人"
+      "sourceUrl": "https://baike.baidu.com/item/石器"
     }
   },
   {
     "id": "history-ancient-5",
     "theme": "history",
     "subTheme": "ancient",
+    "knowledge": "ancient-fire-benefits",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "远古的中国人已经学会用火了。",
@@ -125,14 +130,14 @@
     "expansion": {
       "title": "火带来的改变",
       "body": "学会用火，是远古人类最了不起的大事。火能取暖，冬天不怕冷；火能赶走野兽，晚上睡得安稳；火还能把肉烤熟，烤熟的肉更好吃、更干净。有了火，人类才慢慢变得更聪明、更强壮。",
-      "source": "来源：百度百科·用火",
-      "sourceUrl": "https://baike.baidu.com/item/北京人"
+      "source": "来源：百度百科·用火"
     }
   },
   {
     "id": "history-qin-1",
     "theme": "history",
     "subTheme": "qinshihuang",
+    "knowledge": "qinshihuang-greatwall",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "中国的万里长城是谁下令修建的？",
@@ -163,6 +168,7 @@
     "id": "history-qin-2",
     "theme": "history",
     "subTheme": "qinshihuang",
+    "knowledge": "qinshihuang-greatwall",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "修长城是用来干什么的？",
@@ -180,13 +186,14 @@
       "title": "长城是盾牌",
       "body": "长城建在高高的山上，又高又陡，敌人很难翻过去。城墙上还有烽火台，发现敌人就点起狼烟，一座接一座传下去，很快全国都知道有敌人来了。所以长城就像一道超级大盾牌，保护着中原的老百姓。",
       "source": "来源：故宫博物院官网·长城专题",
-      "sourceUrl": "https://baike.baidu.com/item/秦始皇"
+      "sourceUrl": "https://baike.baidu.com/item/万里长城"
     }
   },
   {
     "id": "history-qin-3",
     "theme": "history",
     "subTheme": "qinshihuang",
+    "knowledge": "qinshihuang-first-emperor",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "秦始皇是中国第一个皇帝吗？",
@@ -215,6 +222,7 @@
     "id": "history-qin-4",
     "theme": "history",
     "subTheme": "qinshihuang",
+    "knowledge": "qinshihuang-greatwall",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "长城是用什么材料建造的？",
@@ -232,13 +240,14 @@
       "title": "石头和砖的长城",
       "body": "长城主要用巨大的石头和烧制的砖头建成，中间填满土。一块城砖有几十斤重，古代没有起重机，工人们用肩膀一块一块扛上去。所以长城能站两千多年不倒，是古代劳动人民了不起的杰作。",
       "source": "来源：百度百科·万里长城",
-      "sourceUrl": "https://baike.baidu.com/item/秦始皇"
+      "sourceUrl": "https://baike.baidu.com/item/万里长城"
     }
   },
   {
     "id": "history-qin-5",
     "theme": "history",
     "subTheme": "qinshihuang",
+    "knowledge": "qinshihuang-unification",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "秦始皇统一了中国，还把文字和钱币也统一了。",
@@ -254,13 +263,14 @@
       "title": "统一文字和钱币",
       "body": "秦始皇做了三件大事：统一文字，让全国各地都写一样的字；统一钱币，大家用一样的圆形方孔钱；统一度量衡，一尺、一斤都变得一样。这样全国的人做生意、写信都方便了。",
       "source": "来源：百度百科·秦始皇",
-      "sourceUrl": "https://baike.baidu.com/item/秦始皇"
+      "sourceUrl": "https://baike.baidu.com/item/秦朝"
     }
   },
   {
     "id": "history-zgl-1",
     "theme": "history",
     "subTheme": "zhugeliang",
+    "knowledge": "zhugeliang-three-kingdoms",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "诸葛亮是哪个时代的人？",
@@ -278,13 +288,14 @@
       "title": "三国时期",
       "body": "三国时期是中国古代一个打打闹闹的时代，有魏、蜀、吴三个国家。诸葛亮是蜀国刘备的军师，帮刘备出主意打天下。小朋友们熟悉的关羽、张飞、赵云，都是这个时代的大英雄。",
       "source": "来源：百度百科·三国",
-      "sourceUrl": "https://baike.baidu.com/item/诸葛亮"
+      "sourceUrl": "https://baike.baidu.com/item/三国"
     }
   },
   {
     "id": "history-zgl-2",
     "theme": "history",
     "subTheme": "zhugeliang",
+    "knowledge": "zhugeliang-wolong",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "诸葛亮最出名的是什么？",
@@ -315,6 +326,7 @@
     "id": "history-zgl-3",
     "theme": "history",
     "subTheme": "zhugeliang",
+    "knowledge": "zhugeliang-feather-fan",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "诸葛亮手里经常拿着什么？",
@@ -332,13 +344,14 @@
       "title": "羽毛扇的秘密",
       "body": "传说诸葛亮手里总拿着一把鹅毛扇，不管天多热都不离手。有人说是他妻子送他的定情礼物，有人说是他思考问题的\"法宝\"。在故事里，他轻轻一摇扇子，就能想出妙计，打败敌人。",
       "source": "来源：《三国演义》",
-      "sourceUrl": "https://baike.baidu.com/item/诸葛亮"
+      "sourceUrl": "https://baike.baidu.com/item/羽毛扇"
     }
   },
   {
     "id": "history-zgl-5",
     "theme": "history",
     "subTheme": "zhugeliang",
+    "knowledge": "zhugeliang-cleverness",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "\"神机妙算\"是夸诸葛亮算得又准又聪明。",
@@ -354,13 +367,14 @@
       "title": "神机妙算",
       "body": "\"神机妙算\"这个成语就是用来夸诸葛亮的：像神仙一样有办法，算得又准又灵。诸葛亮用空城计吓跑敌人、借东风火烧战船，故事里的他好像什么都能算到，所以人们都说他\"神机妙算\"。",
       "source": "来源：成语词典",
-      "sourceUrl": "https://baike.baidu.com/item/诸葛亮"
+      "sourceUrl": "https://baike.baidu.com/item/神机妙算"
     }
   },
   {
     "id": "history-inventions-b1",
     "theme": "history",
     "subTheme": "inventions",
+    "knowledge": "inventions-compass",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "指南针的指针总是指向哪边？",
@@ -378,13 +392,14 @@
       "title": "指南针指南方",
       "body": "指南针的磁针总是指向南方。古代人坐船出海，靠着它就不会迷路。",
       "source": "来源：百度百科·历史专题",
-      "sourceUrl": "https://baike.baidu.com/item/四大发明"
+      "sourceUrl": "https://baike.baidu.com/item/指南针"
     }
   },
   {
     "id": "history-inventions-b2",
     "theme": "history",
     "subTheme": "inventions",
+    "knowledge": "inventions-paper",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "纸是中国人最先发明并改进的。",
@@ -400,13 +415,14 @@
       "title": "中国人发明纸",
       "body": "中国东汉的蔡伦用树皮、破布造出了便宜好用的纸。纸的技术后来传遍全世界，人们才不用在竹简上写字。",
       "source": "来源：百度百科·历史专题",
-      "sourceUrl": "https://baike.baidu.com/item/四大发明"
+      "sourceUrl": "https://baike.baidu.com/item/造纸术"
     }
   },
   {
     "id": "history-zhenghe-b1",
     "theme": "history",
     "subTheme": "zhenghe",
+    "knowledge": "zhenghe-treasure-ship",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "郑和是坐着大船出海远航的。",
@@ -422,13 +438,14 @@
       "title": "郑和的大船",
       "body": "郑和下西洋坐的宝船又大又稳，船上能装几百人，还有粮食、淡水和送给别国的礼物。",
       "source": "来源：百度百科·历史专题",
-      "sourceUrl": "https://baike.baidu.com/item/郑和"
+      "sourceUrl": "https://baike.baidu.com/item/宝船"
     }
   },
   {
     "id": "history-zhenghe-b2",
     "theme": "history",
     "subTheme": "zhenghe",
+    "knowledge": "zhenghe-expeditions",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "郑和的船队去过很远的地方吗？",
@@ -446,13 +463,14 @@
       "title": "郑和去多远",
       "body": "郑和的船队七次远航，走过三十多个国家，最远到达非洲东海岸，比欧洲的航海家还早近百年。",
       "source": "来源：百度百科·历史专题",
-      "sourceUrl": "https://baike.baidu.com/item/郑和"
+      "sourceUrl": "https://baike.baidu.com/item/郑和下西洋"
     }
   },
   {
     "id": "history-relics-b1",
     "theme": "history",
     "subTheme": "relics",
+    "knowledge": "relics-terracotta-army",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "兵马俑在哪个城市可以看到？",
@@ -477,6 +495,7 @@
     "id": "history-relics-b2",
     "theme": "history",
     "subTheme": "relics",
+    "knowledge": "relics-bamboo-slips",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "竹简是用竹子做的，可以在上面写字。",
@@ -492,13 +511,14 @@
       "title": "竹子做的书",
       "body": "古人把竹子削成一片片，在上面写字，再用绳子串起来，就成了\"竹简\"，是古代的书。",
       "source": "来源：百度百科·历史专题",
-      "sourceUrl": "https://baike.baidu.com/item/兵马俑"
+      "sourceUrl": "https://baike.baidu.com/item/竹简"
     }
   },
   {
     "id": "history-festivals-b1",
     "theme": "history",
     "subTheme": "festivals",
+    "knowledge": "festivals-mid-autumn",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "中秋节要吃什么？",
@@ -523,6 +543,7 @@
     "id": "history-festivals-b2",
     "theme": "history",
     "subTheme": "festivals",
+    "knowledge": "festivals-dragon-boat",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "端午节人们会举行什么比赛？",
@@ -540,7 +561,7 @@
       "title": "赛龙舟",
       "body": "端午节，河面上一条条龙船飞快地划，鼓声咚咚响，大家齐声喊着加油，这就是赛龙舟。",
       "source": "来源：百度百科·历史专题",
-      "sourceUrl": "https://baike.baidu.com/item/中秋节"
+      "sourceUrl": "https://baike.baidu.com/item/端午节"
     }
   }
 ]

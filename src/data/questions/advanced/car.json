@@ -3,6 +3,7 @@
     "id": "car-advanced-1",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-merger",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "卡尔·本茨和戈特利布·戴姆勒后来合并成了哪个品牌？",
@@ -20,13 +21,14 @@
       "title": "奔驰的诞生",
       "body": "卡尔·本茨和戈特利布·戴姆勒各自发明了汽车，1926 年两家公司合并成戴姆勒-奔驰，车标是三叉星，就是今天的奔驰。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
+      "sourceUrl": "https://baike.baidu.com/item/梅赛德斯-奔驰"
     }
   },
   {
     "id": "car-advanced-2",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-handcrank",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "早期汽车是用手摇曲柄启动发动机的。",
@@ -41,14 +43,14 @@
     "expansion": {
       "title": "手摇曲柄",
       "body": "一百多年前的汽车没有钥匙启动，司机要用手摇曲柄转动机器，非常费力还有危险。后来电启动发明后，开车才变得轻松。",
-      "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
+      "source": "来源：百度百科·进阶专题"
     }
   },
   {
     "id": "car-advanced-3",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-brazil",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "甲壳虫在巴西被当地人亲切地叫作什么？",
@@ -65,14 +67,14 @@
     "expansion": {
       "title": "巴西的甲壳虫",
       "body": "甲壳虫在巴西生产了 30 多年，当地人称它 Fusca。巴西人爱它爱到专门为它举办节日，直到今天还有人收藏。",
-      "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
+      "source": "来源：百度百科·进阶专题"
     }
   },
   {
     "id": "car-advanced-4",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-vw",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "甲壳虫是大众汽车最畅销的车型之一。",
@@ -88,13 +90,14 @@
       "title": "甲壳虫的地位",
       "body": "甲壳虫是大众汽车的第一个明星车型，它让大众成为世界大厂。后来大众的高尔夫也成了新一代经典。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
+      "sourceUrl": "https://baike.baidu.com/item/大众汽车"
     }
   },
   {
     "id": "car-advanced-5",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-benz-amg",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "奔驰的 AMG 部门是做什么的？",
@@ -112,13 +115,14 @@
       "title": "AMG",
       "body": "AMG 是奔驰的高性能部门，从改装赛车起家。AMG 的发动机上刻着工程师的名字，每一台都是手工组装。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/奔驰"
+      "sourceUrl": "https://baike.baidu.com/item/奔驰AMG"
     }
   },
   {
     "id": "car-advanced-6",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-big-three",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "奔驰、宝马、奥迪被称为德国\"三巨头\"。",
@@ -134,13 +138,14 @@
       "title": "德国三巨头",
       "body": "奔驰、宝马、奥迪并称德国豪华车\"三巨头\"，它们在全球竞争了几十年，你追我赶，造出无数经典车型。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/奔驰"
+      "sourceUrl": "https://baike.baidu.com/item/德国汽车工业"
     }
   },
   {
     "id": "car-advanced-7",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-quattro",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "奥迪的 quattro 是什么意思？",
@@ -158,13 +163,14 @@
       "title": "quattro 四驱",
       "body": "quattro 是奥迪著名的四轮驱动技术，1980 年诞生。它让奥迪赛车在冰雪拉力赛里称霸，也让家用车在雨雪天更安全。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/奥迪"
+      "sourceUrl": "https://baike.baidu.com/item/奥迪quattro"
     }
   },
   {
     "id": "car-advanced-8",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-m",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "宝马的 M 部门标志是什么颜色的条纹？",
@@ -181,14 +187,14 @@
     "expansion": {
       "title": "M 部门",
       "body": "宝马 M 部门从赛车部门演变而来，M 标志的蓝紫红三色分别代表巴伐利亚、赛车和激情。M 系列是宝马的性能之王。",
-      "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/奥迪"
+      "source": "来源：百度百科·进阶专题"
     }
   },
   {
     "id": "car-advanced-9",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-emergency-phone",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "中国的急救电话是多少？",
@@ -206,13 +212,14 @@
       "title": "急救电话",
       "body": "在中国，120 是急救电话，拨通后救护车会赶来。要记住：110 报警、119 火警、120 急救，紧急时刻用得上。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/消防车"
+      "sourceUrl": "https://baike.baidu.com/item/急救电话"
     }
   },
   {
     "id": "car-advanced-10",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-ladder-truck",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "消防车上的云梯可以升到很高，救高楼里的人。",
@@ -228,13 +235,14 @@
       "title": "云梯消防车",
       "body": "云梯消防车装有可以伸缩的长梯，能升到几十米高，把困在高楼里的人接下来，还能喷水灭火。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/消防车"
+      "sourceUrl": "https://baike.baidu.com/item/云梯消防车"
     }
   },
   {
     "id": "car-advanced-11",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-bugatti",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "布加迪威龙（Veyron）的最高时速超过多少？",
@@ -252,13 +260,14 @@
       "title": "布加迪威龙",
       "body": "布加迪威龙搭载 16 缸发动机，最高时速超过 400 公里。为了承受这个速度，它的轮胎是专门定制的，换一套要几十万。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/布加迪"
+      "sourceUrl": "https://baike.baidu.com/item/布加迪威龙"
     }
   },
   {
     "id": "car-advanced-12",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-speed-record",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "量产车最高时速纪录经常在布加迪、科尼赛克等品牌间交替。",
@@ -273,14 +282,14 @@
     "expansion": {
       "title": "最快量产车",
       "body": "世界最快量产车的纪录一直在布加迪、科尼赛克、轩尼诗等品牌之间刷新，每个品牌都想当\"速度之王\"。",
-      "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/布加迪"
+      "source": "来源：百度百科·进阶专题"
     }
   },
   {
     "id": "car-advanced-13",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-hydrogen",
     "difficulty": "advanced",
     "type": "choice",
     "prompt": "氢燃料电池汽车排出的是什么？",
@@ -298,13 +307,14 @@
       "title": "氢燃料电池",
       "body": "氢燃料电池汽车让氢气与氧气反应发电，唯一的排放物是水。加氢只要几分钟，比充电快，但加氢站还很少。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
+      "sourceUrl": "https://baike.baidu.com/item/氢燃料电池"
     }
   },
   {
     "id": "car-advanced-14",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-autonomous",
     "difficulty": "advanced",
     "type": "judge",
     "prompt": "自动驾驶技术通常分为 L0 到 L5 共六个等级。",
@@ -320,7 +330,7 @@
       "title": "自动驾驶分级",
       "body": "自动驾驶分 L0~L5 六级：L0 全人工，L1-L2 辅助驾驶，L3-L4 大部分自动，L5 是完全自动驾驶，车里可以没有方向盘。",
       "source": "来源：百度百科·进阶专题",
-      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
+      "sourceUrl": "https://baike.baidu.com/item/自动驾驶汽车"
     }
   }
 ]

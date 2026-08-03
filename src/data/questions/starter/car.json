@@ -3,6 +3,7 @@
     "id": "car-starter-1",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-engine",
     "difficulty": "starter",
     "type": "judge",
     "prompt": "汽车自己会跑吗？",
@@ -18,13 +19,14 @@
       "title": "汽车会自己跑",
       "body": "汽车肚子里有一台发动机，像大力士一样推着车轮转，所以不用人推，它自己就能跑。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
+      "sourceUrl": "https://baike.baidu.com/item/汽车"
     }
   },
   {
     "id": "car-starter-2",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-wheels",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "小汽车有几个轮子？",
@@ -42,13 +44,14 @@
       "title": "四个轮子",
       "body": "小汽车前面两个轮子，后面两个轮子，一共四个。轮子圆圆的，汽车才能转圈、跑快。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
+      "sourceUrl": "https://baike.baidu.com/item/汽车"
     }
   },
   {
     "id": "car-starter-3",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-fire-truck",
     "difficulty": "starter",
     "type": "judge",
     "prompt": "消防车是红色的吗？",
@@ -64,13 +67,14 @@
       "title": "红红的消防车",
       "body": "消防车漆成红色，最显眼，路上的车都会给它让路，好让它快点去救火。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/奔驰"
+      "sourceUrl": "https://baike.baidu.com/item/消防车"
     }
   },
   {
     "id": "car-starter-4",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-ambulance",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "谁送生病的人去医院？",
@@ -88,13 +92,14 @@
       "title": "救护车",
       "body": "救护车里面有医生和护士，还有急救设备。有人生病了，救护车就闪着灯、响着笛，快快地送他们去医院。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/消防车"
+      "sourceUrl": "https://baike.baidu.com/item/救护车"
     }
   },
   {
     "id": "car-starter-5",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-round-wheel",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "车轮是什么形状的？",
@@ -112,13 +117,14 @@
       "title": "为什么车轮是圆的",
       "body": "圆圆的轮子能滚起来，汽车就跑得快。如果轮子是方形的，汽车就只能一颠一颠地跳着走了。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/布加迪"
+      "sourceUrl": "https://baike.baidu.com/item/车轮"
     }
   },
   {
     "id": "car-starter-6",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-traffic-light",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "红灯亮了要怎么办？",
@@ -136,13 +142,14 @@
       "title": "红灯停绿灯行",
       "body": "马路上的红绿灯是\"指挥家\"：红灯亮，大家停下来；绿灯亮，才能走。红灯停、绿灯行，人人都要遵守。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
+      "sourceUrl": "https://baike.baidu.com/item/交通信号灯"
     }
   },
   {
     "id": "car-starter-7",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-bus",
     "difficulty": "starter",
     "type": "choice",
     "prompt": "公共汽车是干什么的？",
@@ -160,7 +167,7 @@
       "title": "公共汽车",
       "body": "公共汽车又长又大，里面有好多座位，能载几十个人。它沿着固定的路线跑，带大家去上班、上学、买东西。",
       "source": "来源：启蒙题库（改编自主题知识）",
-      "sourceUrl": "https://baike.baidu.com/item/奥迪"
+      "sourceUrl": "https://baike.baidu.com/item/公共汽车"
     }
   }
 ]

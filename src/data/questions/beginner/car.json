@@ -3,6 +3,7 @@
     "id": "car-inventor-1",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-benz",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "谁发明了世界上第一辆汽车？",
@@ -33,6 +34,7 @@
     "id": "car-inventor-2",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-benz",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "卡尔·本茨的第一辆汽车有几个轮子？",
@@ -63,6 +65,7 @@
     "id": "car-inventor-3",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-germany",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "\"奔驰\"汽车来自哪个国家？",
@@ -80,13 +83,14 @@
       "title": "汽车王国——德国",
       "body": "德国被称为\"汽车王国\"，因为世界上第一辆汽车就诞生在这里。奔驰、宝马、奥迪、大众、保时捷……好多有名的汽车品牌都是德国的。德国的斯图加特市还有一座巨大的奔驰博物馆，像宇宙飞船一样漂亮。",
       "source": "来源：百度百科·德国汽车工业",
-      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
+      "sourceUrl": "https://baike.baidu.com/item/德国汽车工业"
     }
   },
   {
     "id": "car-inventor-4",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-tristar",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "奔驰车标上的标志是什么形状？",
@@ -104,13 +108,14 @@
       "title": "闪闪的三叉星",
       "body": "奔驰的三叉星标志像一个三叉的星星。传说奔驰公司的创始人希望自己的汽车在海上、陆地上和天空中都是最棒的，所以画了三个尖角，分别代表海、陆、空。这个标志已经闪闪发光了一百多年。",
       "source": "来源：百度百科·梅赛德斯-奔驰",
-      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
+      "sourceUrl": "https://baike.baidu.com/item/三叉星徽"
     }
   },
   {
     "id": "car-inventor-5",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-benz",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "汽车是德国人发明的吗？",
@@ -133,6 +138,7 @@
     "id": "car-beetle-1",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-name",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "甲壳虫汽车长得像什么小动物？",
@@ -157,6 +163,7 @@
     "id": "car-beetle-2",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-vw",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "甲壳虫汽车是哪个国家造的？",
@@ -187,6 +194,7 @@
     "id": "car-beetle-3",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-vw",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "大众汽车的车标是什么？",
@@ -204,13 +212,14 @@
       "title": "VW 是什么意思",
       "body": "大众汽车在德语里叫 Volkswagen。\"Volk\"是人民的意思，\"Wagen\"是汽车，合起来就是\"人民的汽车\"。它的车标 VW 就是这两个词的开头字母，意思是\"让普通人都买得起的汽车\"。",
       "source": "来源：大众汽车官网",
-      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
+      "sourceUrl": "https://baike.baidu.com/item/大众汽车"
     }
   },
   {
     "id": "car-beetle-5",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-vw",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "\"大众\"的意思是\"人民的汽车\"，想让普通人都买得起。",
@@ -226,13 +235,14 @@
       "title": "人民的汽车",
       "body": "很久以前，汽车是很贵的，只有大富翁才买得起。大众汽车想了一个办法：做一辆又便宜又结实的小汽车，让每家每户都买得起。于是就有了甲壳虫。这个梦想真的实现了，甲壳虫成了很多家庭的第一辆车。",
       "source": "来源：大众汽车官网",
-      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
+      "sourceUrl": "https://baike.baidu.com/item/大众汽车"
     }
   },
   {
     "id": "car-badges-1",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-audi-rings",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "奥迪的车标上有几个圆圈？",
@@ -263,6 +273,7 @@
     "id": "car-badges-2",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-bmw",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "宝马的车标是什么颜色？",
@@ -280,13 +291,14 @@
       "title": "蓝天白云车标",
       "body": "宝马来自德国巴伐利亚州，车标的蓝白色就是巴伐利亚州旗帜的颜色。蓝白相间的小圆圈，看起来像旋转的螺旋桨，也像蓝天白云，特别好看。宝马的德文缩写是 BMW。",
       "source": "来源：百度百科·宝马",
-      "sourceUrl": "https://baike.baidu.com/item/奔驰"
+      "sourceUrl": "https://baike.baidu.com/item/宝马"
     }
   },
   {
     "id": "car-badges-3",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-porsche",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "保时捷的车标中间画的是什么动物？",
@@ -317,6 +329,7 @@
     "id": "car-badges-5",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-big-three",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "奔驰、宝马、奥迪都是德国汽车品牌。",
@@ -332,13 +345,14 @@
       "title": "德国三巨头",
       "body": "奔驰、宝马、奥迪是德国最有名的三个汽车品牌，人们叫它们\"德国三巨头\"。它们一个比一个厉害：奔驰发明了汽车，宝马从飞机发动机起家，奥迪用四个圆圈手拉手。德国还出产大众和保时捷，真是汽车王国。",
       "source": "来源：百度百科·德国汽车工业",
-      "sourceUrl": "https://baike.baidu.com/item/奔驰"
+      "sourceUrl": "https://baike.baidu.com/item/德国汽车工业"
     }
   },
   {
     "id": "car-bmwaudi-b1",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-germany",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "奥迪是德国制造的汽车。",
@@ -361,6 +375,7 @@
     "id": "car-bmwaudi-b2",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-bmw",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "宝马的英文缩写是什么？",
@@ -378,13 +393,14 @@
       "title": "BMW 三个字母",
       "body": "BMW 全称是 Bayerische Motoren Werke，意思是\"巴伐利亚发动机工厂\"。现在大家都叫它宝马。",
       "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/奥迪"
+      "sourceUrl": "https://baike.baidu.com/item/宝马"
     }
   },
   {
     "id": "car-rescue-b1",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-ambulance",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "救护车上是给谁用的？",
@@ -402,13 +418,14 @@
       "title": "救护车救人",
       "body": "救护车是\"移动的医院\"，里面躺着生病或受伤的人，医生和护士在车上照顾他们。",
       "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/消防车"
+      "sourceUrl": "https://baike.baidu.com/item/救护车"
     }
   },
   {
     "id": "car-rescue-b2",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-police",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "警车闪着灯去抓坏人时，其他车要让它先走。",
@@ -424,13 +441,14 @@
       "title": "给警车让路",
       "body": "警车闪着红蓝灯、响着警笛，说明警察有紧急任务。其他车要让路，帮助警察快点到达。",
       "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/消防车"
+      "sourceUrl": "https://baike.baidu.com/item/警车"
     }
   },
   {
     "id": "car-records-b1",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-bugatti",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "布加迪是跑得特别快的超级跑车。",
@@ -453,6 +471,7 @@
     "id": "car-records-b2",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-truck",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "大卡车是用来干什么的？",
@@ -470,13 +489,14 @@
       "title": "大卡车",
       "body": "大卡车能装几十吨货物，把水果、玩具、机器送到全国各地，是公路上的\"大力士\"。",
       "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/布加迪"
+      "sourceUrl": "https://baike.baidu.com/item/卡车"
     }
   },
   {
     "id": "car-future-b1",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-ev",
     "difficulty": "beginner",
     "type": "judge",
     "prompt": "电动汽车跑起来几乎没有声音。",
@@ -499,6 +519,7 @@
     "id": "car-future-b2",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-solar",
     "difficulty": "beginner",
     "type": "choice",
     "prompt": "太阳能汽车靠什么能量跑？",
@@ -516,7 +537,7 @@
       "title": "太阳能汽车",
       "body": "太阳能汽车的车顶装着太阳能板，太阳光照在上面就变成电，汽车就能跑了，不用加油也不用充电。",
       "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
+      "sourceUrl": "https://baike.baidu.com/item/太阳能汽车"
     }
   }
 ]

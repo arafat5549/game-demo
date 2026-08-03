@@ -3,6 +3,7 @@
     "id": "car-beetle-4",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-porsche",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "甲壳虫汽车是哪位设计师设计的？",
@@ -33,6 +34,7 @@
     "id": "car-badges-4",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-bmw-origin",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "宝马最早的时候是造什么的？",
@@ -50,13 +52,14 @@
       "title": "从飞机到汽车",
       "body": "一百多年前，宝马一开始是造飞机发动机的工厂。后来战争结束，飞机卖不出去了，宝马就开始造摩托车和汽车。所以宝马的车标一直让人联想到转动的螺旋桨，纪念它飞上天的历史。",
       "source": "来源：百度百科·宝马",
-      "sourceUrl": "https://baike.baidu.com/item/奔驰"
+      "sourceUrl": "https://baike.baidu.com/item/宝马公司"
     }
   },
   {
     "id": "car-bmwaudi-1",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-germany",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "宝马和奥迪都是哪个国家的汽车品牌？",
@@ -87,6 +90,7 @@
     "id": "car-bmwaudi-2",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-audi-name",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "\"奥迪\"这个名字在拉丁语里的意思是什么？",
@@ -103,14 +107,14 @@
     "expansion": {
       "title": "为什么叫奥迪",
       "body": "奥迪的创始人叫奥古斯特·霍希，\"霍希\"在德语里是\"听\"的意思。他后来离开了自己的公司，新公司不能再用\"霍希\"这个名字，就用了它的拉丁语说法\"Audi\"，也是\"听\"的意思。",
-      "source": "来源：百度百科·奥迪",
-      "sourceUrl": "https://baike.baidu.com/item/奥迪"
+      "source": "来源：百度百科·奥迪"
     }
   },
   {
     "id": "car-bmwaudi-3",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-horch",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "奥迪汽车的创始人叫什么名字？",
@@ -141,6 +145,7 @@
     "id": "car-bmwaudi-4",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-bavaria",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "宝马的蓝天白云车标，来自哪个州的旗帜？",
@@ -158,13 +163,14 @@
       "title": "蓝白色从哪来",
       "body": "宝马的家乡是德国巴伐利亚州，那里的旗帜就是蓝白相间的格子图案。宝马把这两种颜色放进车标里，表示\"我来自巴伐利亚\"。后来人们又觉得它像旋转的螺旋桨，因为宝马最早造飞机发动机。",
       "source": "来源：百度百科·宝马",
-      "sourceUrl": "https://baike.baidu.com/item/奥迪"
+      "sourceUrl": "https://baike.baidu.com/item/巴伐利亚州"
     }
   },
   {
     "id": "car-bmwaudi-5",
     "theme": "car",
     "subTheme": "bmw-audi",
+    "knowledge": "bmw-audi-m",
     "difficulty": "intermediate",
     "type": "judge",
     "prompt": "宝马的 M 系列是特别厉害的高性能汽车系列。",
@@ -179,14 +185,14 @@
     "expansion": {
       "title": "宝马 M 系列",
       "body": "宝马的 M 部门专门打造高性能汽车，就像给汽车装上\"超级心脏\"。M 系列的车跑起来特别快，在赛车场和公路上都很出名。M 的标志是一道蓝、紫、红相间的斜杠。",
-      "source": "来源：百度百科·宝马 M",
-      "sourceUrl": "https://baike.baidu.com/item/奥迪"
+      "source": "来源：百度百科·宝马 M"
     }
   },
   {
     "id": "car-rescue-1",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-fire-engine",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "消防车通常是什么颜色的？",
@@ -217,6 +223,7 @@
     "id": "car-rescue-2",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-ambulance",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "救护车上的急救标志是什么形状？",
@@ -234,13 +241,14 @@
       "title": "救护车的十字",
       "body": "救护车身上画着红色的十字，这是急救和医疗的标志。救护车里有医生、护士和急救设备，专门送病人去医院。看到救护车，路上的车都会让出道路，让它快点通过。",
       "source": "来源：百度百科·救护车",
-      "sourceUrl": "https://baike.baidu.com/item/消防车"
+      "sourceUrl": "https://baike.baidu.com/item/救护车"
     }
   },
   {
     "id": "car-rescue-3",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-police",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "警车的警灯是什么颜色的？",
@@ -258,13 +266,14 @@
       "title": "红蓝闪烁的警灯",
       "body": "警车顶上的警灯闪着红色和蓝色的光，这是警察在执行任务。看到警灯闪烁，路上的车要减速让行。警车上有警笛、对讲机，警察叔叔用它抓坏人、帮助有需要的人。",
       "source": "来源：百度百科·警车",
-      "sourceUrl": "https://baike.baidu.com/item/消防车"
+      "sourceUrl": "https://baike.baidu.com/item/警车"
     }
   },
   {
     "id": "car-rescue-4",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-ambulance",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "听到救护车鸣笛，路上的汽车要怎么做？",
@@ -282,13 +291,14 @@
       "title": "给救护车让路",
       "body": "救护车鸣笛表示\"我有紧急任务，请大家让一让\"。汽车听到鸣笛要立刻靠边让路，这样救护车才能快点把病人送到医院。给救护车让路，就是给生命让路，每个司机都会这样做。",
       "source": "来源：百度百科·救护车",
-      "sourceUrl": "https://baike.baidu.com/item/消防车"
+      "sourceUrl": "https://baike.baidu.com/item/救护车"
     }
   },
   {
     "id": "car-rescue-5",
     "theme": "car",
     "subTheme": "rescue",
+    "knowledge": "rescue-fire-engine",
     "difficulty": "intermediate",
     "type": "judge",
     "prompt": "消防车去救火的时候会拉响警报。",
@@ -311,6 +321,7 @@
     "id": "car-records-1",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-first-car",
     "difficulty": "intermediate",
     "type": "judge",
     "prompt": "世界上第一辆汽车跑得比自行车慢。",
@@ -326,13 +337,14 @@
       "title": "比自行车还慢",
       "body": "卡尔·本茨的第一辆汽车时速只有 16 公里，那时候的自行车骑快点都能超过它。而且它经常出故障，本茨的妻子贝尔塔还悄悄开着它跑了 100 多公里回娘家，成了世界上第一位长途开车的人。",
       "source": "来源：百度百科·卡尔·本茨",
-      "sourceUrl": "https://baike.baidu.com/item/布加迪"
+      "sourceUrl": "https://baike.baidu.com/item/奔驰一号"
     }
   },
   {
     "id": "car-records-2",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-bugatti",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "下面哪个品牌以制造超级快的跑车出名？",
@@ -363,6 +375,7 @@
     "id": "car-records-3",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-longest-car",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "世界上最长的汽车大约有多长？",
@@ -379,14 +392,14 @@
     "expansion": {
       "title": "30 米长的汽车",
       "body": "美国造过一辆叫\"美国梦\"的超长豪华轿车，有 30.5 米长，像一列小火车。它里面有游泳池、直升机停机坪和沙发。不过它太长了，只能在直线马路上慢慢开，转弯都很难。",
-      "source": "来源：百度百科·豪华轿车",
-      "sourceUrl": "https://baike.baidu.com/item/布加迪"
+      "source": "来源：百度百科·豪华轿车"
     }
   },
   {
     "id": "car-records-4",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-smallest-car",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "世界上最小的汽车能坐几个人？",
@@ -404,13 +417,14 @@
       "title": "一人汽车 Peel P50",
       "body": "英国有一辆叫 Peel P50 的微型汽车，只有 1 米多长，只能坐一个人，还没有后备箱。它甚至小到可以在电梯里开！它被吉尼斯世界纪录评为\"世界上最小的量产汽车\"。",
       "source": "来源：百度百科·Peel P50",
-      "sourceUrl": "https://baike.baidu.com/item/布加迪"
+      "sourceUrl": "https://baike.baidu.com/item/Peel P50"
     }
   },
   {
     "id": "car-records-5",
     "theme": "car",
     "subTheme": "records",
+    "knowledge": "records-truck",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "下面哪种车最适合长途运送货物？",
@@ -428,13 +442,14 @@
       "title": "运货大力士",
       "body": "大卡车是公路上的\"大力士\"，能拉几十吨的货物，把粮食、玩具、水果送到全国各地。有的卡车挂着长长的挂车，像一列小火车。司机叔叔开卡车很辛苦，要开很久很久。",
       "source": "来源：百度百科·卡车",
-      "sourceUrl": "https://baike.baidu.com/item/布加迪"
+      "sourceUrl": "https://baike.baidu.com/item/卡车"
     }
   },
   {
     "id": "car-future-1",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-ev",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "现在很多新汽车不用汽油，改用什么东西跑？",
@@ -465,6 +480,7 @@
     "id": "car-future-2",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-autonomous",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "不用人开、自己会开的汽车叫什么？",
@@ -482,13 +498,14 @@
       "title": "自动驾驶",
       "body": "自动驾驶汽车装了摄像头、雷达和\"电脑大脑\"，能看见路上的车和人，自己决定加速、刹车和转弯。很多公司正在研究它。未来人们坐在车里可以看书、睡觉，汽车自己把你送到目的地。",
       "source": "来源：百度百科·自动驾驶汽车",
-      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
+      "sourceUrl": "https://baike.baidu.com/item/自动驾驶汽车"
     }
   },
   {
     "id": "car-future-3",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-charging",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "电动汽车没电了，要去哪里充电？",
@@ -506,13 +523,14 @@
       "title": "充电桩",
       "body": "充电桩就像给汽车用的\"大充电器\"。电动汽车没电了，插上充电桩，快的话半小时就能充一大半电。现在很多小区、商场和高速公路服务区都有充电桩，比加油站还多。",
       "source": "来源：百度百科·充电桩",
-      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
+      "sourceUrl": "https://baike.baidu.com/item/充电桩"
     }
   },
   {
     "id": "car-future-4",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-solar",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "太阳能汽车是靠什么能量跑起来的？",
@@ -530,13 +548,14 @@
       "title": "太阳能汽车",
       "body": "太阳能汽车的车顶铺着一块块太阳能板，像小屋顶。太阳能板能把太阳光变成电，让汽车跑起来。它不烧油、不冒烟，特别环保。不过阴天没有太阳，它就跑不快了。",
       "source": "来源：百度百科·太阳能汽车",
-      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
+      "sourceUrl": "https://baike.baidu.com/item/太阳能汽车"
     }
   },
   {
     "id": "car-future-5",
     "theme": "car",
     "subTheme": "future",
+    "knowledge": "future-flying-car",
     "difficulty": "intermediate",
     "type": "judge",
     "prompt": "科学家正在研究会飞的汽车。",
@@ -552,13 +571,14 @@
       "title": "飞行汽车",
       "body": "世界上已经有好几种飞行汽车在试飞了。它们像直升机和汽车的结合体，平时在马路上开，堵车或走山路时可以展开翅膀飞起来。说不定小朋友长大以后，就能开着飞行汽车上学了！",
       "source": "来源：百度百科·飞行汽车",
-      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
+      "sourceUrl": "https://baike.baidu.com/item/飞行汽车"
     }
   },
   {
     "id": "car-inventor-i1",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-benz",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "世界上第一辆汽车在哪一年诞生？",
@@ -583,6 +603,7 @@
     "id": "car-inventor-i2",
     "theme": "car",
     "subTheme": "inventor",
+    "knowledge": "inventor-bertha",
     "difficulty": "intermediate",
     "type": "judge",
     "prompt": "本茨的妻子贝尔塔是世界上第一位长途开汽车的人。",
@@ -598,13 +619,14 @@
       "title": "贝尔塔夫人",
       "body": "本茨的妻子贝尔塔在 1888 年悄悄开着第一辆汽车长途旅行，路上用发卡修车、买汽油，是全世界第一位长途女司机。",
       "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
+      "sourceUrl": "https://baike.baidu.com/item/贝尔塔·本茨"
     }
   },
   {
     "id": "car-beetle-i1",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-production",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "甲壳虫汽车一共生产了多少辆？",
@@ -621,14 +643,14 @@
     "expansion": {
       "title": "甲壳虫的产量",
       "body": "甲壳虫从 1938 年生产到 2003 年，一共卖出超过 2150 万辆，是历史上产量最大的单一车型之一。",
-      "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
+      "source": "来源：百度百科·汽车专题"
     }
   },
   {
     "id": "car-beetle-i2",
     "theme": "car",
     "subTheme": "beetle",
+    "knowledge": "beetle-mexico",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "甲壳虫停产前最后在哪个国家生产？",
@@ -645,14 +667,14 @@
     "expansion": {
       "title": "最后的甲壳虫",
       "body": "甲壳虫晚年主要在墨西哥生产，当地人称它\"Vocho\"。2003 年最后一辆甲壳虫下线，全世界都舍不得它。",
-      "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
+      "source": "来源：百度百科·汽车专题"
     }
   },
   {
     "id": "car-badges-i1",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-audi-horch",
     "difficulty": "intermediate",
     "type": "choice",
     "prompt": "奥迪创始人霍希说过什么名言？",
@@ -670,13 +692,14 @@
       "title": "霍希的名言",
       "body": "奥迪创始人奥古斯特·霍希留下一句名言：\"我无论如何都要造出最好的汽车。\"奥迪至今都在追求这个目标。",
       "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/奔驰"
+      "sourceUrl": "https://baike.baidu.com/item/奥古斯特·霍希"
     }
   },
   {
     "id": "car-badges-i2",
     "theme": "car",
     "subTheme": "badges",
+    "knowledge": "badges-benz-sclass",
     "difficulty": "intermediate",
     "type": "judge",
     "prompt": "奔驰的 S 级轿车是奔驰的旗舰豪华轿车。",
@@ -692,7 +715,7 @@
       "title": "奔驰 S 级",
       "body": "奔驰 S 级是品牌的旗舰轿车，从 1972 年至今已经生产了十几代，是全世界豪华轿车的标杆。",
       "source": "来源：百度百科·汽车专题",
-      "sourceUrl": "https://baike.baidu.com/item/奔驰"
+      "sourceUrl": "https://baike.baidu.com/item/奔驰S级"
     }
   }
 ]
