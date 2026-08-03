@@ -1,0 +1,2 @@
+[permissions]
+allow = ["Edit", "Bash=npm install --no-audit --no-fund 2>&1 | tail -5", "Bash=npx tsc --noEmit 2>&1 | head -20"]

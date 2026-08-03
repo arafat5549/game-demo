@@ -1,0 +1,859 @@
+[
+  {
+    "id": "car-inventor-1",
+    "theme": "car",
+    "subTheme": "inventor",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "谁发明了世界上第一辆汽车？",
+    "options": [
+      "卡尔·本茨",
+      "比尔·盖茨",
+      "爱因斯坦",
+      "孙悟空"
+    ],
+    "answer": 0,
+    "fact": "1886 年，德国的卡尔·本茨造出了第一辆汽车，大家都叫他\"汽车之父\"。",
+    "cardName": "汽车之父",
+    "cardEmoji": "👨‍🔧",
+    "expansion": {
+      "title": "汽车之父卡尔·本茨",
+      "body": "1886 年 1 月 29 日，卡尔·本茨为他造的三轮汽车申请了专利，这一天被看作汽车的生日。这辆车跑得比马车慢，但是不用马拉！后来本茨先生创立了奔驰公司，全世界的人都叫他\"汽车之父\"。",
+      "source": "来源：百度百科·卡尔·本茨",
+      "links": [
+        {
+          "label": "百度百科：卡尔·本茨",
+          "url": "https://baike.baidu.com/item/卡尔·本茨"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-inventor-2",
+    "theme": "car",
+    "subTheme": "inventor",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "卡尔·本茨的第一辆汽车有几个轮子？",
+    "options": [
+      "3 个",
+      "4 个",
+      "2 个",
+      "8 个"
+    ],
+    "answer": 0,
+    "fact": "第一辆汽车是三个轮子的，跑起来像一辆装了发动机的三轮车。",
+    "cardName": "三轮汽车",
+    "cardEmoji": "🛺",
+    "expansion": {
+      "title": "第一辆三轮汽车",
+      "body": "本茨的第一辆汽车叫\"奔驰一号\"，只有三个轮子：前面一个，后面两个。它最高时速只有 16 公里，还没有自行车快，但它是世界上第一辆自己会跑的\"无马马车\"。这辆车现在还能在德国奔驰博物馆里看到。",
+      "source": "来源：百度百科·奔驰一号",
+      "links": [
+        {
+          "label": "百度百科：奔驰一号",
+          "url": "https://baike.baidu.com/item/奔驰一号"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-inventor-3",
+    "theme": "car",
+    "subTheme": "inventor",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "\"奔驰\"汽车来自哪个国家？",
+    "options": [
+      "德国",
+      "法国",
+      "日本",
+      "美国"
+    ],
+    "answer": 0,
+    "fact": "奔驰是德国汽车，德国的汽车工业全世界都很有名。",
+    "cardName": "德国奔驰",
+    "cardEmoji": "🇩🇪",
+    "expansion": {
+      "title": "汽车王国——德国",
+      "body": "德国被称为\"汽车王国\"，因为世界上第一辆汽车就诞生在这里。奔驰、宝马、奥迪、大众、保时捷……好多有名的汽车品牌都是德国的。德国的斯图加特市还有一座巨大的奔驰博物馆，像宇宙飞船一样漂亮。",
+      "source": "来源：百度百科·德国汽车工业"
+    }
+  },
+  {
+    "id": "car-inventor-4",
+    "theme": "car",
+    "subTheme": "inventor",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "奔驰车标上的标志是什么形状？",
+    "options": [
+      "三叉星",
+      "圆圈",
+      "方块",
+      "闪电"
+    ],
+    "answer": 0,
+    "fact": "奔驰的三叉星代表海、陆、空三个方向，奔驰都想征服。",
+    "cardName": "三叉星",
+    "cardEmoji": "⭐",
+    "expansion": {
+      "title": "闪闪的三叉星",
+      "body": "奔驰的三叉星标志像一个三叉的星星。传说奔驰公司的创始人希望自己的汽车在海上、陆地上和天空中都是最棒的，所以画了三个尖角，分别代表海、陆、空。这个标志已经闪闪发光了一百多年。",
+      "source": "来源：百度百科·梅赛德斯-奔驰"
+    }
+  },
+  {
+    "id": "car-inventor-5",
+    "theme": "car",
+    "subTheme": "inventor",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "汽车是德国人发明的吗？",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！1886 年德国人卡尔·本茨发明了第一辆汽车。",
+    "cardName": "汽车诞生",
+    "cardEmoji": "🎂",
+    "expansion": {
+      "title": "汽车的生日",
+      "body": "1886 年 1 月 29 日，卡尔·本茨的汽车获得了专利，这一天后来被全世界定为\"汽车诞生日\"。到今天，汽车已经 100 多岁了，从三个轮子的小车子，变成了各种各样的汽车、卡车和赛车。",
+      "source": "来源：百度百科·卡尔·本茨"
+    }
+  },
+  {
+    "id": "car-beetle-1",
+    "theme": "car",
+    "subTheme": "beetle",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "甲壳虫汽车长得像什么小动物？",
+    "options": [
+      "甲虫",
+      "大象",
+      "老虎",
+      "蝴蝶"
+    ],
+    "answer": 0,
+    "fact": "甲壳虫圆圆的、胖胖的，真的像一只可爱的小甲虫。",
+    "cardName": "甲壳虫",
+    "cardEmoji": "🐞",
+    "expansion": {
+      "title": "圆滚滚的甲壳虫",
+      "body": "甲壳虫汽车诞生于 1938 年，它圆圆的脑袋、胖胖的身子，跟小甲虫一模一样，所以大家都叫它\"甲壳虫\"。它是历史上卖得最多的汽车之一，全世界卖出了两千多万辆，好多家庭的第一辆车就是它。",
+      "source": "来源：百度百科·大众甲壳虫"
+    }
+  },
+  {
+    "id": "car-beetle-2",
+    "theme": "car",
+    "subTheme": "beetle",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "甲壳虫汽车是哪个国家造的？",
+    "options": [
+      "德国",
+      "中国",
+      "埃及",
+      "巴西"
+    ],
+    "answer": 0,
+    "fact": "甲壳虫是德国大众汽车造的，它是全世界最受欢迎的小汽车之一。",
+    "cardName": "德国小甲虫",
+    "cardEmoji": "🇩🇪",
+    "expansion": {
+      "title": "从德国走向世界",
+      "body": "甲壳虫在德国出生，后来还去了墨西哥、巴西很多国家生产。美国人最喜欢它，给它起了好多可爱的外号。虽然现在甲壳虫停产了，但它圆滚滚的样子永远是汽车历史上最经典的模样。",
+      "source": "来源：百度百科·大众汽车",
+      "links": [
+        {
+          "label": "百度百科：大众汽车",
+          "url": "https://baike.baidu.com/item/大众汽车"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-beetle-3",
+    "theme": "car",
+    "subTheme": "beetle",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "大众汽车的车标是什么？",
+    "options": [
+      "VW",
+      "BMW",
+      "ABC",
+      "WW"
+    ],
+    "answer": 0,
+    "fact": "大众的德文是 Volkswagen，VW 就是它的名字缩写。",
+    "cardName": "VW 车标",
+    "cardEmoji": "🔤",
+    "expansion": {
+      "title": "VW 是什么意思",
+      "body": "大众汽车在德语里叫 Volkswagen。\"Volk\"是人民的意思，\"Wagen\"是汽车，合起来就是\"人民的汽车\"。它的车标 VW 就是这两个词的开头字母，意思是\"让普通人都买得起的汽车\"。",
+      "source": "来源：大众汽车官网"
+    }
+  },
+  {
+    "id": "car-beetle-4",
+    "theme": "car",
+    "subTheme": "beetle",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "甲壳虫汽车是哪位设计师设计的？",
+    "options": [
+      "费迪南德·保时捷",
+      "卡尔·本茨",
+      "牛顿",
+      "爱迪生"
+    ],
+    "answer": 0,
+    "fact": "设计甲壳虫的费迪南德·保时捷，后来还创办了保时捷跑车公司。",
+    "cardName": "保时捷博士",
+    "cardEmoji": "🧑‍🔬",
+    "expansion": {
+      "title": "设计甲壳虫的博士",
+      "body": "费迪南德·保时捷是一位超级厉害的汽车工程师，大家都叫他\"保时捷博士\"。他设计了甲壳虫，后来还创办了保时捷跑车公司。他的儿子和孙子也都是著名的汽车设计师，一家人都爱造汽车。",
+      "source": "来源：百度百科·费迪南德·保时捷",
+      "links": [
+        {
+          "label": "百度百科：费迪南德·保时捷",
+          "url": "https://baike.baidu.com/item/费迪南德·保时捷"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-beetle-5",
+    "theme": "car",
+    "subTheme": "beetle",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "\"大众\"的意思是\"人民的汽车\"，想让普通人都买得起。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！大众汽车的梦想就是让每家每户都能开上汽车。",
+    "cardName": "人民的汽车",
+    "cardEmoji": "👨‍👩‍👧",
+    "expansion": {
+      "title": "人民的汽车",
+      "body": "很久以前，汽车是很贵的，只有大富翁才买得起。大众汽车想了一个办法：做一辆又便宜又结实的小汽车，让每家每户都买得起。于是就有了甲壳虫。这个梦想真的实现了，甲壳虫成了很多家庭的第一辆车。",
+      "source": "来源：大众汽车官网"
+    }
+  },
+  {
+    "id": "car-badges-1",
+    "theme": "car",
+    "subTheme": "badges",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "奥迪的车标上有几个圆圈？",
+    "options": [
+      "4 个",
+      "3 个",
+      "2 个",
+      "5 个"
+    ],
+    "answer": 0,
+    "fact": "奥迪的四个圆圈代表四家汽车公司手拉手联合在一起。",
+    "cardName": "奥迪四环",
+    "cardEmoji": "⭕",
+    "expansion": {
+      "title": "奥迪的四个圆圈",
+      "body": "奥迪的四个圆圈代表四家汽车公司联合在一起，就像四个好朋友手拉手。它们一起造汽车，力量更大。奥迪这个名字来自创始人奥古斯特·霍希，在拉丁语里是\"听\"的意思。",
+      "source": "来源：百度百科·奥迪",
+      "links": [
+        {
+          "label": "百度百科：奥迪",
+          "url": "https://baike.baidu.com/item/奥迪"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-badges-2",
+    "theme": "car",
+    "subTheme": "badges",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "宝马的车标是什么颜色？",
+    "options": [
+      "蓝白色",
+      "红黄色",
+      "绿黑色",
+      "粉紫色"
+    ],
+    "answer": 0,
+    "fact": "宝马的蓝白车标来自巴伐利亚州的旗帜颜色，像蓝天白云。",
+    "cardName": "蓝天白云",
+    "cardEmoji": "🔵",
+    "expansion": {
+      "title": "蓝天白云车标",
+      "body": "宝马来自德国巴伐利亚州，车标的蓝白色就是巴伐利亚州旗帜的颜色。蓝白相间的小圆圈，看起来像旋转的螺旋桨，也像蓝天白云，特别好看。宝马的德文缩写是 BMW。",
+      "source": "来源：百度百科·宝马"
+    }
+  },
+  {
+    "id": "car-badges-3",
+    "theme": "car",
+    "subTheme": "badges",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "保时捷的车标中间画的是什么动物？",
+    "options": [
+      "马",
+      "狮子",
+      "龙",
+      "猫"
+    ],
+    "answer": 0,
+    "fact": "保时捷车标中间是一匹昂起头的黑马，跑车跑得像马一样快。",
+    "cardName": "黑马",
+    "cardEmoji": "🐎",
+    "expansion": {
+      "title": "保时捷的黑马",
+      "body": "保时捷车标中间有一匹黑色的马，它来自保时捷家乡斯图加特市的市徽——斯图加特在德语里就是\"养马场\"的意思。保时捷的跑车跑起来像骏马一样快，所以用马做标志再合适不过了。",
+      "source": "来源：百度百科·保时捷",
+      "links": [
+        {
+          "label": "百度百科：保时捷",
+          "url": "https://baike.baidu.com/item/保时捷"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-badges-4",
+    "theme": "car",
+    "subTheme": "badges",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "宝马最早的时候是造什么的？",
+    "options": [
+      "飞机发动机",
+      "自行车",
+      "火车",
+      "轮船"
+    ],
+    "answer": 0,
+    "fact": "宝马最开始造飞机发动机，所以它的标志像旋转的螺旋桨。",
+    "cardName": "螺旋桨",
+    "cardEmoji": "🚁",
+    "expansion": {
+      "title": "从飞机到汽车",
+      "body": "一百多年前，宝马一开始是造飞机发动机的工厂。后来战争结束，飞机卖不出去了，宝马就开始造摩托车和汽车。所以宝马的车标一直让人联想到转动的螺旋桨，纪念它飞上天的历史。",
+      "source": "来源：百度百科·宝马"
+    }
+  },
+  {
+    "id": "car-badges-5",
+    "theme": "car",
+    "subTheme": "badges",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "奔驰、宝马、奥迪都是德国汽车品牌。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！它们都是德国有名的汽车品牌，所以叫\"德国三巨头\"。",
+    "cardName": "三巨头",
+    "cardEmoji": "👑",
+    "expansion": {
+      "title": "德国三巨头",
+      "body": "奔驰、宝马、奥迪是德国最有名的三个汽车品牌，人们叫它们\"德国三巨头\"。它们一个比一个厉害：奔驰发明了汽车，宝马从飞机发动机起家，奥迪用四个圆圈手拉手。德国还出产大众和保时捷，真是汽车王国。",
+      "source": "来源：百度百科·德国汽车工业"
+    }
+  },
+  {
+    "id": "car-bmwaudi-1",
+    "theme": "car",
+    "subTheme": "bmw-audi",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "宝马和奥迪都是哪个国家的汽车品牌？",
+    "options": [
+      "德国",
+      "意大利",
+      "英国",
+      "韩国"
+    ],
+    "answer": 0,
+    "fact": "宝马和奥迪都是德国品牌，和奔驰一起被称为\"德国三巨头\"。",
+    "cardName": "德国双雄",
+    "cardEmoji": "🇩🇪",
+    "expansion": {
+      "title": "宝马和奥迪",
+      "body": "宝马和奥迪都来自德国。宝马的蓝白车标像旋转的螺旋桨，奥迪的四个圈代表四家公司手拉手。它们都造出过很多特别棒的汽车，在世界各地都能看到。",
+      "source": "来源：百度百科·奥迪",
+      "links": [
+        {
+          "label": "百度百科：奥迪",
+          "url": "https://baike.baidu.com/item/奥迪"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-bmwaudi-2",
+    "theme": "car",
+    "subTheme": "bmw-audi",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "\"奥迪\"这个名字在拉丁语里的意思是什么？",
+    "options": [
+      "听",
+      "跑",
+      "飞",
+      "看"
+    ],
+    "answer": 0,
+    "fact": "\"奥迪\"（Audi）在拉丁语里是\"听\"的意思，来自创始人霍希的名字。",
+    "cardName": "奥迪=听",
+    "cardEmoji": "👂",
+    "expansion": {
+      "title": "为什么叫奥迪",
+      "body": "奥迪的创始人叫奥古斯特·霍希，\"霍希\"在德语里是\"听\"的意思。他后来离开了自己的公司，新公司不能再用\"霍希\"这个名字，就用了它的拉丁语说法\"Audi\"，也是\"听\"的意思。",
+      "source": "来源：百度百科·奥迪"
+    }
+  },
+  {
+    "id": "car-bmwaudi-3",
+    "theme": "car",
+    "subTheme": "bmw-audi",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "奥迪汽车的创始人叫什么名字？",
+    "options": [
+      "奥古斯特·霍希",
+      "卡尔·本茨",
+      "亨利·福特",
+      "莱特兄弟"
+    ],
+    "answer": 0,
+    "fact": "奥迪的创始人是奥古斯特·霍希，他是一位很厉害的汽车工程师。",
+    "cardName": "霍希先生",
+    "cardEmoji": "🧔",
+    "expansion": {
+      "title": "创始人霍希",
+      "body": "奥古斯特·霍希是德国著名的汽车工程师。他造的车又稳又舒服，特别受欢迎。后来他创办了奥迪公司，还留下了名言：\"我无论如何都要造出最好的汽车。\"",
+      "source": "来源：百度百科·奥古斯特·霍希",
+      "links": [
+        {
+          "label": "百度百科：奥古斯特·霍希",
+          "url": "https://baike.baidu.com/item/奥古斯特·霍希"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-bmwaudi-4",
+    "theme": "car",
+    "subTheme": "bmw-audi",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "宝马的蓝天白云车标，来自哪个州的旗帜？",
+    "options": [
+      "巴伐利亚州",
+      "加利福尼亚州",
+      "佛罗里达州",
+      "纽约州"
+    ],
+    "answer": 0,
+    "fact": "宝马来自德国的巴伐利亚州，车标的蓝白色就是那里的旗帜颜色。",
+    "cardName": "巴伐利亚",
+    "cardEmoji": "🚩",
+    "expansion": {
+      "title": "蓝白色从哪来",
+      "body": "宝马的家乡是德国巴伐利亚州，那里的旗帜就是蓝白相间的格子图案。宝马把这两种颜色放进车标里，表示\"我来自巴伐利亚\"。后来人们又觉得它像旋转的螺旋桨，因为宝马最早造飞机发动机。",
+      "source": "来源：百度百科·宝马"
+    }
+  },
+  {
+    "id": "car-bmwaudi-5",
+    "theme": "car",
+    "subTheme": "bmw-audi",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "宝马的 M 系列是特别厉害的高性能汽车系列。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！M 是宝马专门做高性能汽车的部门，M 系列跑得又快又帅。",
+    "cardName": "M 系列",
+    "cardEmoji": "🏁",
+    "expansion": {
+      "title": "宝马 M 系列",
+      "body": "宝马的 M 部门专门打造高性能汽车，就像给汽车装上\"超级心脏\"。M 系列的车跑起来特别快，在赛车场和公路上都很出名。M 的标志是一道蓝、紫、红相间的斜杠。",
+      "source": "来源：百度百科·宝马 M"
+    }
+  },
+  {
+    "id": "car-rescue-1",
+    "theme": "car",
+    "subTheme": "rescue",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "消防车通常是什么颜色的？",
+    "options": [
+      "红色",
+      "蓝色",
+      "黑色",
+      "白色"
+    ],
+    "answer": 0,
+    "fact": "消防车是红色的，红色最显眼，远远就能看见。",
+    "cardName": "红色消防车",
+    "cardEmoji": "🚒",
+    "expansion": {
+      "title": "红色的消防车",
+      "body": "消防车漆成红色，因为红色最醒目，老远就能看到，路上的车会赶紧让路。消防车上装着水枪、梯子和水管，还能拉响\"呜哇呜哇\"的警报。消防员叔叔救火救人，是最勇敢的人。",
+      "source": "来源：百度百科·消防车",
+      "links": [
+        {
+          "label": "百度百科：消防车",
+          "url": "https://baike.baidu.com/item/消防车"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-rescue-2",
+    "theme": "car",
+    "subTheme": "rescue",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "救护车上的急救标志是什么形状？",
+    "options": [
+      "十字",
+      "圆圈",
+      "星星",
+      "三角"
+    ],
+    "answer": 0,
+    "fact": "救护车上有红色的十字标志，表示救死扶伤。",
+    "cardName": "急救十字",
+    "cardEmoji": "🏥",
+    "expansion": {
+      "title": "救护车的十字",
+      "body": "救护车身上画着红色的十字，这是急救和医疗的标志。救护车里有医生、护士和急救设备，专门送病人去医院。看到救护车，路上的车都会让出道路，让它快点通过。",
+      "source": "来源：百度百科·救护车"
+    }
+  },
+  {
+    "id": "car-rescue-3",
+    "theme": "car",
+    "subTheme": "rescue",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "警车的警灯是什么颜色的？",
+    "options": [
+      "红色和蓝色",
+      "绿色和黄色",
+      "紫色和粉色",
+      "黑色和白色"
+    ],
+    "answer": 0,
+    "fact": "警车顶上的警灯闪着红蓝两色的光，特别醒目。",
+    "cardName": "红蓝警灯",
+    "cardEmoji": "🚨",
+    "expansion": {
+      "title": "红蓝闪烁的警灯",
+      "body": "警车顶上的警灯闪着红色和蓝色的光，这是警察在执行任务。看到警灯闪烁，路上的车要减速让行。警车上有警笛、对讲机，警察叔叔用它抓坏人、帮助有需要的人。",
+      "source": "来源：百度百科·警车"
+    }
+  },
+  {
+    "id": "car-rescue-4",
+    "theme": "car",
+    "subTheme": "rescue",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "听到救护车鸣笛，路上的汽车要怎么做？",
+    "options": [
+      "让路",
+      "堵住它",
+      "跟它比赛",
+      "不理它"
+    ],
+    "answer": 0,
+    "fact": "听到救护车鸣笛要马上让路，因为车上有病人要抢救。",
+    "cardName": "让路小卫士",
+    "cardEmoji": "🫡",
+    "expansion": {
+      "title": "给救护车让路",
+      "body": "救护车鸣笛表示\"我有紧急任务，请大家让一让\"。汽车听到鸣笛要立刻靠边让路，这样救护车才能快点把病人送到医院。给救护车让路，就是给生命让路，每个司机都会这样做。",
+      "source": "来源：百度百科·救护车"
+    }
+  },
+  {
+    "id": "car-rescue-5",
+    "theme": "car",
+    "subTheme": "rescue",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "消防车去救火的时候会拉响警报。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！救火是紧急任务，消防车会拉响警报让路上的车让行。",
+    "cardName": "呜哇呜哇",
+    "cardEmoji": "📢",
+    "expansion": {
+      "title": "消防车的警报",
+      "body": "消防车出警时会拉响\"呜哇呜哇\"的警报声，提醒大家让路。消防车越快到达，火就越小，损失就越少。所以听到消防车警报，大家都会主动让出道路，让消防员叔叔快点去救火。",
+      "source": "来源：百度百科·消防车"
+    }
+  },
+  {
+    "id": "car-records-1",
+    "theme": "car",
+    "subTheme": "records",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "世界上第一辆汽车跑得比自行车慢。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！第一辆汽车最高时速只有 16 公里，还没自行车快。",
+    "cardName": "慢吞吞一号",
+    "cardEmoji": "🐢",
+    "expansion": {
+      "title": "比自行车还慢",
+      "body": "卡尔·本茨的第一辆汽车时速只有 16 公里，那时候的自行车骑快点都能超过它。而且它经常出故障，本茨的妻子贝尔塔还悄悄开着它跑了 100 多公里回娘家，成了世界上第一位长途开车的人。",
+      "source": "来源：百度百科·卡尔·本茨"
+    }
+  },
+  {
+    "id": "car-records-2",
+    "theme": "car",
+    "subTheme": "records",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "下面哪个品牌以制造超级快的跑车出名？",
+    "options": [
+      "布加迪",
+      "拖拉机厂",
+      "公交车厂",
+      "自行车厂"
+    ],
+    "answer": 0,
+    "fact": "布加迪是法国超级跑车品牌，它的车是全世界跑得最快的之一。",
+    "cardName": "速度之王",
+    "cardEmoji": "💨",
+    "expansion": {
+      "title": "布加迪的速度",
+      "body": "布加迪来自法国，专门制造超级跑车。它的威龙（Veyron）和凯龙（Chiron）车型时速能超过 400 公里，比高铁还快！当然，这样的车也非常非常贵，全世界只有少数人买得起。",
+      "source": "来源：百度百科·布加迪",
+      "links": [
+        {
+          "label": "百度百科：布加迪",
+          "url": "https://baike.baidu.com/item/布加迪"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-records-3",
+    "theme": "car",
+    "subTheme": "records",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "世界上最长的汽车大约有多长？",
+    "options": [
+      "30 多米",
+      "3 米",
+      "300 米",
+      "3 厘米"
+    ],
+    "answer": 0,
+    "fact": "世界上最长的豪华轿车有 30 多米长，比一栋楼还长！",
+    "cardName": "超长轿车",
+    "cardEmoji": "🐍",
+    "expansion": {
+      "title": "30 米长的汽车",
+      "body": "美国造过一辆叫\"美国梦\"的超长豪华轿车，有 30.5 米长，像一列小火车。它里面有游泳池、直升机停机坪和沙发。不过它太长了，只能在直线马路上慢慢开，转弯都很难。",
+      "source": "来源：百度百科·豪华轿车"
+    }
+  },
+  {
+    "id": "car-records-4",
+    "theme": "car",
+    "subTheme": "records",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "世界上最小的汽车能坐几个人？",
+    "options": [
+      "1 个人",
+      "10 个人",
+      "50 个人",
+      "100 个人"
+    ],
+    "answer": 0,
+    "fact": "英国造过一种微型车叫 Peel P50，只能坐一个人。",
+    "cardName": "小不点汽车",
+    "cardEmoji": "🪆",
+    "expansion": {
+      "title": "一人汽车 Peel P50",
+      "body": "英国有一辆叫 Peel P50 的微型汽车，只有 1 米多长，只能坐一个人，还没有后备箱。它甚至小到可以在电梯里开！它被吉尼斯世界纪录评为\"世界上最小的量产汽车\"。",
+      "source": "来源：百度百科·Peel P50"
+    }
+  },
+  {
+    "id": "car-records-5",
+    "theme": "car",
+    "subTheme": "records",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "下面哪种车最适合长途运送货物？",
+    "options": [
+      "大卡车",
+      "小轿车",
+      "跑车",
+      "三轮车"
+    ],
+    "answer": 0,
+    "fact": "大卡车力气大、装得多，是运送货物的主力。",
+    "cardName": "大力士卡车",
+    "cardEmoji": "🚛",
+    "expansion": {
+      "title": "运货大力士",
+      "body": "大卡车是公路上的\"大力士\"，能拉几十吨的货物，把粮食、玩具、水果送到全国各地。有的卡车挂着长长的挂车，像一列小火车。司机叔叔开卡车很辛苦，要开很久很久。",
+      "source": "来源：百度百科·卡车"
+    }
+  },
+  {
+    "id": "car-future-1",
+    "theme": "car",
+    "subTheme": "future",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "现在很多新汽车不用汽油，改用什么东西跑？",
+    "options": [
+      "电",
+      "可乐",
+      "风",
+      "水"
+    ],
+    "answer": 0,
+    "fact": "电动汽车用电池里的电来跑，又安静又不冒黑烟。",
+    "cardName": "电动车",
+    "cardEmoji": "🔋",
+    "expansion": {
+      "title": "电动汽车",
+      "body": "电动汽车不烧汽油，靠电池里的电转动车轮。它跑起来几乎没有声音，也不会排出黑黑的尾气，对空气很友好。中国的电动汽车卖得特别好，很多家庭都在开电动车。",
+      "source": "来源：百度百科·电动汽车",
+      "links": [
+        {
+          "label": "百度百科：电动汽车",
+          "url": "https://baike.baidu.com/item/电动汽车"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-future-2",
+    "theme": "car",
+    "subTheme": "future",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "不用人开、自己会开的汽车叫什么？",
+    "options": [
+      "自动驾驶汽车",
+      "遥控汽车",
+      "玩具汽车",
+      "碰碰车"
+    ],
+    "answer": 0,
+    "fact": "自动驾驶汽车就像长了眼睛和大脑，自己会认路、会刹车。",
+    "cardName": "自己会开",
+    "cardEmoji": "🤖",
+    "expansion": {
+      "title": "自动驾驶",
+      "body": "自动驾驶汽车装了摄像头、雷达和\"电脑大脑\"，能看见路上的车和人，自己决定加速、刹车和转弯。很多公司正在研究它。未来人们坐在车里可以看书、睡觉，汽车自己把你送到目的地。",
+      "source": "来源：百度百科·自动驾驶汽车"
+    }
+  },
+  {
+    "id": "car-future-3",
+    "theme": "car",
+    "subTheme": "future",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "电动汽车没电了，要去哪里充电？",
+    "options": [
+      "充电桩",
+      "加油站",
+      "洗车店",
+      "修鞋摊"
+    ],
+    "answer": 0,
+    "fact": "电动汽车要在充电桩充电，就像手机没电要插充电器一样。",
+    "cardName": "充电桩",
+    "cardEmoji": "🔌",
+    "expansion": {
+      "title": "充电桩",
+      "body": "充电桩就像给汽车用的\"大充电器\"。电动汽车没电了，插上充电桩，快的话半小时就能充一大半电。现在很多小区、商场和高速公路服务区都有充电桩，比加油站还多。",
+      "source": "来源：百度百科·充电桩"
+    }
+  },
+  {
+    "id": "car-future-4",
+    "theme": "car",
+    "subTheme": "future",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "太阳能汽车是靠什么能量跑起来的？",
+    "options": [
+      "太阳光",
+      "月光",
+      "星光",
+      "灯光"
+    ],
+    "answer": 0,
+    "fact": "太阳能汽车顶上装着太阳能板，把太阳光变成电来跑。",
+    "cardName": "太阳能量",
+    "cardEmoji": "☀️",
+    "expansion": {
+      "title": "太阳能汽车",
+      "body": "太阳能汽车的车顶铺着一块块太阳能板，像小屋顶。太阳能板能把太阳光变成电，让汽车跑起来。它不烧油、不冒烟，特别环保。不过阴天没有太阳，它就跑不快了。",
+      "source": "来源：百度百科·太阳能汽车"
+    }
+  },
+  {
+    "id": "car-future-5",
+    "theme": "car",
+    "subTheme": "future",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "科学家正在研究会飞的汽车。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！很多国家都在试验飞行汽车，堵车的时候它可以飞过去。",
+    "cardName": "飞行汽车",
+    "cardEmoji": "🛸",
+    "expansion": {
+      "title": "飞行汽车",
+      "body": "世界上已经有好几种飞行汽车在试飞了。它们像直升机和汽车的结合体，平时在马路上开，堵车或走山路时可以展开翅膀飞起来。说不定小朋友长大以后，就能开着飞行汽车上学了！",
+      "source": "来源：百度百科·飞行汽车"
+    }
+  }
+]
