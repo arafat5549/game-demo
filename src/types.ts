@@ -55,10 +55,17 @@ export interface Settings {
   muted: boolean
 }
 
+/** 小游戏进度（ADR-0014）：按主题记录 */
+export interface MiniGameProgress {
+  played: boolean // 是否首通（首通送小游戏卡）
+  bestStars: number // 最佳星级 0-3
+}
+
 export interface SaveData {
   version: 1
   stars: number // 总星星
   themeProgress: Record<ThemeId, ThemeProgress>
+  miniGames: Record<ThemeId, MiniGameProgress>
   settings: Settings
 }
 

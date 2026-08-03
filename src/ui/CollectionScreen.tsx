@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import type { Question, ThemeId } from '../types'
-import { THEMES } from '../data/themes'
+import { THEMES, MINI_GAMES, miniGameCardId } from '../data/themes'
 import { QUESTIONS } from '../data/questions'
 import { useSave } from '../store/save'
 import { playClick } from '../audio/sfx'
@@ -39,25 +39,36 @@ export function CollectionScreen({ theme, onBack }: Props) {
         </div>
       </div>
 
-      {/* 奖牌卡 */}
-      <div className="mx-auto mt-4 grid w-full max-w-md grid-cols-2 gap-3 px-4">
+      {/* 小游戏卡 + 奖牌卡 */}
+      <div className="mx-auto mt-4 grid w-full max-w-md grid-cols-3 gap-2 px-4">
         <div
-          className={`flex flex-col items-center rounded-2xl border-4 p-3 shadow ${
+          className={`flex flex-col items-center rounded-2xl border-4 p-2.5 shadow ${
+            collected.has(miniGameCardId(theme)) ? 'border-violet-300 bg-violet-50' : 'border-slate-300 bg-slate-200'
+          }`}
+        >
+          <div className="text-3xl">
+            {collected.has(miniGameCardId(theme)) ? MINI_GAMES.find((m) => m.theme === theme)?.emoji ?? '🎮' : '❓'}
+          </div>
+          <div className="mt-1 text-center text-[11px] font-bold leading-tight text-slate-700">小游戏卡</div>
+          <div className="text-[10px] text-slate-500">首通小游戏</div>
+        </div>
+        <div
+          className={`flex flex-col items-center rounded-2xl border-4 p-2.5 shadow ${
             prog.medal ? 'border-yellow-300 bg-yellow-50' : 'border-slate-300 bg-slate-200'
           }`}
         >
-          <div className="text-4xl">{prog.medal ? '🏅' : '❓'}</div>
-          <div className="mt-1 text-sm font-bold text-slate-700">主题奖牌卡</div>
-          <div className="text-[11px] text-slate-500">爬完 10 关</div>
+          <div className="text-3xl">{prog.medal ? '🏅' : '❓'}</div>
+          <div className="mt-1 text-center text-[11px] font-bold leading-tight text-slate-700">主题奖牌卡</div>
+          <div className="text-[10px] text-slate-500">爬完 10 关</div>
         </div>
         <div
-          className={`flex flex-col items-center rounded-2xl border-4 p-3 shadow ${
+          className={`flex flex-col items-center rounded-2xl border-4 p-2.5 shadow ${
             prog.goldMedal ? 'border-yellow-300 bg-yellow-50' : 'border-slate-300 bg-slate-200'
           }`}
         >
-          <div className="text-4xl">{prog.goldMedal ? '🥇' : '❓'}</div>
-          <div className="mt-1 text-sm font-bold text-slate-700">金色奖牌卡</div>
-          <div className="text-[11px] text-slate-500">10 关全 3 星</div>
+          <div className="text-3xl">{prog.goldMedal ? '🥇' : '❓'}</div>
+          <div className="mt-1 text-center text-[11px] font-bold leading-tight text-slate-700">金色奖牌卡</div>
+          <div className="text-[10px] text-slate-500">10 关全 3 星</div>
         </div>
       </div>
 

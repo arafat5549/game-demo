@@ -8,11 +8,16 @@ import { speak } from '../audio/tts'
 interface Props {
   onEnterTheme: (t: ThemeId) => void
   onOpenParent: () => void
+  onOpenMiniHall: () => void
   overLimit: boolean
 }
 
-export function HomeScreen({ onEnterTheme, onOpenParent, overLimit }: Props) {
+export function HomeScreen({ onEnterTheme, onOpenParent, onOpenMiniHall, overLimit }: Props) {
   const { save, updateSettings } = useSave()
+  // 有主题通关但对应小游戏还没玩过 → 红点提醒
+  const miniGamePending = (['car', 'history', 'minecraft'] as ThemeId[]).some(
+    (t) => save.themeProgress[t].medal && !save.miniGames[t].played,
+  )
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-400 via-indigo-300 to-violet-300 p-4">
@@ -95,6 +100,31 @@ export function HomeScreen({ onEnterTheme, onOpenParent, overLimit }: Props) {
             </motion.button>
           )
         })}
+
+        {/* 小游戏厅入口（ADR-0014） */}
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          disabled={overLimit}
+          onClick={() => {
+            playClick()
+            onOpenMiniHall()
+          }}
+          className="relative flex items-center gap-4 rounded-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 p-5 text-left text-white shadow-xl transition active:scale-95 disabled:opacity-60"
+        >
+          {miniGamePending && (
+            <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-black shadow">
+              !
+            </span>
+          )}
+          <div className="text-5xl drop-shadow">🎮</div>
+          <div className="flex-1">
+            <div className="text-2xl font-black drop-shadow">小游戏厅</div>
+            <div className="text-sm text-white/90">汽车组装 · 文物拼图 · 挖矿大作战</div>
+          </div>
+          <div className="text-3xl">▶️</div>
+        </motion.button>
       </div>
     </div>
   )

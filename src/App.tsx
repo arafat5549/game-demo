@@ -10,12 +10,19 @@ import { QuizScreen } from './ui/QuizScreen'
 import { ResultScreen } from './ui/ResultScreen'
 import { CollectionScreen } from './ui/CollectionScreen'
 import { ParentZone } from './ui/ParentZone'
+import { MiniGameHallScreen } from './ui/MiniGameHallScreen'
+import { CarAssemblyGame } from './ui/minigames/CarAssemblyGame'
+import { RelicPuzzleGame } from './ui/minigames/RelicPuzzleGame'
+import { MiningGame } from './ui/minigames/MiningGame'
 
 type Screen =
   | { name: 'home' }
   | { name: 'theme'; theme: ThemeId }
-  | { name: 'quiz'; theme: ThemeId; node: LevelNode; questions: Question[] }  | { name: 'result'; theme: ThemeId; node: LevelNode; result: LevelResult }
+  | { name: 'quiz'; theme: ThemeId; node: LevelNode; questions: Question[] }
+  | { name: 'result'; theme: ThemeId; node: LevelNode; result: LevelResult }
   | { name: 'collection'; theme: ThemeId }
+  | { name: 'mini-hall' }
+  | { name: 'mini-play'; theme: ThemeId }
   | { name: 'parent' }
 
 function Shell() {
@@ -59,6 +66,7 @@ function Shell() {
       <HomeScreen
         onEnterTheme={(t) => setScreen({ name: 'theme', theme: t })}
         onOpenParent={() => setScreen({ name: 'parent' })}
+        onOpenMiniHall={() => setScreen({ name: 'mini-hall' })}
         overLimit={overLimit}
       />
     )
@@ -98,6 +106,31 @@ function Shell() {
         onBack={() => setScreen({ name: 'theme', theme: screen.theme })}
       />
     )
+  } else if (screen.name === 'mini-hall') {
+    content = (
+      <MiniGameHallScreen
+        onBack={goHome}
+        onPlay={(t) => {
+          quizStartRef.current = Date.now() // 小游戏计时起点（ADR-0014）
+          setScreen({ name: 'mini-play', theme: t })
+        }}
+      />
+    )
+  } else if (screen.name === 'mini-play') {
+    // 退出小游戏时计入每日游玩时长
+    const back = () => {
+      const minutes = Math.max(1, Math.round((Date.now() - quizStartRef.current) / 60000))
+      addPlayTime(minutes)
+      setScreen({ name: 'mini-hall' })
+    }
+    content =
+      screen.theme === 'car' ? (
+        <CarAssemblyGame theme={screen.theme} onExit={back} />
+      ) : screen.theme === 'history' ? (
+        <RelicPuzzleGame theme={screen.theme} onExit={back} />
+      ) : (
+        <MiningGame theme={screen.theme} onExit={back} />
+      )
   } else {
     content = <ParentZone onBack={goHome} />
   }

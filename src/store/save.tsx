@@ -29,6 +29,11 @@ export function defaultSave(): SaveData {
       history: defaultProgress(),
       minecraft: defaultProgress(),
     },
+    miniGames: {
+      car: { played: false, bestStars: 0 },
+      history: { played: false, bestStars: 0 },
+      minecraft: { played: false, bestStars: 0 },
+    },
     settings: {
       dailyLimitMinutes: 0,
       todayPlayedMinutes: 0,
@@ -70,6 +75,7 @@ function persist(save: SaveData) {
 interface SaveApi {
   save: SaveData
   applyLevelResult: (theme: ThemeId, result: LevelResult) => void
+  applyMiniGameResult: (theme: ThemeId, stars: number) => void
   addPlayTime: (minutes: number) => void
   updateSettings: (patch: Partial<Settings>) => void
   clearSave: () => void
@@ -145,6 +151,29 @@ export function SaveProvider({ children }: { children: ReactNode }) {
     })
   }, [])
 
+  const applyMiniGameResult = useCallback((theme: ThemeId, stars: number) => {
+    setSave((s) => {
+      const mg = s.miniGames[theme]
+      const prog = s.themeProgress[theme]
+      // 首通：送小游戏卡入图鉴（id: mg-<theme>，ADR-0014）
+      const collectedCardIds = mg.played
+        ? prog.collectedCardIds
+        : Array.from(new Set([...prog.collectedCardIds, `mg-${theme}`]))
+      return {
+        ...s,
+        stars: s.stars + stars,
+        miniGames: {
+          ...s.miniGames,
+          [theme]: { played: true, bestStars: Math.max(mg.bestStars, stars) },
+        },
+        themeProgress: {
+          ...s.themeProgress,
+          [theme]: { ...prog, collectedCardIds },
+        },
+      }
+    })
+  }, [])
+
   const addPlayTime = useCallback((minutes: number) => {
     setSave((s) => ({
       ...s,
@@ -168,7 +197,7 @@ export function SaveProvider({ children }: { children: ReactNode }) {
 
   return (
     <SaveContext.Provider
-      value={{ save, applyLevelResult, addPlayTime, updateSettings, clearSave }}
+      value={{ save, applyLevelResult, applyMiniGameResult, addPlayTime, updateSettings, clearSave }}
     >
       {children}
     </SaveContext.Provider>

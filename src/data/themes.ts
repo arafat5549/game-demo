@@ -114,3 +114,40 @@ export function levelTree(theme: ThemeId): LevelNode[] {
 export function levelNode(theme: ThemeId, index: number): LevelNode {
   return LEVEL_TREE[theme][index - 1]
 }
+
+// ── 小游戏元数据（ADR-0014）──
+export interface MiniGameMeta {
+  theme: ThemeId
+  name: string
+  emoji: string
+  description: string
+  gradient: string
+}
+
+export const MINI_GAMES: MiniGameMeta[] = [
+  {
+    theme: 'car',
+    name: '汽车组装',
+    emoji: '🚗',
+    description: '把车身、轮子和车灯装成一辆小汽车',
+    gradient: THEMES.car.gradient,
+  },
+  {
+    theme: 'history',
+    name: '文物拼图',
+    emoji: '🏺',
+    description: '把打乱的拼图块还原成古代宝贝',
+    gradient: THEMES.history.gradient,
+  },
+  {
+    theme: 'minecraft',
+    name: '挖矿大作战',
+    emoji: '⛏️',
+    description: '30 秒挖钻石，小心点中苦力怕！',
+    gradient: THEMES.minecraft.gradient,
+  },
+]
+
+export function miniGameCardId(theme: ThemeId): string {
+  return `mg-${theme}`
+}
