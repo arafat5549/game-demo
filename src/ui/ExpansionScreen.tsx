@@ -5,6 +5,7 @@ import { THEMES } from '../data/themes'
 import { playClick } from '../audio/sfx'
 import { speak, stopSpeaking } from '../audio/tts'
 import { useSave } from '../store/save'
+import { cacheImage, getCachedImage } from '../store/imgCache'
 
 interface Props {
   theme: ThemeId
@@ -23,9 +24,49 @@ export function ExpansionScreen({ theme, question, onBack }: Props) {
   const meta = THEMES[theme]
   const { save } = useSave()
   const exp = question.expansion
-  // 图片：显式 image URL 优先；为空则用来源页面截图；截图失败回退 emoji
-  const [imgFailed, setImgFailed] = useState(false)
-  const imgSrc = exp?.image ?? (!imgFailed ? sourceScreenshotUrl(exp?.sourceUrl) : undefined)
+  // 图片加载链：本地缓存 → 请求并缓存 → 直连（浏览器缓存兜底）→ 失败回退 emoji
+  const [imgSrc, setImgSrc] = useState<string | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    let objectUrl: string | null = null
+    const url = exp?.image ?? sourceScreenshotUrl(exp?.sourceUrl)
+    if (!url) return
+
+    const load = async () => {
+      // 1. 本地缓存命中（URL 为 key，避免重复请求）
+      const cached = await getCachedImage(url)
+      if (cancelled) return
+      if (cached) {
+        objectUrl = URL.createObjectURL(cached)
+        setImgSrc(objectUrl)
+        return
+      }
+      // 2. 请求图片并写入本地缓存
+      try {
+        const resp = await fetch(url)
+        if (resp.ok) {
+          const blob = await resp.blob()
+          if (!cancelled) {
+            void cacheImage(url, blob)
+            objectUrl = URL.createObjectURL(blob)
+            setImgSrc(objectUrl)
+            return
+          }
+        }
+      } catch {
+        // CORS/网络失败 → 直连
+      }
+      // 3. 直连加载（浏览器 HTTP 缓存兜底），失败由 onError 回退 emoji
+      if (!cancelled) setImgSrc(url)
+    }
+    void load()
+
+    return () => {
+      cancelled = true
+      if (objectUrl) URL.revokeObjectURL(objectUrl)
+    }
+  }, [exp?.image, exp?.sourceUrl])
 
   // 进入自动朗读正文（孩子识字量有限）
   useEffect(() => {
@@ -80,7 +121,7 @@ export function ExpansionScreen({ theme, question, onBack }: Props) {
               <img
                 src={imgSrc}
                 alt={exp.title}
-                onError={() => setImgFailed(true)}
+                onError={() => setImgSrc(null)}
                 className="h-full w-full object-cover"
               />
             ) : (
