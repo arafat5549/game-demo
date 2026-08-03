@@ -9,6 +9,15 @@ interface Props {
   onPlay: (theme: ThemeId) => void
 }
 
+/**
+ * 开发模式默认解锁全部小游戏（便于本地试玩，免通关）。
+ * 关闭方式：项目根目录建 .env 文件，写 VITE_UNLOCK_MINI_GAMES=false
+ */
+function devUnlocked(): boolean {
+  if (!import.meta.env.DEV) return false
+  return import.meta.env.VITE_UNLOCK_MINI_GAMES !== 'false'
+}
+
 /** 小游戏厅选型界面（ADR-0014）：主题通关解锁对应小游戏 */
 export function MiniGameHallScreen({ onBack, onPlay }: Props) {
   const { save } = useSave()
@@ -35,7 +44,7 @@ export function MiniGameHallScreen({ onBack, onPlay }: Props) {
 
       <div className="mx-auto mt-6 flex max-w-md flex-col gap-4">
         {MINI_GAMES.map((mg, i) => {
-          const unlocked = save.themeProgress[mg.theme].medal
+          const unlocked = save.themeProgress[mg.theme].medal || devUnlocked()
           const best = save.miniGames[mg.theme].bestStars
           return (
             <motion.button

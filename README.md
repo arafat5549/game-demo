@@ -8,9 +8,13 @@
 
 ```bash
 npm install
-npm run dev      # 开发：http://localhost:5173
+npm run dev      # 开发：http://localhost:5173（小游戏厅默认全部解锁，免通关试玩）
 npm run build    # 构建：产物在 dist/，可部署到 GitHub Pages / Vercel
 ```
+
+> 本地开发默认解锁全部小游戏（`import.meta.env.DEV`）。想恢复"通关解锁"逻辑：
+> 在项目根目录建 `.env` 文件，写入 `VITE_UNLOCK_MINI_GAMES=false` 后重启 `npm run dev`。
+> 生产构建（`npm run build`）始终按正常规则（通关解锁），不受影响。
 
 ## 安装到手机（PWA）
 
