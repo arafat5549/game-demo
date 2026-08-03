@@ -16,21 +16,26 @@ npm run build    # 构建：产物在 dist/，可部署到 GitHub Pages / Vercel
 
 游戏已支持 PWA：可以像 App 一样装到手机/平板主屏幕，**离线也能玩**。
 
-### 前提：需要 https 地址
+### 🎮 线上地址（已部署，直接打开玩）
 
-Service Worker 只在 `https`（或 `localhost`）下生效。所以手机安装前，先把构建产物部署到一个免费 https 托管：
+**https://arafat5549.github.io/game-demo/**
 
-```bash
-npm run build   # 产物在 dist/
-```
-
-然后把 `dist/` 部署到 GitHub Pages / Vercel / Netlify 任意一个（都是免费的 https）。
+用手机浏览器打开这个地址，即可按下面的步骤安装到主屏幕。
 
 ### 安装步骤
 
 - **Android（Chrome/Edge）**：用浏览器打开游戏网址 → 菜单 ⋮ →「安装应用」或「添加到主屏幕」→ 桌面出现图标，全屏打开
 - **iPhone/iPad（Safari）**：打开网址 → 底部分享按钮 ⬆️ →「添加到主屏幕」→ 点「添加」
 - 安装后断网也能玩；进度存在设备本地
+
+### 重新部署（更新内容后）
+
+```bash
+npm run build
+git add -A && git commit -m "更新" && git push
+```
+
+推送到 `main` 分支后，GitHub Actions 会自动构建并部署（约 1 分钟生效）。
 
 ### 局域网快速测试（不安装、无离线）
 
