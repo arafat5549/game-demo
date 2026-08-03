@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
-import type { LevelResult, MiniGameId, SaveData, Settings, ThemeId } from '../types'
+import type { LevelResult, MiniGameId, SaveData, Settings, ThemeId, ThemeProgress } from '../types'
+import { questionById } from '../data/questions'
 
 const SAVE_KEY = 'quiz-quest-save-v1'
 
@@ -13,6 +14,7 @@ export function defaultProgress() {
     highestUnlocked: 1,
     starsPerLevel: {},
     clearedLevels: [],
+    collectedKnowledgeIds: [],
     collectedCardIds: [],
     medal: false,
     goldMedal: false,
@@ -46,13 +48,34 @@ export function defaultSave(): SaveData {
   }
 }
 
+/**
+ * 旧存档迁移（ADR-0017）：把旧字段 collectedCardIds（题卡 id）映射为知识点 key 写入
+ * collectedKnowledgeIds（去重合并）。题目查不到或 knowledge 缺失（空串）的 id 跳过，不阻塞。
+ * 旧 collectedCardIds 保留原值不清空，以便追溯。
+ */
+function migrateCollectedIds(prog: ThemeProgress, legacyCardIds: string[]): ThemeProgress {
+  const knowledgeIds = Array.from(
+    new Set(
+      legacyCardIds
+        .map((id) => questionById(id)?.knowledge)
+        .filter((k): k is string => Boolean(k)),
+    ),
+  )
+  return {
+    ...prog,
+    collectedKnowledgeIds: Array.from(
+      new Set([...prog.collectedKnowledgeIds, ...knowledgeIds]),
+    ),
+  }
+}
+
 export function loadSave(): SaveData {
   try {
     const raw = localStorage.getItem(SAVE_KEY)
     if (!raw) return defaultSave()
     const parsed = JSON.parse(raw) as Partial<SaveData>
     const base = defaultSave()
-    return {
+    const merged: SaveData = {
       ...base,
       ...parsed,
       themeProgress: {
@@ -67,6 +90,13 @@ export function loadSave(): SaveData {
       },
       settings: { ...base.settings, ...parsed.settings },
     }
+    // 迁移（ADR-0017）：collectedCardIds → collectedKnowledgeIds（一次性，终身有效）
+    const themes: ThemeId[] = ['car', 'history', 'minecraft']
+    for (const t of themes) {
+      const prog = merged.themeProgress[t]
+      merged.themeProgress[t] = migrateCollectedIds(prog, prog.collectedCardIds)
+    }
+    return merged
   } catch {
     return defaultSave()
   }
@@ -132,9 +162,9 @@ export function SaveProvider({ children }: { children: ReactNode }) {
         result.nodeType === 'review'
           ? poolAfterAdd.filter((id) => !result.correctQuestionIds.includes(id))
           : poolAfterAdd
-      // 图鉴：过关后本关全部卡片入册
-      const collectedCardIds = Array.from(
-        new Set([...prog.collectedCardIds, ...result.unlockedCardIds]),
+      // 图鉴：过关后本关知识点入册（ADR-0017）；旧字段 collectedCardIds 不再更新（废弃保留）
+      const collectedKnowledgeIds = Array.from(
+        new Set([...prog.collectedKnowledgeIds, ...result.unlockedKnowledgeIds]),
       )
       const clearedAll = cleared.length >= 10
       const allThreeStars = Object.keys(starsPerLevel).length >= 10 &&
@@ -150,7 +180,8 @@ export function SaveProvider({ children }: { children: ReactNode }) {
             starsPerLevel,
             clearedLevels: cleared,
             mistakePool,
-            collectedCardIds,
+            collectedKnowledgeIds,
+            collectedCardIds: prog.collectedCardIds, // 旧字段保留原值（废弃不清空，便于追溯）
             medal: prog.medal || clearedAll,
             goldMedal: prog.goldMedal || allThreeStars,
           },

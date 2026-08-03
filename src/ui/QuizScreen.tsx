@@ -68,7 +68,10 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
         bonusStars,
         wrongQuestionIds: wrongIds,
         correctQuestionIds: correctIds,
-        unlockedCardIds: passed ? questions.map((x) => x.id) : [],
+        // 过关解锁知识点（ADR-0017）：按 knowledge 去重；自定义题无 knowledge 的自然被过滤
+        unlockedKnowledgeIds: passed
+          ? Array.from(new Set(questions.map((x) => x.knowledge).filter(Boolean)))
+          : [],
       }
       applyLevelResult(theme, result)
       // 修复：最后一题完成始终进结算页（星星/卡片动画），不再跳关

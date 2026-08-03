@@ -1,19 +1,62 @@
 import type { Difficulty, LevelNode, Question, ThemeId } from '../types'
 import { QUESTIONS, questionById, questionsBySubTheme, shuffle } from '../data/questions'
 
-/** 难度顺序（ADR-0015）：索引距离 = 难度距离 */
-const DIFF_ORDER: Difficulty[] = ['starter', 'beginner', 'intermediate', 'advanced']
+/** 难度顺序（ADR-0015 / ADR-0017）：索引距离 = 难度距离；图鉴代表题回退复用 */
+export const DIFF_ORDER: Difficulty[] = ['starter', 'beginner', 'intermediate', 'advanced']
 
-/** 按难度距离最近优先取题（同难度随机；无题自动回退相邻难度） */
+/**
+ * 按难度距离最近优先取题（同难度随机；无题自动回退相邻难度），并做关内知识点去重（ADR-0017）：
+ * 按（难度距离升序）遍历，跳过与已选题目 knowledge 相同的题（同难度优先、允许跨难度补位）；
+ * 去重后仍不足 count 时降级允许 knowledge 重复（现有题量下几乎不会触发）。
+ * 无 knowledge 的题（家长自定义题等）不受去重约束。
+ */
 export function pickByDifficulty(qs: Question[], difficulty: Difficulty, count = 5): Question[] {
   const idx = DIFF_ORDER.indexOf(difficulty)
-  return shuffle(qs)
-    .sort((a, b) => {
-      const da = Math.abs(DIFF_ORDER.indexOf(a.difficulty) - idx)
-      const db = Math.abs(DIFF_ORDER.indexOf(b.difficulty) - idx)
-      return da - db
-    })
-    .slice(0, count)
+  const sorted = shuffle(qs).sort((a, b) => {
+    const da = Math.abs(DIFF_ORDER.indexOf(a.difficulty) - idx)
+    const db = Math.abs(DIFF_ORDER.indexOf(b.difficulty) - idx)
+    return da - db
+  })
+  // 第一轮：同 knowledge 只取最先遇到的一题
+  const picked: Question[] = []
+  const seen = new Set<string>()
+  for (const q of sorted) {
+    if (picked.length >= count) break
+    const key = q.knowledge
+    if (key && seen.has(key)) continue
+    picked.push(q)
+    if (key) seen.add(key)
+  }
+  // 兜底：去重后不足 count，允许 knowledge 重复补足
+  if (picked.length < count) {
+    const pickedIds = new Set(picked.map((q) => q.id))
+    for (const q of sorted) {
+      if (picked.length >= count) break
+      if (pickedIds.has(q.id)) continue
+      picked.push(q)
+      pickedIds.add(q.id)
+    }
+  }
+  return picked
+}
+
+/**
+ * 知识点代表题（ADR-0017）：优先当前全局难度档下该知识点的题；该难度无题则回退最近难度
+ * （与出题同用 DIFF_ORDER 距离逻辑）；同档多题取第一题。图鉴与结算页共用，保证逻辑单一来源。
+ */
+export function questionForKnowledge(
+  theme: ThemeId,
+  knowledge: string,
+  difficulty: Difficulty,
+): Question | undefined {
+  const idx = DIFF_ORDER.indexOf(difficulty)
+  const candidates = QUESTIONS[theme].filter((q) => q.knowledge === knowledge)
+  if (candidates.length === 0) return undefined
+  return [...candidates].sort((a, b) => {
+    const da = Math.abs(DIFF_ORDER.indexOf(a.difficulty) - idx)
+    const db = Math.abs(DIFF_ORDER.indexOf(b.difficulty) - idx)
+    return da - db
+  })[0]
 }
 
 /**

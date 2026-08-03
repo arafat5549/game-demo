@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import type { LevelNode, LevelResult, ThemeId } from '../types'
+import type { LevelNode, LevelResult, Question, ThemeId } from '../types'
 import { THEMES } from '../data/themes'
-import { questionById } from '../data/questions'
+import { questionForKnowledge } from '../game/engine'
+import { useSave } from '../store/save'
 import { playClick, playFanfare, playStar } from '../audio/sfx'
 
 interface Props {
@@ -16,13 +17,15 @@ interface Props {
 
 export function ResultScreen({ theme, node, result, onRetry, onBack, onNext }: Props) {
   const meta = THEMES[theme]
+  const { save } = useSave()
   const [cardStep, setCardStep] = useState(0)
   const fanfarePlayed = useRef(false)
   const passed = result.passed
 
-  const cards = result.unlockedCardIds
-    .map(questionById)
-    .filter((q) => q !== undefined)
+  // 过关解锁的知识点卡片（ADR-0017）：每知识点取代表题，随全局难度回退最近难度
+  const cards = result.unlockedKnowledgeIds
+    .map((k) => questionForKnowledge(theme, k, save.settings.difficulty))
+    .filter((q): q is Question => Boolean(q))
 
   // 过关：星星逐个弹入 + 卡片逐张翻开
   useEffect(() => {

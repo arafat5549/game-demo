@@ -14,25 +14,31 @@ import mcAdvanced from './advanced/minecraft.json'
 
 // 内置题库按难度分文件夹存放（ADR-0016）：
 //   src/data/questions/<难度>/<主题>.json（starter/beginner/intermediate/advanced）
+// ADR-0017：knowledge 字段部分题库（如 car 主题）标注中可能缺失，加载时统一按空串降级，
+// 保证运行时任何代码读到 q.knowledge 都是 string（无 knowledge 的题以题目 id 作孤立知识点兜底）。
+function normalizeKnowledge(list: Question[]): Question[] {
+  return list.map((q) => ({ ...q, knowledge: q.knowledge ?? '' }))
+}
+
 export const QUESTIONS: Record<ThemeId, Question[]> = {
-  car: [
+  car: normalizeKnowledge([
     ...(carStarter as Question[]),
     ...(carBeginner as Question[]),
     ...(carIntermediate as Question[]),
     ...(carAdvanced as Question[]),
-  ],
-  history: [
+  ]),
+  history: normalizeKnowledge([
     ...(historyStarter as Question[]),
     ...(historyBeginner as Question[]),
     ...(historyIntermediate as Question[]),
     ...(historyAdvanced as Question[]),
-  ],
-  minecraft: [
+  ]),
+  minecraft: normalizeKnowledge([
     ...(mcStarter as Question[]),
     ...(mcBeginner as Question[]),
     ...(mcIntermediate as Question[]),
     ...(mcAdvanced as Question[]),
-  ],
+  ]),
 }
 
 export function questionsBySubTheme(theme: ThemeId, subTheme: string): Question[] {

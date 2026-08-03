@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import type { Question, ThemeId } from '../types'
-import { THEMES, MINI_GAMES, miniGameCardId } from '../data/themes'
+import type { Difficulty, Question, ThemeId } from '../types'
+import { THEMES, MINI_GAMES, DIFFICULTIES, miniGameCardId } from '../data/themes'
 import { QUESTIONS } from '../data/questions'
+import { DIFF_ORDER, questionForKnowledge } from '../game/engine'
 import { useSave } from '../store/save'
 import { playClick } from '../audio/sfx'
 import { ExpansionScreen } from './ExpansionScreen'
@@ -68,12 +69,38 @@ export function CollectionScreen({ variant, onBack }: Props) {
     )
   }
 
-  // ── 主题图鉴（theme）：题卡 + 小游戏卡 + 奖牌卡 ──
+  // ── 主题图鉴（theme）：知识点卡 + 小游戏卡 + 奖牌卡（ADR-0017）──
   const theme = variant.theme
   const meta = THEMES[theme]
   const prog = save.themeProgress[theme]
-  const questions = QUESTIONS[theme]
-  const collected = new Set(prog.collectedCardIds)
+  const difficulty = save.settings.difficulty
+
+  // 知识点分组（ADR-0017）：同 knowledge 归一张卡；无 knowledge 的题以题目自身 id 作孤立知识点，保证不丢
+  const knowledgeMap = new Map<string, Question[]>()
+  for (const q of QUESTIONS[theme]) {
+    const key = q.knowledge || q.id
+    const list = knowledgeMap.get(key) ?? []
+    list.push(q)
+    knowledgeMap.set(key, list)
+  }
+
+  interface KnowledgeEntry {
+    key: string
+    representative: Question // 代表题（随全局难度回退最近难度）
+    difficulties: Difficulty[] // 该知识点覆盖的难度档（DIFF_ORDER 顺序）
+  }
+  const knowledgeEntries: KnowledgeEntry[] = Array.from(knowledgeMap, ([key, qs]) => ({
+    key,
+    representative: qs[0].knowledge
+      ? questionForKnowledge(theme, key, difficulty) ?? qs[0]
+      : qs[0], // 孤立知识点：代表题即题目自身
+    difficulties: DIFF_ORDER.filter((d) => qs.some((q) => q.difficulty === d)),
+  }))
+  const collectedKnowledgeIds = new Set(prog.collectedKnowledgeIds)
+  const collectedCount = knowledgeEntries.filter((e) => collectedKnowledgeIds.has(e.key)).length
+  // 小游戏卡/奖牌卡行沿用旧 collectedCardIds（mg-<theme> 入册，ADR-0014），不参与知识点判定
+  const miniGameCollected = new Set(prog.collectedCardIds)
+  const diffEmoji = (d: Difficulty) => DIFFICULTIES.find((x) => x.id === d)?.emoji ?? ''
 
   return (
     <div className={`min-h-screen ${meta.mapBg} pb-10`}>
@@ -89,7 +116,7 @@ export function CollectionScreen({ variant, onBack }: Props) {
         </button>
         <h1 className="text-xl font-black text-slate-700">📖 {meta.name}图鉴</h1>
         <div className="rounded-full bg-white/80 px-3 py-1.5 text-sm font-bold text-slate-600 shadow">
-          {collected.size}/{questions.length}
+          {collectedCount}/{knowledgeEntries.length}
         </div>
       </div>
 
@@ -97,11 +124,11 @@ export function CollectionScreen({ variant, onBack }: Props) {
       <div className="mx-auto mt-4 grid w-full max-w-md grid-cols-3 gap-2 px-4">
         <div
           className={`flex flex-col items-center rounded-2xl border-4 p-2.5 shadow ${
-            collected.has(miniGameCardId(theme)) ? 'border-violet-300 bg-violet-50' : 'border-slate-300 bg-slate-200'
+            miniGameCollected.has(miniGameCardId(theme)) ? 'border-violet-300 bg-violet-50' : 'border-slate-300 bg-slate-200'
           }`}
         >
           <div className="text-3xl">
-            {collected.has(miniGameCardId(theme)) ? MINI_GAMES.find((m) => m.id === theme)?.emoji ?? '🎮' : '❓'}
+            {miniGameCollected.has(miniGameCardId(theme)) ? MINI_GAMES.find((m) => m.id === theme)?.emoji ?? '🎮' : '❓'}
           </div>
           <div className="mt-1 text-center text-[11px] font-bold leading-tight text-slate-700">小游戏卡</div>
           <div className="text-[10px] text-slate-500">首通小游戏</div>
@@ -126,13 +153,14 @@ export function CollectionScreen({ variant, onBack }: Props) {
         </div>
       </div>
 
-      {/* 题卡网格 */}
+      {/* 知识点卡网格（3 列，ADR-0017） */}
       <div className="mx-auto mt-4 grid w-full max-w-md grid-cols-3 gap-3 px-4">
-        {questions.map((q, i) => {
-          const has = collected.has(q.id)
+        {knowledgeEntries.map((entry, i) => {
+          const has = collectedKnowledgeIds.has(entry.key)
+          const q = entry.representative
           return (
             <motion.button
-              key={q.id}
+              key={entry.key}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.03 }}
@@ -153,13 +181,19 @@ export function CollectionScreen({ variant, onBack }: Props) {
               <div className="mt-1 text-center text-[11px] font-bold leading-tight text-slate-700">
                 {has ? q.cardName : '？？？'}
               </div>
+              {/* 难度覆盖小字标注（可选，ADR-0017）：跨难度知识点显示覆盖档位 */}
+              {has && entry.difficulties.length > 1 && (
+                <div className="mt-0.5 text-[9px] leading-none tracking-tight text-slate-400">
+                  {entry.difficulties.map((d) => diffEmoji(d)).join('')}
+                </div>
+              )}
             </motion.button>
           )
         })}
       </div>
 
       <p className="mx-auto mt-6 max-w-sm px-4 text-center text-xs text-slate-500">
-        过关就能翻开新卡片；点已收集的卡片可以看它的知识扩展页 📖
+        过关就能翻开新知识卡片；点已收集的卡片可以看它的知识扩展页 📖
       </p>
 
       {/* 知识扩展覆盖层（ADR-0013） */}

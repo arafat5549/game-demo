@@ -17,6 +17,7 @@ export interface Question {
   options: string[] // 四选一 / 判断（["对","错"]）
   answer: number // 正确选项下标
   fact: string // 知识小故事（学习时刻朗读）
+  knowledge: string // 知识点 key（ADR-0017）：`<子主题>-<短词>`，同知识点跨难度共享；标注中缺失时按空串降级
   cardName: string // 对应知识卡片名
   cardEmoji: string // 卡片图标（MVP 用 emoji 占位）
   expansion?: Expansion // 知识扩展（ADR-0013）
@@ -46,7 +47,8 @@ export interface ThemeProgress {
   highestUnlocked: number // 已解锁的最高关卡 index（第 1 关默认解锁）
   starsPerLevel: Record<number, number> // 每关最佳星级（0-3）
   clearedLevels: number[] // 已通关关卡 index
-  collectedCardIds: string[] // 图鉴中已收集的卡片 id（题卡）
+  collectedKnowledgeIds: string[] // 图鉴中已收集的知识点 key（ADR-0017）
+  collectedCardIds: string[] // 旧字段（题卡 id，ADR-0012）：废弃但不清空，保留以便追溯
   medal: boolean // 通关奖牌（10 关全通）
   goldMedal: boolean // 金色奖牌（10 关全 3 星）
   mistakePool: string[] // 错题池（题目 id）
@@ -85,5 +87,5 @@ export interface LevelResult {
   bonusStars: number // 宝藏关全对额外奖励（货币）
   wrongQuestionIds: string[]
   correctQuestionIds: string[]
-  unlockedCardIds: string[]
+  unlockedKnowledgeIds: string[] // 过关解锁的知识点 key（ADR-0017）
 }
