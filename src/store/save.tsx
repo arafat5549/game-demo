@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
-import type { LevelResult, SaveData, Settings, ThemeId } from '../types'
+import type { LevelResult, MiniGameId, SaveData, Settings, ThemeId } from '../types'
 
 const SAVE_KEY = 'quiz-quest-save-v1'
 
@@ -33,12 +33,15 @@ export function defaultSave(): SaveData {
       car: { played: false, bestStars: 0 },
       history: { played: false, bestStars: 0 },
       minecraft: { played: false, bestStars: 0 },
+      race: { played: false, bestStars: 0 },
     },
+    bonusCards: [],
     settings: {
       dailyLimitMinutes: 0,
       todayPlayedMinutes: 0,
       todayDate: today(),
       muted: false,
+      difficulty: 'beginner',
     },
   }
 }
@@ -56,6 +59,11 @@ export function loadSave(): SaveData {
         car: { ...base.themeProgress.car, ...parsed.themeProgress?.car },
         history: { ...base.themeProgress.history, ...parsed.themeProgress?.history },
         minecraft: { ...base.themeProgress.minecraft, ...parsed.themeProgress?.minecraft },
+      },
+      // 迁移：旧存档无 race 小游戏条目 / bonusCards 字段，用默认值补齐
+      miniGames: {
+        ...base.miniGames,
+        ...parsed.miniGames,
       },
       settings: { ...base.settings, ...parsed.settings },
     }
@@ -75,7 +83,7 @@ function persist(save: SaveData) {
 interface SaveApi {
   save: SaveData
   applyLevelResult: (theme: ThemeId, result: LevelResult) => void
-  applyMiniGameResult: (theme: ThemeId, stars: number) => void
+  applyMiniGameResult: (id: MiniGameId, stars: number) => void
   addPlayTime: (minutes: number) => void
   updateSettings: (patch: Partial<Settings>) => void
   clearSave: () => void
@@ -151,24 +159,40 @@ export function SaveProvider({ children }: { children: ReactNode }) {
     })
   }, [])
 
-  const applyMiniGameResult = useCallback((theme: ThemeId, stars: number) => {
+  const applyMiniGameResult = useCallback((id: MiniGameId, stars: number) => {
     setSave((s) => {
-      const mg = s.miniGames[theme]
-      const prog = s.themeProgress[theme]
+      // 彩蛋小游戏：卡片入全局 bonusCards，不碰主题进度（ADR-0014）
+      if (id === 'race') {
+        const mg = s.miniGames.race
+        const firstTime = !mg.played
+        return {
+          ...s,
+          stars: s.stars + stars,
+          bonusCards: firstTime
+            ? Array.from(new Set([...s.bonusCards, 'mg-race']))
+            : s.bonusCards,
+          miniGames: {
+            ...s.miniGames,
+            race: { played: true, bestStars: Math.max(mg.bestStars, stars) },
+          },
+        }
+      }
+      const mg = s.miniGames[id]
+      const prog = s.themeProgress[id]
       // 首通：送小游戏卡入图鉴（id: mg-<theme>，ADR-0014）
       const collectedCardIds = mg.played
         ? prog.collectedCardIds
-        : Array.from(new Set([...prog.collectedCardIds, `mg-${theme}`]))
+        : Array.from(new Set([...prog.collectedCardIds, `mg-${id}`]))
       return {
         ...s,
         stars: s.stars + stars,
         miniGames: {
           ...s.miniGames,
-          [theme]: { played: true, bestStars: Math.max(mg.bestStars, stars) },
+          [id]: { played: true, bestStars: Math.max(mg.bestStars, stars) },
         },
         themeProgress: {
           ...s.themeProgress,
-          [theme]: { ...prog, collectedCardIds },
+          [id]: { ...prog, collectedCardIds },
         },
       }
     })

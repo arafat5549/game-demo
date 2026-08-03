@@ -1,31 +1,39 @@
 import { motion } from 'framer-motion'
-import type { ThemeId } from '../../types'
-import { THEMES } from '../../data/themes'
-import { useSave } from '../../store/save'
 import { playClick, playFanfare, playStar } from '../../audio/sfx'
 
 interface Props {
-  theme: ThemeId
+  // 结算弹层皮肤与身份：由调用方传入（不依赖 THEMES/MINI_GAMES）
+  gradient: string // Tailwind 渐变类
+  emoji: string // 小游戏图标（卡片提示文案会用到）
+  cardHint: string | null // 首通新卡提示（卡片类型标签，如「小游戏卡」「彩蛋卡」）；null = 非首通不显示
   stars: number
+  rank?: number // 竞速类小游戏的排名展示（如「第 1 名」）；主题小游戏不传
   onRetry: () => void
   onExit: () => void
 }
 
-/** 小游戏结算弹层（ADR-0014）：星级 + 首通送卡提示 */
-export function GameResultOverlay({ theme, stars, onRetry, onExit }: Props) {
-  const { save } = useSave()
-  const meta = THEMES[theme]
-  const firstTime = !save.miniGames[theme].played
-
+/** 小游戏结算弹层（ADR-0014）：星级 + 首通送卡提示，纯 props 驱动 */
+export function GameResultOverlay({
+  gradient,
+  emoji,
+  cardHint,
+  stars,
+  rank,
+  onRetry,
+  onExit,
+}: Props) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
       <motion.div
         initial={{ scale: 0.6, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-        className={`w-full max-w-sm rounded-3xl bg-gradient-to-b ${meta.gradient} p-6 text-center shadow-2xl`}
+        className={`w-full max-w-sm rounded-3xl bg-gradient-to-b ${gradient} p-6 text-center shadow-2xl`}
       >
         <div className="text-2xl font-black text-white drop-shadow">小游戏完成！</div>
+        {rank !== undefined && (
+          <div className="mt-2 text-4xl font-black text-white drop-shadow">🏁 第 {rank} 名</div>
+        )}
         <div className="mt-3 flex items-center justify-center gap-2">
           {[1, 2, 3].map((i) => (
             <motion.div
@@ -45,9 +53,9 @@ export function GameResultOverlay({ theme, stars, onRetry, onExit }: Props) {
             </motion.div>
           ))}
         </div>
-        {firstTime && (
+        {cardHint !== null && (
           <div className="mt-3 rounded-2xl bg-white/90 px-4 py-2 text-sm font-black text-amber-600 shadow">
-            🎁 新卡片入图鉴：{meta.emoji} 小游戏卡
+            🎁 新卡片入图鉴：{emoji} {cardHint}
           </div>
         )}
         <div className="mt-4 flex gap-3">

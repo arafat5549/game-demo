@@ -6,6 +6,7 @@ import { useSave } from '../store/save'
 import { playClick, playCorrect, playFanfare, playWrong } from '../audio/sfx'
 import { speak, stopSpeaking } from '../audio/tts'
 import { ExpansionScreen } from './ExpansionScreen'
+import { DIFFICULTIES } from '../data/themes'
 
 interface Props {
   theme: ThemeId
@@ -188,8 +189,12 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
             🔊
           </button>
         </div>
-        <div className="mt-1 text-center text-xs text-slate-400">
-          {node.title} · {node.index} 关
+        <div className="mt-1 flex items-center justify-center gap-2 text-xs text-slate-400">
+          <span className="rounded-full bg-slate-100 px-2 py-0.5 font-bold text-slate-500">
+            {DIFFICULTIES.find((d) => d.id === q.difficulty)?.emoji}{' '}
+            {DIFFICULTIES.find((d) => d.id === q.difficulty)?.label ?? q.difficulty}
+          </span>
+          <span>{node.title} · {node.index} 关</span>
         </div>
       </div>
 

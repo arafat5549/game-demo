@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type { ThemeId } from '../../types'
+import { MINI_GAMES, THEMES } from '../../data/themes'
 import { useSave } from '../../store/save'
 import { playClick, playCorrect, playFanfare } from '../../audio/sfx'
 import { GameResultOverlay } from './GameResultOverlay'
@@ -20,7 +21,7 @@ const POS_PART: Record<Pos, Part> = {
 
 /** 🚗 汽车组装（ADR-0014）：点零件 → 点虚线位置安装 */
 export function CarAssemblyGame({ theme, onExit }: Props) {
-  const { applyMiniGameResult } = useSave()
+  const { save, applyMiniGameResult } = useSave()
   const [selected, setSelected] = useState<Part | null>(null)
   const [installed, setInstalled] = useState<Record<Pos, boolean>>({
     body: false, wheelL: false, wheelR: false, lightL: false, lightR: false,
@@ -29,6 +30,8 @@ export function CarAssemblyGame({ theme, onExit }: Props) {
   const [stars, setStars] = useState(0)
   const startRef = useRef(Date.now())
   const installedCount = POS_ORDER.filter((p) => installed[p]).length
+  const mini = MINI_GAMES.find((m) => m.id === theme)!
+  const firstTime = !save.miniGames[theme].played
 
   const wheelsLeft = 2 - (installed.wheelL ? 1 : 0) - (installed.wheelR ? 1 : 0)
   const lightsLeft = 2 - (installed.lightL ? 1 : 0) - (installed.lightR ? 1 : 0)
@@ -133,12 +136,19 @@ export function CarAssemblyGame({ theme, onExit }: Props) {
       </div>
 
       {done && (
-        <GameResultOverlay theme={theme} stars={stars} onRetry={() => {
-          setInstalled({ body: false, wheelL: false, wheelR: false, lightL: false, lightR: false })
-          setSelected(null)
-          setDone(false)
-          startRef.current = Date.now()
-        }} onExit={onExit} />
+        <GameResultOverlay
+          gradient={THEMES[theme].gradient}
+          emoji={mini.emoji}
+          cardHint={firstTime ? '小游戏卡' : null}
+          stars={stars}
+          onRetry={() => {
+            setInstalled({ body: false, wheelL: false, wheelR: false, lightL: false, lightR: false })
+            setSelected(null)
+            setDone(false)
+            startRef.current = Date.now()
+          }}
+          onExit={onExit}
+        />
       )}
     </div>
   )

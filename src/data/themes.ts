@@ -1,8 +1,10 @@
-import type { LevelNode, ThemeId } from '../types'
+import type { Difficulty, LevelNode, MiniGameId, ThemeId } from '../types'
 
 // 主题元数据与关卡树（见 docs/adr/0012）
 // 每主题对称 10 关：8 普通 + 2 复习（固定第 4、8 位）；关 1-4 初级、5-8 中级。
 // MVP 题库覆盖关 1-3 的子主题，关 4-10 渲染为暗锁节点。
+
+export type { MiniGameId } from '../types'
 
 export interface SubThemeMeta {
   key: string
@@ -117,7 +119,8 @@ export function levelNode(theme: ThemeId, index: number): LevelNode {
 
 // ── 小游戏元数据（ADR-0014）──
 export interface MiniGameMeta {
-  theme: ThemeId
+  id: MiniGameId
+  theme?: ThemeId // 主题小游戏所属主题；彩蛋小游戏（race）无主题
   name: string
   emoji: string
   description: string
@@ -126,6 +129,7 @@ export interface MiniGameMeta {
 
 export const MINI_GAMES: MiniGameMeta[] = [
   {
+    id: 'car',
     theme: 'car',
     name: '汽车组装',
     emoji: '🚗',
@@ -133,6 +137,7 @@ export const MINI_GAMES: MiniGameMeta[] = [
     gradient: THEMES.car.gradient,
   },
   {
+    id: 'history',
     theme: 'history',
     name: '文物拼图',
     emoji: '🏺',
@@ -140,14 +145,37 @@ export const MINI_GAMES: MiniGameMeta[] = [
     gradient: THEMES.history.gradient,
   },
   {
+    id: 'minecraft',
     theme: 'minecraft',
     name: '挖矿大作战',
     emoji: '⛏️',
     description: '30 秒挖钻石，小心点中苦力怕！',
     gradient: THEMES.minecraft.gradient,
   },
+  {
+    id: 'race',
+    name: '摩托大乱斗',
+    emoji: '🏍️',
+    description: '3 车道竞速，撞开对手冲第一！',
+    gradient: 'from-sky-500 to-indigo-500',
+  },
 ]
 
-export function miniGameCardId(theme: ThemeId): string {
-  return `mg-${theme}`
+export function miniGameCardId(id: MiniGameId): string {
+  return id === 'race' ? 'mg-race' : `mg-${id}`
 }
+
+// ── 难度元数据（ADR-0015）：4 档年级制 ──
+export interface DifficultyMeta {
+  id: Difficulty
+  label: string
+  emoji: string
+  age: string
+}
+
+export const DIFFICULTIES: DifficultyMeta[] = [
+  { id: 'starter', label: '启蒙', emoji: '🌱', age: '大班~1年级' },
+  { id: 'beginner', label: '初级', emoji: '⭐', age: '2年级' },
+  { id: 'intermediate', label: '中级', emoji: '🚀', age: '3-4年级' },
+  { id: 'advanced', label: '高级', emoji: '👑', age: '5-6年级' },
+]

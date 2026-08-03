@@ -1,7 +1,10 @@
 // 领域类型定义（与 docs/glossary.md 术语对齐）
 
 export type ThemeId = 'car' | 'history' | 'minecraft'
-export type Difficulty = 'beginner' | 'intermediate'
+/** 小游戏 id：主题小游戏 + 彩蛋小游戏（race 不属于任何主题，ADR-0014） */
+export type MiniGameId = ThemeId | 'race'
+/** 难度体系（ADR-0015）：4 档年级制，全局选择 */
+export type Difficulty = 'starter' | 'beginner' | 'intermediate' | 'advanced'
 export type QuestionType = 'choice' | 'judge'
 
 export interface Question {
@@ -53,9 +56,10 @@ export interface Settings {
   todayPlayedMinutes: number
   todayDate: string // YYYY-MM-DD
   muted: boolean
+  difficulty: Difficulty // 全局难度（ADR-0015），默认初级
 }
 
-/** 小游戏进度（ADR-0014）：按主题记录 */
+/** 小游戏进度（ADR-0014）：按小游戏 id 记录 */
 export interface MiniGameProgress {
   played: boolean // 是否首通（首通送小游戏卡）
   bestStars: number // 最佳星级 0-3
@@ -65,7 +69,8 @@ export interface SaveData {
   version: 1
   stars: number // 总星星
   themeProgress: Record<ThemeId, ThemeProgress>
-  miniGames: Record<ThemeId, MiniGameProgress>
+  miniGames: Record<MiniGameId, MiniGameProgress>
+  bonusCards: string[] // 彩蛋收集（全局图鉴彩蛋页签用）：首通彩蛋小游戏入册，如 'mg-race'
   settings: Settings
 }
 

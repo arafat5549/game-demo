@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
-import type { ThemeId } from '../types'
+import type { MiniGameId, ThemeId } from '../types'
 import { MINI_GAMES, THEMES } from '../data/themes'
 import { useSave } from '../store/save'
 import { playClick } from '../audio/sfx'
 
 interface Props {
   onBack: () => void
-  onPlay: (theme: ThemeId) => void
+  onPlay: (id: MiniGameId) => void
 }
 
 /**
@@ -44,18 +44,24 @@ export function MiniGameHallScreen({ onBack, onPlay }: Props) {
 
       <div className="mx-auto mt-6 flex max-w-md flex-col gap-4">
         {MINI_GAMES.map((mg, i) => {
-          const unlocked = save.themeProgress[mg.theme].medal || devUnlocked()
-          const best = save.miniGames[mg.theme].bestStars
+          // 解锁：主题小游戏 = 该主题通关；彩蛋小游戏（race）= 三主题全通关（ADR-0015）；dev 模式全解锁
+          const allThemesCleared = (['car', 'history', 'minecraft'] as ThemeId[]).every(
+            (t) => save.themeProgress[t].medal,
+          )
+          const unlocked = mg.theme
+            ? save.themeProgress[mg.theme].medal || devUnlocked()
+            : allThemesCleared || devUnlocked()
+          const best = save.miniGames[mg.id].bestStars
           return (
             <motion.button
-              key={mg.theme}
+              key={mg.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
               disabled={!unlocked}
               onClick={() => {
                 playClick()
-                onPlay(mg.theme)
+                onPlay(mg.id)
               }}
               className={`relative flex items-center gap-4 rounded-3xl bg-gradient-to-r ${mg.gradient} p-5 text-left text-white shadow-xl transition active:scale-95 disabled:opacity-70`}
             >
@@ -68,7 +74,9 @@ export function MiniGameHallScreen({ onBack, onPlay }: Props) {
                     ? best > 0
                       ? `最佳 ${'⭐'.repeat(best)} · 可重玩`
                       : '已解锁 · 快来玩'
-                    : `🔒 通关${THEMES[mg.theme].name}解锁`}
+                    : mg.theme
+                      ? `🔒 通关${THEMES[mg.theme].name}解锁`
+                      : '🔒 通关全部主题解锁'}
                 </div>
               </div>
               {unlocked && <div className="text-3xl">▶️</div>}

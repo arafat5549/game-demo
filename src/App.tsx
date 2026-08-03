@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react'
-import type { LevelNode, LevelResult, Question, ThemeId } from './types'
+import type { LevelNode, LevelResult, MiniGameId, Question, ThemeId } from './types'
 import { SaveProvider, useSave } from './store/save'
 import { levelNode } from './data/themes'
 import { buildLevelQuestions } from './game/engine'
@@ -14,6 +14,8 @@ import { MiniGameHallScreen } from './ui/MiniGameHallScreen'
 import { CarAssemblyGame } from './ui/minigames/CarAssemblyGame'
 import { RelicPuzzleGame } from './ui/minigames/RelicPuzzleGame'
 import { MiningGame } from './ui/minigames/MiningGame'
+// TODO(协调者): race 分发将在此 import MotorbikeRushGame（src/ui/minigames/MotorbikeRushGame.tsx，
+// 由另一个任务创建，本任务不创建/不引入，仅留接口）
 
 type Screen =
   | { name: 'home' }
@@ -21,8 +23,9 @@ type Screen =
   | { name: 'quiz'; theme: ThemeId; node: LevelNode; questions: Question[] }
   | { name: 'result'; theme: ThemeId; node: LevelNode; result: LevelResult }
   | { name: 'collection'; theme: ThemeId }
+  | { name: 'collection-bonus' }
   | { name: 'mini-hall' }
-  | { name: 'mini-play'; theme: ThemeId }
+  | { name: 'mini-play'; theme: MiniGameId }
   | { name: 'parent' }
 
 function Shell() {
@@ -33,11 +36,17 @@ function Shell() {
   const enterQuiz = useCallback(
     (theme: ThemeId, node: LevelNode) => {
       const { mistakePool } = save.themeProgress[theme]
-      const questions = buildLevelQuestions(theme, node, mistakePool, loadCustomBank())
+      const questions = buildLevelQuestions(
+        theme,
+        node,
+        mistakePool,
+        loadCustomBank(),
+        save.settings.difficulty, // 全局难度（ADR-0015）
+      )
       quizStartRef.current = Date.now()
       setScreen({ name: 'quiz', theme, node, questions })
     },
-    [save.themeProgress],
+    [save.themeProgress, save.settings.difficulty],
   )
 
   const finishQuiz = useCallback(
@@ -67,6 +76,7 @@ function Shell() {
         onEnterTheme={(t) => setScreen({ name: 'theme', theme: t })}
         onOpenParent={() => setScreen({ name: 'parent' })}
         onOpenMiniHall={() => setScreen({ name: 'mini-hall' })}
+        onOpenBonusCollection={() => setScreen({ name: 'collection-bonus' })}
         overLimit={overLimit}
       />
     )
@@ -102,17 +112,19 @@ function Shell() {
   } else if (screen.name === 'collection') {
     content = (
       <CollectionScreen
-        theme={screen.theme}
+        variant={{ type: 'theme', theme: screen.theme }}
         onBack={() => setScreen({ name: 'theme', theme: screen.theme })}
       />
     )
+  } else if (screen.name === 'collection-bonus') {
+    content = <CollectionScreen variant={{ type: 'bonus' }} onBack={goHome} />
   } else if (screen.name === 'mini-hall') {
     content = (
       <MiniGameHallScreen
         onBack={goHome}
-        onPlay={(t) => {
+        onPlay={(id) => {
           quizStartRef.current = Date.now() // 小游戏计时起点（ADR-0014）
-          setScreen({ name: 'mini-play', theme: t })
+          setScreen({ name: 'mini-play', theme: id })
         }}
       />
     )
@@ -123,14 +135,27 @@ function Shell() {
       addPlayTime(minutes)
       setScreen({ name: 'mini-hall' })
     }
-    content =
-      screen.theme === 'car' ? (
-        <CarAssemblyGame theme={screen.theme} onExit={back} />
-      ) : screen.theme === 'history' ? (
-        <RelicPuzzleGame theme={screen.theme} onExit={back} />
-      ) : (
-        <MiningGame theme={screen.theme} onExit={back} />
-      )
+    content = screen.theme === 'car' ? (
+      <CarAssemblyGame theme={screen.theme} onExit={back} />
+    ) : screen.theme === 'history' ? (
+      <RelicPuzzleGame theme={screen.theme} onExit={back} />
+    ) : screen.theme === 'minecraft' ? (
+      <MiningGame theme={screen.theme} onExit={back} />
+    ) : (
+      // TODO(协调者): race 引擎接入处——将替换为 <MotorbikeRushGame onExit={back} />
+      // 引擎组件（src/ui/minigames/MotorbikeRushGame.tsx）由另一个任务创建，此处先渲染占位提示
+      <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-gradient-to-b from-sky-400 to-indigo-500 p-4 text-center text-white">
+        <div className="text-7xl drop-shadow">🏍️</div>
+        <div className="text-2xl font-black drop-shadow">摩托大乱斗</div>
+        <p className="text-sm text-white/90">3 车道竞速，撞开对手冲第一！（引擎接入中…）</p>
+        <button
+          onClick={back}
+          className="mt-2 rounded-full bg-white/90 px-4 py-1.5 font-bold text-slate-600 shadow"
+        >
+          ← 返回小游戏厅
+        </button>
+      </div>
+    )
   } else {
     content = <ParentZone onBack={goHome} />
   }

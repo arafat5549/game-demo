@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { ThemeId } from '../../types'
+import { MINI_GAMES, THEMES } from '../../data/themes'
 import { useSave } from '../../store/save'
 import { playClick, playCorrect, playFanfare } from '../../audio/sfx'
 import { shuffle } from '../../data/questions'
@@ -21,12 +22,14 @@ function newTiles(): number[] {
 
 /** 🏯 文物拼图（ADR-0014）：点选一块，再点另一块交换 */
 export function RelicPuzzleGame({ theme, onExit }: Props) {
-  const { applyMiniGameResult } = useSave()
+  const { save, applyMiniGameResult } = useSave()
   const [tiles, setTiles] = useState<number[]>(() => newTiles())
   const [selected, setSelected] = useState<number | null>(null)
   const [moves, setMoves] = useState(0)
   const [done, setDone] = useState(false)
   const [stars, setStars] = useState(0)
+  const mini = MINI_GAMES.find((m) => m.id === theme)!
+  const firstTime = !save.miniGames[theme].played
 
   const handleTile = (idx: number) => {
     if (done) return
@@ -121,7 +124,9 @@ export function RelicPuzzleGame({ theme, onExit }: Props) {
 
       {done && (
         <GameResultOverlay
-          theme={theme}
+          gradient={THEMES[theme].gradient}
+          emoji={mini.emoji}
+          cardHint={firstTime ? '小游戏卡' : null}
           stars={stars}
           onRetry={() => {
             setTiles(newTiles())

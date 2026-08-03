@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { ThemeId } from '../../types'
+import { MINI_GAMES, THEMES } from '../../data/themes'
 import { useSave } from '../../store/save'
 import { playClick, playCorrect, playFanfare, playWrong } from '../../audio/sfx'
 import { GameResultOverlay } from './GameResultOverlay'
@@ -27,7 +28,7 @@ function newBoard(): CellState[] {
 
 /** 🧱 挖矿大作战（ADR-0014）：30 秒点钻石得分，点苦力怕扣分 */
 export function MiningGame({ theme, onExit }: Props) {
-  const { applyMiniGameResult } = useSave()
+  const { save, applyMiniGameResult } = useSave()
   const [board, setBoard] = useState<CellState[]>(() => newBoard())
   const [score, setScore] = useState(0)
   const [timeLeft, setTimeLeft] = useState(DURATION)
@@ -35,6 +36,8 @@ export function MiningGame({ theme, onExit }: Props) {
   const [stars, setStars] = useState(0)
   const scoreRef = useRef(score)
   scoreRef.current = score
+  const mini = MINI_GAMES.find((m) => m.id === theme)!
+  const firstTime = !save.miniGames[theme].played
 
   // 倒计时：每秒减 1，并刷新未挖的格子
   useEffect(() => {
@@ -133,7 +136,9 @@ export function MiningGame({ theme, onExit }: Props) {
 
       {done && (
         <GameResultOverlay
-          theme={theme}
+          gradient={THEMES[theme].gradient}
+          emoji={mini.emoji}
+          cardHint={firstTime ? '小游戏卡' : null}
           stars={stars}
           onRetry={restart}
           onExit={onExit}
