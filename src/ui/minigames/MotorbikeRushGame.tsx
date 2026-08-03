@@ -18,6 +18,17 @@ const SLIDE_SPEED = 7 // 切道滑动速度（车道/秒）
 const AI_SLIDE_SPEED = 6 // AI 变道滑动速度
 const AI_COLORS = ['bg-red-400/90', 'bg-blue-400/90', 'bg-green-400/90'] // AI 头环颜色
 
+// ── 道具类型（生成时决定，所见即所得）──
+type ItemKind = 'boost' | 'missile' | 'slow' | 'armor'
+const ITEM_KINDS: ItemKind[] = ['boost', 'missile', 'slow', 'armor']
+// 路上道具渲染映射：各图标 + 彩色发光圆底，与减速带（横条路障）彻底区分
+const ITEM_META: Record<ItemKind, { emoji: string; bg: string }> = {
+  boost: { emoji: '⚡', bg: 'bg-yellow-400/90' }, // 加速
+  missile: { emoji: '🚀', bg: 'bg-red-500/90' }, // 导弹
+  slow: { emoji: '❄️', bg: 'bg-blue-400/90' }, // 减速弹
+  armor: { emoji: '🛡️', bg: 'bg-green-400/90' }, // 碰撞装甲
+}
+
 // ── 状态模型：全部可变状态放 ref，rAF 每帧推进 + setState 刷新 UI ──
 interface PlayerState {
   lane: number // 当前显示车道（连续值，用于平滑滑动）
@@ -52,6 +63,11 @@ interface RoadObject {
   distance: number
 }
 
+/** 路上道具：生成时即决定类型（拾取时所见即所得） */
+interface ItemObject extends RoadObject {
+  kind: ItemKind
+}
+
 interface MissileState {
   target: number // 目标 AI 下标
   start: number // 发射时间（游戏内时钟）
@@ -61,8 +77,8 @@ interface MissileState {
 interface GameState {
   player: PlayerState
   ais: AiState[]
-  items: RoadObject[] // 道具箱 📦
-  bumps: RoadObject[] // 减速带 🟫
+  items: ItemObject[] // 路上道具（所见即所得）
+  bumps: RoadObject[] // 减速带（横向路面条块）
   missile: MissileState | null
   nextItemAt: number // 下次刷道具箱里程
   nextBumpAt: number // 下次刷减速带里程
@@ -74,6 +90,11 @@ interface GameState {
 
 function randLane(): number {
   return Math.floor(Math.random() * LANES)
+}
+
+/** 随机道具类型（4 种等概率） */
+function randomItemKind(): ItemKind {
+  return ITEM_KINDS[Math.floor(Math.random() * ITEM_KINDS.length)]
 }
 
 /** 平滑逼近：把 cur 以 maxStep 为最大步长移向 target */
@@ -99,28 +120,27 @@ function nearestAI(g: GameState): number {
   return best
 }
 
-/** 拾取道具箱：4 种随机，捡到全部自动生效（单槽，新捡顶旧） */
-function pickup(g: GameState) {
+/** 拾取道具：按生成时决定的 kind 立即生效（单槽，新捡顶旧） */
+function pickup(g: GameState, kind: ItemKind) {
   const now = g.now
   const p = g.player
-  const kind = Math.floor(Math.random() * 4)
   switch (kind) {
-    case 0: // 加速：速度 ×1.5 持续 3s
+    case 'boost': // 加速：速度 ×1.5 持续 3s
       p.boostUntil = now + 3
       break
-    case 1: {
-      // 导弹：自动锁定最近 AI
+    case 'missile': {
+      // 导弹：自动锁定最近 AI 发射
       const target = nearestAI(g)
       if (target >= 0) g.missile = { target, start: now, duration: 0.5 }
       break
     }
-    case 2: {
+    case 'slow': {
       // 减速弹：最近 AI 速度 ×0.5 持续 4s
       const target = nearestAI(g)
       if (target >= 0) g.ais[target].slowUntil = now + 4
       break
     }
-    case 3: // 碰撞装甲：下次碰撞自己不掉速、AI -1♥ 且速度归零 2s
+    case 'armor': // 碰撞装甲：下次碰撞自己不掉速、AI -1♥ 且速度归零 2s
       p.armor = true
       break
   }
@@ -142,9 +162,13 @@ function update(g: GameState, dt: number) {
   if (now < p.boostUntil) mult *= 1.5 // 道具加速
   p.distance += (boosting ? BOOST : CRUISE) * mult * dt
 
-  // 刷道具箱：每 300-500m 随机车道刷 1 个，出现在前方可见范围
+  // 刷道具：每 300-500m 随机车道刷 1 个，生成时随机决定类型（所见即所得）
   if (p.distance >= g.nextItemAt) {
-    g.items.push({ lane: randLane(), distance: p.distance + 120 + Math.random() * 200 })
+    g.items.push({
+      lane: randLane(),
+      distance: p.distance + 120 + Math.random() * 200,
+      kind: randomItemKind(),
+    })
     g.nextItemAt = p.distance + 300 + Math.random() * 200
   }
   // 刷减速带
@@ -153,13 +177,13 @@ function update(g: GameState, dt: number) {
     g.nextBumpAt = p.distance + 250 + Math.random() * 200
   }
 
-  // 道具箱拾取
+  // 道具拾取
   for (let i = g.items.length - 1; i >= 0; i--) {
     const it = g.items[i]
     if (it.lane === pLane && p.distance >= it.distance - 5) {
       g.items.splice(i, 1)
       playCorrect()
-      pickup(g)
+      pickup(g, it.kind)
     }
   }
   // 减速带：撞上减速 1.5s（×0.6）+ 冒烟震动
@@ -440,33 +464,42 @@ export function MotorbikeRushGame({ onExit }: { onExit: () => void }) {
           />
         ))}
 
-        {/* 道具箱 📦 */}
+        {/* 路上道具：所见即所得，各图标 + 彩色发光圆底 */}
         {g.items.map((it, i) => {
           const y = yOf(it.distance)
           if (y < -40 || y > ROAD_H + 30) return null
+          const meta = ITEM_META[it.kind]
           return (
             <div
               key={`i${i}`}
-              className="absolute text-3xl"
+              className="absolute"
               style={{ left: laneLeft(it.lane), top: y, transform: 'translate(-50%, -50%)' }}
             >
-              📦
+              <div
+                className={`flex h-9 w-9 items-center justify-center rounded-full shadow-lg ring-2 ring-white/80 ${meta.bg}`}
+              >
+                <span className="text-2xl drop-shadow">{meta.emoji}</span>
+              </div>
             </div>
           )
         })}
 
-        {/* 减速带 🟫 */}
+        {/* 减速带：横向黄黑斜纹条块（真实路障形态，与圆形道具区分） */}
         {g.bumps.map((b, i) => {
           const y = yOf(b.distance)
           if (y < -40 || y > ROAD_H + 30) return null
           return (
             <div
               key={`b${i}`}
-              className="absolute text-2xl"
-              style={{ left: laneLeft(b.lane), top: y, transform: 'translate(-50%, -50%)' }}
-            >
-              🟫
-            </div>
+              className="absolute h-3.5 w-1/4 rounded-sm shadow-md ring-1 ring-black/40"
+              style={{
+                left: laneLeft(b.lane),
+                top: y,
+                transform: 'translate(-50%, -50%)',
+                backgroundImage:
+                  'repeating-linear-gradient(45deg, #f59e0b 0 8px, #1f2937 8px 16px)',
+              }}
+            />
           )
         })}
 
