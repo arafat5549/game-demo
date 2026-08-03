@@ -137,8 +137,14 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
         >
           ✕ 退出
         </button>
-        <div className="text-lg font-black text-white drop-shadow">
-          第 {qIndex + 1} / {total} 题
+        <div className="text-center">
+          <div className="text-lg font-black leading-tight text-white drop-shadow">
+            第 {qIndex + 1} / {total} 题
+          </div>
+          {/* 当前题目名（卡片名） */}
+          <div className="text-xs font-bold text-white/90 drop-shadow">
+            {q.cardEmoji} {q.cardName}
+          </div>
         </div>
         <div className="w-20 text-right text-lg font-black text-yellow-200 drop-shadow">
           {combo >= 2 ? `🔥${combo}` : ''}
