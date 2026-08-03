@@ -25,7 +25,9 @@ export function ExpansionScreen({ theme, question, onBack }: Props) {
   const { save } = useSave()
   const exp = question.expansion
   // 图片加载链：本地缓存 → 请求并缓存 → 直连（浏览器缓存兜底）→ 失败回退 emoji
+  // 加载中/失败均显示卡通 emoji 占位，不空白（ADR-0013）
   const [imgSrc, setImgSrc] = useState<string | null>(null)
+  const [imgDone, setImgDone] = useState(false)
 
   useEffect(() => {
     let cancelled = false
@@ -33,6 +35,8 @@ export function ExpansionScreen({ theme, question, onBack }: Props) {
     const url = exp?.image ?? sourceScreenshotUrl(exp?.sourceUrl)
     if (!url) return
 
+    setImgDone(false)
+    setImgSrc(null)
     const load = async () => {
       // 1. 本地缓存命中（URL 为 key，避免重复请求）
       const cached = await getCachedImage(url)
@@ -113,14 +117,15 @@ export function ExpansionScreen({ theme, question, onBack }: Props) {
           animate={{ y: 0, opacity: 1 }}
           className="mt-4 overflow-hidden rounded-3xl bg-white shadow-xl"
         >
-          {/* 插图区：显式 image URL 优先，为空用来源页面截图，失败回退 emoji（ADR-0013） */}
+          {/* 插图区：加载完成显示来源图；加载中/失败显示卡通 emoji 占位（不空白） */}
           <div
             className={`flex h-44 items-center justify-center bg-gradient-to-br ${meta.gradient}`}
           >
-            {imgSrc ? (
+            {imgSrc && imgDone ? (
               <img
                 src={imgSrc}
                 alt={exp.title}
+                onLoad={() => setImgDone(true)}
                 onError={() => setImgSrc(null)}
                 className="h-full w-full object-cover"
               />
