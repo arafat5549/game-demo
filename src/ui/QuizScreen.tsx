@@ -141,9 +141,9 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
           <div className="text-lg font-black leading-tight text-white drop-shadow">
             第 {qIndex + 1} / {total} 题
           </div>
-          {/* 当前题目名词（cardName） */}
+          {/* 当前爬塔层级名（node.title，明确在哪一层） */}
           <div className="text-xs font-bold text-white/90 drop-shadow">
-            📖 {q.cardName}
+            {node.emoji} {node.title} · 第 {node.index} 关
           </div>
         </div>
         <div className="w-20 text-right text-lg font-black text-yellow-200 drop-shadow">
@@ -221,7 +221,8 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
             {DIFFICULTIES.find((d) => d.id === q.difficulty)?.emoji}{' '}
             {DIFFICULTIES.find((d) => d.id === q.difficulty)?.label ?? q.difficulty}
           </span>
-          <span>{node.title} · 第 {node.index} 关</span>
+          {/* 当前题目卡片名 */}
+          <span>📖 {q.cardName}</span>
         </div>
       </div>
 
