@@ -12,7 +12,7 @@ interface Props {
   theme: ThemeId
   node: LevelNode
   questions: Question[]
-  onFinish: (theme: ThemeId, node: LevelNode, result: LevelResult, toNext: boolean) => void
+  onFinish: (theme: ThemeId, node: LevelNode, result: LevelResult) => void
   onAbort: () => void
 }
 
@@ -71,7 +71,8 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
         unlockedCardIds: passed ? questions.map((x) => x.id) : [],
       }
       applyLevelResult(theme, result)
-      onFinish(theme, node, result, passed)
+      // 修复：最后一题完成始终进结算页（星星/卡片动画），不再跳关
+      onFinish(theme, node, result)
       return
     }
     setQIndex(qIndex + 1)

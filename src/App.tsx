@@ -51,18 +51,14 @@ function Shell() {
   )
 
   const finishQuiz = useCallback(
-    (theme: ThemeId, node: LevelNode, result: LevelResult, toNext: boolean) => {
+    (theme: ThemeId, node: LevelNode, result: LevelResult) => {
       // 计入每日游玩时长（按整分钟）
       const minutes = Math.max(1, Math.round((Date.now() - quizStartRef.current) / 60000))
       addPlayTime(minutes)
-      if (toNext && node.index < 10) {
-        // 直接进入下一关：按关卡树取节点并出题
-        enterQuiz(theme, levelNode(theme, node.index + 1))
-        return
-      }
+      // 始终进入结算页；"下一关"由结算页按钮触发（修复 5/5 跳关 bug）
       setScreen({ name: 'result', theme, node, result })
     },
-    [addPlayTime, enterQuiz],
+    [addPlayTime],
   )
 
   const goHome = useCallback(() => setScreen({ name: 'home' }), [])
@@ -108,6 +104,7 @@ function Shell() {
         result={screen.result}
         onRetry={() => enterQuiz(screen.theme, screen.node)}
         onBack={() => setScreen({ name: 'theme', theme: screen.theme })}
+        onNext={() => enterQuiz(screen.theme, levelNode(screen.theme, screen.node.index + 1))}
       />
     )
   } else if (screen.name === 'collection') {

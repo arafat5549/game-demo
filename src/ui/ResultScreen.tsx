@@ -11,9 +11,10 @@ interface Props {
   result: LevelResult
   onRetry: () => void
   onBack: () => void
+  onNext: () => void
 }
 
-export function ResultScreen({ theme, node, result, onRetry, onBack }: Props) {
+export function ResultScreen({ theme, node, result, onRetry, onBack, onNext }: Props) {
   const meta = THEMES[theme]
   const [cardStep, setCardStep] = useState(0)
   const fanfarePlayed = useRef(false)
@@ -140,7 +141,7 @@ export function ResultScreen({ theme, node, result, onRetry, onBack }: Props) {
             <button
               onClick={() => {
                 playClick()
-                onBack()
+                onNext()
               }}
               className="rounded-full bg-white px-6 py-3 text-xl font-black text-slate-700 shadow-xl active:scale-95"
             >
