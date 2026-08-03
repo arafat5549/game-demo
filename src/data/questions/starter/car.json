@@ -1,0 +1,159 @@
+[
+  {
+    "id": "car-starter-1",
+    "theme": "car",
+    "subTheme": "inventor",
+    "difficulty": "starter",
+    "type": "judge",
+    "prompt": "汽车自己会跑吗？",
+    "options": [
+      "会",
+      "不会"
+    ],
+    "answer": 0,
+    "fact": "汽车有发动机，不用人推，自己就能跑。",
+    "cardName": "会跑的车",
+    "cardEmoji": "🚗",
+    "expansion": {
+      "title": "汽车会自己跑",
+      "body": "汽车肚子里有一台发动机，像大力士一样推着车轮转，所以不用人推，它自己就能跑。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "car-starter-2",
+    "theme": "car",
+    "subTheme": "beetle",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "小汽车有几个轮子？",
+    "options": [
+      "4 个",
+      "8 个",
+      "1 个",
+      "100 个"
+    ],
+    "answer": 0,
+    "fact": "小汽车有四个轮子，稳稳地跑在路上。",
+    "cardName": "四个轮子",
+    "cardEmoji": "🛞",
+    "expansion": {
+      "title": "四个轮子",
+      "body": "小汽车前面两个轮子，后面两个轮子，一共四个。轮子圆圆的，汽车才能转圈、跑快。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "car-starter-3",
+    "theme": "car",
+    "subTheme": "badges",
+    "difficulty": "starter",
+    "type": "judge",
+    "prompt": "消防车是红色的吗？",
+    "options": [
+      "是",
+      "不是"
+    ],
+    "answer": 0,
+    "fact": "消防车是红色的，老远就能看到它。",
+    "cardName": "红色消防车",
+    "cardEmoji": "🚒",
+    "expansion": {
+      "title": "红红的消防车",
+      "body": "消防车漆成红色，最显眼，路上的车都会给它让路，好让它快点去救火。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "car-starter-4",
+    "theme": "car",
+    "subTheme": "rescue",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "谁送生病的人去医院？",
+    "options": [
+      "救护车",
+      "冰淇淋车",
+      "垃圾车",
+      "拖拉机"
+    ],
+    "answer": 0,
+    "fact": "救护车上有医生，专门送病人去医院。",
+    "cardName": "救护车",
+    "cardEmoji": "🚑",
+    "expansion": {
+      "title": "救护车",
+      "body": "救护车里面有医生和护士，还有急救设备。有人生病了，救护车就闪着灯、响着笛，快快地送他们去医院。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "car-starter-5",
+    "theme": "car",
+    "subTheme": "records",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "车轮是什么形状的？",
+    "options": [
+      "圆形",
+      "方形",
+      "三角形",
+      "星星形"
+    ],
+    "answer": 0,
+    "fact": "车轮是圆圆的，才能滚起来。",
+    "cardName": "圆车轮",
+    "cardEmoji": "⭕",
+    "expansion": {
+      "title": "为什么车轮是圆的",
+      "body": "圆圆的轮子能滚起来，汽车就跑得快。如果轮子是方形的，汽车就只能一颠一颠地跳着走了。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "car-starter-6",
+    "theme": "car",
+    "subTheme": "future",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "红灯亮了要怎么办？",
+    "options": [
+      "停下来",
+      "快点跑",
+      "闭上眼睛",
+      "跳起来"
+    ],
+    "answer": 0,
+    "fact": "红灯亮了要停，绿灯亮了才能走。",
+    "cardName": "红灯停",
+    "cardEmoji": "🚦",
+    "expansion": {
+      "title": "红灯停绿灯行",
+      "body": "马路上的红绿灯是\"指挥家\"：红灯亮，大家停下来；绿灯亮，才能走。红灯停、绿灯行，人人都要遵守。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "car-starter-7",
+    "theme": "car",
+    "subTheme": "bmw-audi",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "公共汽车是干什么的？",
+    "options": [
+      "载很多人",
+      "装垃圾",
+      "浇花",
+      "放风筝"
+    ],
+    "answer": 0,
+    "fact": "公共汽车能载很多人，大家一起去上班上学。",
+    "cardName": "大公交",
+    "cardEmoji": "🚌",
+    "expansion": {
+      "title": "公共汽车",
+      "body": "公共汽车又长又大，里面有好多座位，能载几十个人。它沿着固定的路线跑，带大家去上班、上学、买东西。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  }
+]

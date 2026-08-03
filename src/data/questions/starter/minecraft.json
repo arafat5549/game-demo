@@ -1,0 +1,203 @@
+[
+  {
+    "id": "mc-starter-1",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "我的世界里到处都是什么？",
+    "options": [
+      "方块",
+      "圆形",
+      "三角形",
+      "爱心"
+    ],
+    "answer": 0,
+    "fact": "我的世界里的东西都是方块做的，包括云和太阳。",
+    "cardName": "方块世界",
+    "cardEmoji": "🧊",
+    "expansion": {
+      "title": "方块世界",
+      "body": "我的世界里，地是方块、树是方块、羊也是方块，整个世界都是用方块搭起来的。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "mc-starter-2",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "天黑了要小心什么？",
+    "options": [
+      "怪物",
+      "冰淇淋",
+      "小兔子",
+      "蝴蝶"
+    ],
+    "answer": 0,
+    "fact": "天黑了，僵尸、骷髅这些怪物就会出来。",
+    "cardName": "黑夜小心",
+    "cardEmoji": "🌙",
+    "expansion": {
+      "title": "夜晚的怪物",
+      "body": "我的世界到了晚上，怪物们就出来了。所以天黑前要回家，关好门，点起火把。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "mc-starter-3",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "starter",
+    "type": "judge",
+    "prompt": "钻石很珍贵吗？",
+    "options": [
+      "很珍贵",
+      "不珍贵"
+    ],
+    "answer": 0,
+    "fact": "钻石亮晶晶的，很难挖到，是宝贝。",
+    "cardName": "珍贵钻石",
+    "cardEmoji": "💎",
+    "expansion": {
+      "title": "钻石宝贝",
+      "body": "钻石在很深很深的地下，要挖很久才能找到。它亮晶晶的，能做最厉害的工具，特别珍贵。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "mc-starter-4",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "苦力怕会做什么？",
+    "options": [
+      "爆炸",
+      "唱歌",
+      "跳舞",
+      "做饭"
+    ],
+    "answer": 0,
+    "fact": "苦力怕靠近你就会爆炸，要赶紧跑。",
+    "cardName": "会爆炸",
+    "cardEmoji": "💥",
+    "expansion": {
+      "title": "苦力怕",
+      "body": "苦力怕是绿色的怪物，它不咬人，但是会\"砰\"地爆炸。听到它\"嘶嘶\"响，就要快快跑开。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "mc-starter-5",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "砍树能得到什么？",
+    "options": [
+      "木头",
+      "钻石",
+      "面包",
+      "牛奶"
+    ],
+    "answer": 0,
+    "fact": "用斧头砍树，能得到木头。",
+    "cardName": "砍木头",
+    "cardEmoji": "🪓",
+    "expansion": {
+      "title": "砍树",
+      "body": "在方块世界里，第一件事就是砍树。砍倒大树，得到木头，木头能做木板、工具和房子。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "mc-starter-6",
+    "theme": "minecraft",
+    "subTheme": "building",
+    "difficulty": "starter",
+    "type": "judge",
+    "prompt": "火把能把黑黑的地方照亮吗？",
+    "options": [
+      "能",
+      "不能"
+    ],
+    "answer": 0,
+    "fact": "火把能照亮，怪物就不敢靠近。",
+    "cardName": "亮亮火把",
+    "cardEmoji": "🔥",
+    "expansion": {
+      "title": "火把",
+      "body": "火把像小路灯，插在地上就能照亮一大片。亮亮的地方怪物不会出现，所以晚上要多多点火把。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "mc-starter-7",
+    "theme": "minecraft",
+    "subTheme": "ender",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "我的世界的主角叫什么？",
+    "options": [
+      "史蒂夫",
+      "汤姆",
+      "杰瑞",
+      "小猪"
+    ],
+    "answer": 0,
+    "fact": "主角叫史蒂夫，他陪大家一起冒险。",
+    "cardName": "史蒂夫",
+    "cardEmoji": "🧑‍🌾",
+    "expansion": {
+      "title": "主角史蒂夫",
+      "body": "史蒂夫是方块世界的主角，蓝色眼睛、棕色头发。玩家们控制他去砍树、挖矿、打怪物、建房子。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "mc-starter-8",
+    "theme": "minecraft",
+    "subTheme": "crafting",
+    "difficulty": "starter",
+    "type": "choice",
+    "prompt": "工作台是用来干什么的？",
+    "options": [
+      "做工具",
+      "睡觉",
+      "吃饭",
+      "游泳"
+    ],
+    "answer": 0,
+    "fact": "工作台能做出镐、剑和各种工具。",
+    "cardName": "工作台",
+    "cardEmoji": "🔨",
+    "expansion": {
+      "title": "工作台",
+      "body": "工作台像小桌子，把材料放上去，就能做出镐、斧头、剑和各种工具。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  },
+  {
+    "id": "mc-starter-9",
+    "theme": "minecraft",
+    "subTheme": "redstone",
+    "difficulty": "starter",
+    "type": "judge",
+    "prompt": "红石能做出自己开关的门吗？",
+    "options": [
+      "能",
+      "不能"
+    ],
+    "answer": 0,
+    "fact": "能！用红石做的自动门，一按按钮就自己开。",
+    "cardName": "红石门",
+    "cardEmoji": "🚪",
+    "expansion": {
+      "title": "红石魔法",
+      "body": "红石是方块世界的魔法粉，用它做机关，按一下按钮，门就自己打开，灯就自己亮。",
+      "source": "来源：启蒙题库（改编自主题知识）"
+    }
+  }
+]

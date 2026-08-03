@@ -1,0 +1,312 @@
+[
+  {
+    "id": "car-advanced-1",
+    "theme": "car",
+    "subTheme": "inventor",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "卡尔·本茨和戈特利布·戴姆勒后来合并成了哪个品牌？",
+    "options": [
+      "奔驰",
+      "宝马",
+      "奥迪",
+      "大众"
+    ],
+    "answer": 0,
+    "fact": "1926 年两家公司合并，成为今天的梅赛德斯-奔驰。",
+    "cardName": "强强合并",
+    "cardEmoji": "🤝",
+    "expansion": {
+      "title": "奔驰的诞生",
+      "body": "卡尔·本茨和戈特利布·戴姆勒各自发明了汽车，1926 年两家公司合并成戴姆勒-奔驰，车标是三叉星，就是今天的奔驰。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-2",
+    "theme": "car",
+    "subTheme": "inventor",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "早期汽车是用手摇曲柄启动发动机的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！早期汽车没有电启动，要用摇把使劲摇才能发动。",
+    "cardName": "手摇启动",
+    "cardEmoji": "🪛",
+    "expansion": {
+      "title": "手摇曲柄",
+      "body": "一百多年前的汽车没有钥匙启动，司机要用手摇曲柄转动机器，非常费力还有危险。后来电启动发明后，开车才变得轻松。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-3",
+    "theme": "car",
+    "subTheme": "beetle",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "甲壳虫在巴西被当地人亲切地叫作什么？",
+    "options": [
+      "Fusca",
+      "Beetle",
+      "Bug",
+      "Coccinelle"
+    ],
+    "answer": 0,
+    "fact": "巴西人称甲壳虫为 Fusca，是巴西最受欢迎的车之一。",
+    "cardName": "巴西 Fusca",
+    "cardEmoji": "🇧🇷",
+    "expansion": {
+      "title": "巴西的甲壳虫",
+      "body": "甲壳虫在巴西生产了 30 多年，当地人称它 Fusca。巴西人爱它爱到专门为它举办节日，直到今天还有人收藏。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-4",
+    "theme": "car",
+    "subTheme": "beetle",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "甲壳虫是大众汽车最畅销的车型之一。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！甲壳虫是大众的经典车型，卖了两千多万辆。",
+    "cardName": "大众明星",
+    "cardEmoji": "🌟",
+    "expansion": {
+      "title": "甲壳虫的地位",
+      "body": "甲壳虫是大众汽车的第一个明星车型，它让大众成为世界大厂。后来大众的高尔夫也成了新一代经典。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-5",
+    "theme": "car",
+    "subTheme": "badges",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "奔驰的 AMG 部门是做什么的？",
+    "options": [
+      "打造高性能版奔驰",
+      "造飞机",
+      "造轮胎",
+      "修公路"
+    ],
+    "answer": 0,
+    "fact": "AMG 是奔驰的高性能部门，专门造又快又猛的车。",
+    "cardName": "AMG",
+    "cardEmoji": "🏁",
+    "expansion": {
+      "title": "AMG",
+      "body": "AMG 是奔驰的高性能部门，从改装赛车起家。AMG 的发动机上刻着工程师的名字，每一台都是手工组装。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-6",
+    "theme": "car",
+    "subTheme": "badges",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "奔驰、宝马、奥迪被称为德国\"三巨头\"。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！这三家是德国最著名的豪华汽车品牌。",
+    "cardName": "三巨头",
+    "cardEmoji": "👑",
+    "expansion": {
+      "title": "德国三巨头",
+      "body": "奔驰、宝马、奥迪并称德国豪华车\"三巨头\"，它们在全球竞争了几十年，你追我赶，造出无数经典车型。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-7",
+    "theme": "car",
+    "subTheme": "bmw-audi",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "奥迪的 quattro 是什么意思？",
+    "options": [
+      "四轮驱动系统",
+      "四个轮胎",
+      "四座车",
+      "四挡变速箱"
+    ],
+    "answer": 0,
+    "fact": "quattro 是奥迪的四驱系统，让车在冰雪里也稳。",
+    "cardName": "quattro",
+    "cardEmoji": "❄️",
+    "expansion": {
+      "title": "quattro 四驱",
+      "body": "quattro 是奥迪著名的四轮驱动技术，1980 年诞生。它让奥迪赛车在冰雪拉力赛里称霸，也让家用车在雨雪天更安全。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-8",
+    "theme": "car",
+    "subTheme": "bmw-audi",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "宝马的 M 部门标志是什么颜色的条纹？",
+    "options": [
+      "蓝紫红",
+      "红黄绿",
+      "黑白灰",
+      "金银铜"
+    ],
+    "answer": 0,
+    "fact": "M 标志是蓝、紫、红三色斜条纹。",
+    "cardName": "M 三色",
+    "cardEmoji": "🌈",
+    "expansion": {
+      "title": "M 部门",
+      "body": "宝马 M 部门从赛车部门演变而来，M 标志的蓝紫红三色分别代表巴伐利亚、赛车和激情。M 系列是宝马的性能之王。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-9",
+    "theme": "car",
+    "subTheme": "rescue",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "中国的急救电话是多少？",
+    "options": [
+      "120",
+      "110",
+      "119",
+      "114"
+    ],
+    "answer": 0,
+    "fact": "120 是急救电话，119 是火警，110 是报警。",
+    "cardName": "急救 120",
+    "cardEmoji": "📞",
+    "expansion": {
+      "title": "急救电话",
+      "body": "在中国，120 是急救电话，拨通后救护车会赶来。要记住：110 报警、119 火警、120 急救，紧急时刻用得上。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-10",
+    "theme": "car",
+    "subTheme": "rescue",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "消防车上的云梯可以升到很高，救高楼里的人。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！云梯消防车能把梯子升到几十米高。",
+    "cardName": "云梯",
+    "cardEmoji": "🪜",
+    "expansion": {
+      "title": "云梯消防车",
+      "body": "云梯消防车装有可以伸缩的长梯，能升到几十米高，把困在高楼里的人接下来，还能喷水灭火。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-11",
+    "theme": "car",
+    "subTheme": "records",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "布加迪威龙（Veyron）的最高时速超过多少？",
+    "options": [
+      "400 公里/小时",
+      "100 公里/小时",
+      "200 公里/小时",
+      "300 公里/小时"
+    ],
+    "answer": 0,
+    "fact": "布加迪威龙时速超过 400 公里，曾是最快量产车。",
+    "cardName": "威龙",
+    "cardEmoji": "💨",
+    "expansion": {
+      "title": "布加迪威龙",
+      "body": "布加迪威龙搭载 16 缸发动机，最高时速超过 400 公里。为了承受这个速度，它的轮胎是专门定制的，换一套要几十万。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-12",
+    "theme": "car",
+    "subTheme": "records",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "量产车最高时速纪录经常在布加迪、科尼赛克等品牌间交替。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！各大超跑品牌一直在争夺\"最快\"的称号。",
+    "cardName": "速度之王之争",
+    "cardEmoji": "🏆",
+    "expansion": {
+      "title": "最快量产车",
+      "body": "世界最快量产车的纪录一直在布加迪、科尼赛克、轩尼诗等品牌之间刷新，每个品牌都想当\"速度之王\"。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-13",
+    "theme": "car",
+    "subTheme": "future",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "氢燃料电池汽车排出的是什么？",
+    "options": [
+      "水",
+      "黑烟",
+      "二氧化碳",
+      "汽油"
+    ],
+    "answer": 0,
+    "fact": "氢燃料车排出的是水蒸气，非常环保。",
+    "cardName": "氢能源",
+    "cardEmoji": "💧",
+    "expansion": {
+      "title": "氢燃料电池",
+      "body": "氢燃料电池汽车让氢气与氧气反应发电，唯一的排放物是水。加氢只要几分钟，比充电快，但加氢站还很少。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  },
+  {
+    "id": "car-advanced-14",
+    "theme": "car",
+    "subTheme": "future",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "自动驾驶技术通常分为 L0 到 L5 共六个等级。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！L5 是最高级：完全不需要人开。",
+    "cardName": "自动驾驶分级",
+    "cardEmoji": "🤖",
+    "expansion": {
+      "title": "自动驾驶分级",
+      "body": "自动驾驶分 L0~L5 六级：L0 全人工，L1-L2 辅助驾驶，L3-L4 大部分自动，L5 是完全自动驾驶，车里可以没有方向盘。",
+      "source": "来源：百度百科·进阶专题"
+    }
+  }
+]

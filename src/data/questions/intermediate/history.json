@@ -1,0 +1,633 @@
+[
+  {
+    "id": "history-zgl-4",
+    "theme": "history",
+    "subTheme": "zhugeliang",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "刘备几次去请诸葛亮出山帮忙？",
+    "options": [
+      "3 次",
+      "1 次",
+      "2 次",
+      "10 次"
+    ],
+    "answer": 0,
+    "fact": "刘备去了三次，第三次才见到诸葛亮，这就是\"三顾茅庐\"。",
+    "cardName": "三顾茅庐",
+    "cardEmoji": "🏠",
+    "expansion": {
+      "title": "三顾茅庐",
+      "body": "刘备听说诸葛亮很聪明，就亲自去山里请他。第一次没见到，第二次又没见到，第三次去的时候，诸葛亮正在睡午觉，刘备就站在门外等。诸葛亮醒来后很感动，答应帮刘备打天下。这个故事叫\"三顾茅庐\"。",
+      "source": "来源：《三国演义》"
+    }
+  },
+  {
+    "id": "history-inventions-1",
+    "theme": "history",
+    "subTheme": "inventions",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "下面哪一样是中国的四大发明之一？",
+    "options": [
+      "造纸术",
+      "电视机",
+      "手机",
+      "汽车"
+    ],
+    "answer": 0,
+    "fact": "四大发明是造纸术、印刷术、火药和指南针，都是中国人发明的。",
+    "cardName": "四大发明",
+    "cardEmoji": "📜",
+    "expansion": {
+      "title": "四大发明",
+      "body": "中国古代有四大发明：造纸术、印刷术、火药和指南针。它们传到全世界，改变了人类的生活——有了纸和印刷术，书变得便宜；有了指南针，大船敢去远航；有了火药，有了烟花和开山工具。",
+      "source": "来源：百度百科·四大发明",
+      "links": [
+        {
+          "label": "百度百科：四大发明",
+          "url": "https://baike.baidu.com/item/四大发明"
+        }
+      ]
+    }
+  },
+  {
+    "id": "history-inventions-2",
+    "theme": "history",
+    "subTheme": "inventions",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "指南针是用来干什么的？",
+    "options": [
+      "指方向",
+      "称重量",
+      "量长度",
+      "看时间"
+    ],
+    "answer": 0,
+    "fact": "指南针的指针总是指向南方，帮人认路、航海。",
+    "cardName": "指南针",
+    "cardEmoji": "🧭",
+    "expansion": {
+      "title": "指方向的指南针",
+      "body": "指南针里有一根小磁针，不管怎么转，它总是指向南方。古代的大船装上指南针，在茫茫大海上也不会迷路。它也叫\"罗盘\"，是中国古代最重要的发明之一。",
+      "source": "来源：百度百科·指南针"
+    }
+  },
+  {
+    "id": "history-inventions-3",
+    "theme": "history",
+    "subTheme": "inventions",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "改进造纸术的人是谁？",
+    "options": [
+      "蔡伦",
+      "李白",
+      "诸葛亮",
+      "秦始皇"
+    ],
+    "answer": 0,
+    "fact": "东汉的蔡伦改进了造纸术，造出了便宜又好用的纸。",
+    "cardName": "蔡伦造纸",
+    "cardEmoji": "🧻",
+    "expansion": {
+      "title": "蔡伦和纸",
+      "body": "蔡伦是东汉时期的人。那时候写字用的是又贵又重的竹简，蔡伦用树皮、破布等便宜的材料造出了又轻又便宜的纸。后来全世界都用上了中国的方法造纸，蔡伦被称为\"造纸祖师\"。",
+      "source": "来源：百度百科·蔡伦"
+    }
+  },
+  {
+    "id": "history-inventions-4",
+    "theme": "history",
+    "subTheme": "inventions",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "火药是中国人发明的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！火药是中国炼丹师在炼丹时偶然发现的。",
+    "cardName": "火药",
+    "cardEmoji": "🧨",
+    "expansion": {
+      "title": "火药的故事",
+      "body": "一千多年前，中国的炼丹师想把石头炼成\"长生不老药\"，没想到配出了会爆炸的火药。中国人用它做烟花和鞭炮，后来火药传到西方，改变了世界。节日里\"噼里啪啦\"的鞭炮，就是火药的功劳。",
+      "source": "来源：百度百科·火药"
+    }
+  },
+  {
+    "id": "history-inventions-5",
+    "theme": "history",
+    "subTheme": "inventions",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "有了印刷术以后，书变得怎么样了？",
+    "options": [
+      "越来越多、越来越便宜",
+      "越来越少",
+      "越来越贵",
+      "消失了"
+    ],
+    "answer": 0,
+    "fact": "印刷术让书可以批量制造，普通人家也买得起书了。",
+    "cardName": "印书机",
+    "cardEmoji": "🖨️",
+    "expansion": {
+      "title": "印刷术",
+      "body": "在印刷术发明以前，书要靠人一笔一笔抄写，又慢又贵。中国的毕昇发明了活字印刷，把字做成一个个小印章，排好就能印一页书，还能重复使用。从此书越来越多、越来越便宜，更多人能读书识字。",
+      "source": "来源：百度百科·印刷术"
+    }
+  },
+  {
+    "id": "history-zhenghe-1",
+    "theme": "history",
+    "subTheme": "zhenghe",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "大航海家郑和是哪个朝代的人？",
+    "options": [
+      "明朝",
+      "唐朝",
+      "秦朝",
+      "宋朝"
+    ],
+    "answer": 0,
+    "fact": "郑和是明朝的大航海家，他带着巨大的船队七次出海远航。",
+    "cardName": "明朝航海家",
+    "cardEmoji": "⛵",
+    "expansion": {
+      "title": "郑和下西洋",
+      "body": "六百多年前，明朝的郑和带着世界上最庞大的船队出海远航，一共去了七次，这就是\"郑和下西洋\"。他们去过东南亚、印度、非洲几十个国家，比欧洲大航海家早了近百年。",
+      "source": "来源：百度百科·郑和",
+      "links": [
+        {
+          "label": "百度百科：郑和",
+          "url": "https://baike.baidu.com/item/郑和"
+        }
+      ]
+    }
+  },
+  {
+    "id": "history-zhenghe-2",
+    "theme": "history",
+    "subTheme": "zhenghe",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "郑和下西洋坐的是什么船？",
+    "options": [
+      "大宝船",
+      "小木筏",
+      "橡皮艇",
+      "潜水艇"
+    ],
+    "answer": 0,
+    "fact": "郑和乘坐的\"宝船\"特别巨大，是当时世界上最大的木船。",
+    "cardName": "大宝船",
+    "cardEmoji": "🚢",
+    "expansion": {
+      "title": "巨大的宝船",
+      "body": "郑和船队里最大的船叫\"宝船\"，长一百多米，有九根桅杆，能装几百人。它比篮球场还大，是当时世界上最大的木船。整个船队有二百多艘船、两万多人，浩浩荡荡，像一座海上城市。",
+      "source": "来源：百度百科·宝船"
+    }
+  },
+  {
+    "id": "history-zhenghe-3",
+    "theme": "history",
+    "subTheme": "zhenghe",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "郑和一共出海远航了几次？",
+    "options": [
+      "7 次",
+      "1 次",
+      "2 次",
+      "100 次"
+    ],
+    "answer": 0,
+    "fact": "郑和一生七次下西洋，走遍了三十多个国家。",
+    "cardName": "七下西洋",
+    "cardEmoji": "7️⃣",
+    "expansion": {
+      "title": "七次远航",
+      "body": "郑和从 1405 年开始，一共出海七次，前后花了二十多年。他和船员们到过东南亚、印度、阿拉伯，最远到了非洲东海岸。每次远航都带回来各国的礼物和新鲜事物，让中国人认识了世界。",
+      "source": "来源：百度百科·郑和下西洋"
+    }
+  },
+  {
+    "id": "history-zhenghe-4",
+    "theme": "history",
+    "subTheme": "zhenghe",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "郑和的船队到了哪些地方？",
+    "options": [
+      "海外很多国家",
+      "只有家门口",
+      "月球",
+      "海底"
+    ],
+    "answer": 0,
+    "fact": "郑和的船队走遍了东南亚、印度和非洲的三十多个国家。",
+    "cardName": "走向世界",
+    "cardEmoji": "🌍",
+    "expansion": {
+      "title": "船队走多远",
+      "body": "郑和的船队最远到达了非洲东海岸（现在的肯尼亚一带）。他们每到一个国家，就送上丝绸、瓷器和茶叶，也带回珍珠、香料和奇珍异兽。郑和从不欺负小国，而是和他们交朋友、做生意。",
+      "source": "来源：百度百科·郑和下西洋"
+    }
+  },
+  {
+    "id": "history-zhenghe-5",
+    "theme": "history",
+    "subTheme": "zhenghe",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "郑和的船队是当时世界上最庞大的船队。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！两百多艘船、两万多人，当时全世界没有比它更大的船队。",
+    "cardName": "世界第一船队",
+    "cardEmoji": "🥇",
+    "expansion": {
+      "title": "最庞大的船队",
+      "body": "郑和的船队有两百多艘船、两万七千多人，比欧洲著名航海家哥伦布的船队大几十倍。六百多年前的中国，就已经拥有全世界最先进的造船和航海技术，非常了不起。",
+      "source": "来源：百度百科·郑和下西洋"
+    }
+  },
+  {
+    "id": "history-relics-1",
+    "theme": "history",
+    "subTheme": "relics",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "兵马俑是在哪个城市被发现的？",
+    "options": [
+      "西安",
+      "上海",
+      "北京",
+      "广州"
+    ],
+    "answer": 0,
+    "fact": "兵马俑在西安被发现，是秦始皇的\"地下军队\"。",
+    "cardName": "西安兵马俑",
+    "cardEmoji": "🗿",
+    "expansion": {
+      "title": "兵马俑",
+      "body": "1974 年，西安的农民挖井时发现了兵马俑——成千上万个和真人一样大的陶土士兵、战马和战车，整整齐齐地站在地下，保护秦始皇。兵马俑被称为\"世界第八大奇迹\"，每天有无数人去看它们。",
+      "source": "来源：百度百科·兵马俑",
+      "links": [
+        {
+          "label": "百度百科：兵马俑",
+          "url": "https://baike.baidu.com/item/兵马俑"
+        }
+      ]
+    }
+  },
+  {
+    "id": "history-relics-2",
+    "theme": "history",
+    "subTheme": "relics",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "兵马俑是用什么材料做的？",
+    "options": [
+      "陶土",
+      "巧克力",
+      "棉花",
+      "塑料"
+    ],
+    "answer": 0,
+    "fact": "兵马俑是用陶土捏好再烧制而成的，和砖头一样结实。",
+    "cardName": "陶土士兵",
+    "cardEmoji": "🏺",
+    "expansion": {
+      "title": "陶土做的军队",
+      "body": "兵马俑是先用陶土捏出形状，再放进窑里烧硬，最后画上颜色。每个士兵的长相都不一样：有的年轻，有的年老，有的留胡子。两千多年前的工匠们一个个亲手捏出来，真是太厉害了。",
+      "source": "来源：百度百科·兵马俑"
+    }
+  },
+  {
+    "id": "history-relics-3",
+    "theme": "history",
+    "subTheme": "relics",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "纸发明以前，古人主要用什么写字？",
+    "options": [
+      "竹简",
+      "iPad",
+      "黑板",
+      "树叶"
+    ],
+    "answer": 0,
+    "fact": "古人把字写在竹片做的\"竹简\"上，再用绳子串起来。",
+    "cardName": "竹简",
+    "cardEmoji": "🎋",
+    "expansion": {
+      "title": "竹简和帛书",
+      "body": "纸发明以前，古人把竹子削成一条条竹片，在上面写字，这叫\"竹简\"。一篇文章要用很多竹简，再用绳子串成\"册\"。所以有\"学富五车\"的成语——读了五车竹简，才算学问大。",
+      "source": "来源：百度百科·竹简"
+    }
+  },
+  {
+    "id": "history-relics-4",
+    "theme": "history",
+    "subTheme": "relics",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "古代的青铜器是什么颜色的？",
+    "options": [
+      "青绿色",
+      "粉红色",
+      "金黄色",
+      "雪白色"
+    ],
+    "answer": 0,
+    "fact": "青铜器放久了表面会变成青绿色，所以叫\"青铜\"。",
+    "cardName": "青铜器",
+    "cardEmoji": "🫖",
+    "expansion": {
+      "title": "青铜器",
+      "body": "青铜是铜和锡合在一起炼成的金属，刚做出来是金色的，放几千年后表面长出青绿色的\"锈\"，所以叫青铜。古代人用青铜做锅（鼎）、酒杯、乐器和兵器，博物馆里能看到好多漂亮的青铜器。",
+      "source": "来源：百度百科·青铜器"
+    }
+  },
+  {
+    "id": "history-relics-5",
+    "theme": "history",
+    "subTheme": "relics",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "兵马俑是秦始皇为自己造的\"地下军队\"。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！秦始皇希望死后也有军队保护，所以造了成千上万个兵马俑。",
+    "cardName": "地下军队",
+    "cardEmoji": "⚔️",
+    "expansion": {
+      "title": "秦始皇的地下军队",
+      "body": "秦始皇统一天下后，担心死后没人保护自己，就命令工匠造了成千上万个陶土士兵，埋在自己陵墓旁，这就是兵马俑。它们手握兵器、排好队列，静静地守卫了两千多年，直到今天被我们发现。",
+      "source": "来源：百度百科·兵马俑"
+    }
+  },
+  {
+    "id": "history-festivals-1",
+    "theme": "history",
+    "subTheme": "festivals",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "中秋节要吃什么？",
+    "options": [
+      "月饼",
+      "粽子",
+      "饺子",
+      "汤圆"
+    ],
+    "answer": 0,
+    "fact": "中秋节的晚上，全家人一边赏月一边吃甜甜的月饼。",
+    "cardName": "中秋月饼",
+    "cardEmoji": "🥮",
+    "expansion": {
+      "title": "中秋节",
+      "body": "中秋节在农历八月十五，是一年中月亮最圆最亮的时候。传说嫦娥飞到月亮上，住在广寒宫里，还有玉兔陪着她。这一天全家人团圆，吃月饼、赏月亮，所以中秋节也叫\"团圆节\"。",
+      "source": "来源：百度百科·中秋节",
+      "links": [
+        {
+          "label": "百度百科：中秋节",
+          "url": "https://baike.baidu.com/item/中秋节"
+        }
+      ]
+    }
+  },
+  {
+    "id": "history-festivals-2",
+    "theme": "history",
+    "subTheme": "festivals",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "端午节是为了纪念谁？",
+    "options": [
+      "屈原",
+      "孙悟空",
+      "李白",
+      "关羽"
+    ],
+    "answer": 0,
+    "fact": "端午节纪念爱国诗人屈原，人们赛龙舟、吃粽子。",
+    "cardName": "端午屈原",
+    "cardEmoji": "🚣",
+    "expansion": {
+      "title": "端午节",
+      "body": "很久以前，爱国诗人屈原跳进汨罗江。人们划着船去找他，还往江里扔粽子，希望鱼虾不要吃他。后来每年农历五月初五，大家就赛龙舟、吃粽子，纪念屈原，这就是端午节。",
+      "source": "来源：百度百科·端午节"
+    }
+  },
+  {
+    "id": "history-festivals-3",
+    "theme": "history",
+    "subTheme": "festivals",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "元宵节晚上要做什么？",
+    "options": [
+      "看花灯",
+      "看星星",
+      "看蚂蚁",
+      "看鱼"
+    ],
+    "answer": 0,
+    "fact": "元宵节晚上到处挂着漂亮的花灯，还有灯谜可以猜。",
+    "cardName": "元宵花灯",
+    "cardEmoji": "🏮",
+    "expansion": {
+      "title": "元宵节",
+      "body": "元宵节在农历正月十五，是春节的最后一天。这一天晚上，大街小巷挂满五彩的花灯，有兔子灯、龙灯、莲花灯。人们吃汤圆、猜灯谜，热热闹闹地过完春节。",
+      "source": "来源：百度百科·元宵节"
+    }
+  },
+  {
+    "id": "history-festivals-4",
+    "theme": "history",
+    "subTheme": "festivals",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "重阳节也叫什么节？",
+    "options": [
+      "敬老节",
+      "儿童节",
+      "劳动节",
+      "植树节"
+    ],
+    "answer": 0,
+    "fact": "重阳节要登高、赏菊，也是敬老爱老的节日。",
+    "cardName": "重阳敬老",
+    "cardEmoji": "🧓",
+    "expansion": {
+      "title": "重阳节",
+      "body": "重阳节在农历九月初九。古时候人们在这一天登高望远、赏菊花、插茱萸。现在重阳节也叫\"敬老节\"，大家会陪爷爷奶奶、外公外婆过节，感谢他们对我们的爱。",
+      "source": "来源：百度百科·重阳节"
+    }
+  },
+  {
+    "id": "history-festivals-5",
+    "theme": "history",
+    "subTheme": "festivals",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "春节是中国最重要的传统节日。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！春节全家团圆，贴春联、放鞭炮、吃年夜饭、收压岁钱。",
+    "cardName": "大春节",
+    "cardEmoji": "🧧",
+    "expansion": {
+      "title": "春节",
+      "body": "春节是中国人最重要的节日。传说古时候有叫\"年\"的怪兽，怕红色和响声，所以人们贴红春联、放鞭炮赶走它。除夕夜全家吃年夜饭，小朋友还能收到压岁钱。春节代表着新的一年的开始。",
+      "source": "来源：百度百科·春节"
+    }
+  },
+  {
+    "id": "history-ancient-i1",
+    "theme": "history",
+    "subTheme": "ancient",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "山顶洞人住在哪里？",
+    "options": [
+      "北京周口店的山洞里",
+      "上海的高楼里",
+      "广州的地铁里",
+      "哈尔滨的冰屋里"
+    ],
+    "answer": 0,
+    "fact": "山顶洞人住在北京周口店龙骨山的山洞里。",
+    "cardName": "山顶洞人",
+    "cardEmoji": "⛰️",
+    "expansion": {
+      "title": "山顶洞人",
+      "body": "山顶洞人生活在约一万八千年前，住在北京周口店的山顶洞里。他们已经会缝衣服、戴装饰品了。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-ancient-i2",
+    "theme": "history",
+    "subTheme": "ancient",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "河姆渡人已经会种水稻了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！河姆渡人约七千年前就开始种水稻，是最早的农民之一。",
+    "cardName": "种水稻",
+    "cardEmoji": "🌾",
+    "expansion": {
+      "title": "河姆渡人种水稻",
+      "body": "浙江的河姆渡遗址告诉我们，约七千年前那里的人已经开始种水稻、养牲畜、住木头房子，比许多地方都早。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-qin-i1",
+    "theme": "history",
+    "subTheme": "qinshihuang",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "兵马俑一共有几个大坑？",
+    "options": [
+      "三个大坑",
+      "一百个坑",
+      "一个坑",
+      "没有坑"
+    ],
+    "answer": 0,
+    "fact": "兵马俑有三个大坑，里面埋着几千个陶土士兵。",
+    "cardName": "三大坑",
+    "cardEmoji": "🕳️",
+    "expansion": {
+      "title": "兵马俑的三个坑",
+      "body": "秦始皇陵的兵马俑有三个大坑：一号坑最大，是步兵方阵；二号坑有战车和骑兵；三号坑是指挥部。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-qin-i2",
+    "theme": "history",
+    "subTheme": "qinshihuang",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "秦始皇还下令统一了马车车轮的宽度。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！车同轨，车轮一样宽，马车才能在同一条路上跑。",
+    "cardName": "车同轨",
+    "cardEmoji": "🛞",
+    "expansion": {
+      "title": "车同轨",
+      "body": "秦始皇统一天下后，规定车轮的宽度必须一样（车同轨），这样全国的大路都能走同一辆马车，交通方便多了。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-zgl-i1",
+    "theme": "history",
+    "subTheme": "zhugeliang",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "\"空城计\"讲的是诸葛亮用什么吓退敌人？",
+    "options": [
+      "弹琴和空城",
+      "大炮",
+      "飞机",
+      "石头"
+    ],
+    "answer": 0,
+    "fact": "诸葛亮坐在空城上弹琴，敌人以为有埋伏就退兵了。",
+    "cardName": "空城计",
+    "cardEmoji": "🎹",
+    "expansion": {
+      "title": "空城计",
+      "body": "故事里，诸葛亮城里没兵，却打开城门坐在城头弹琴。敌人怕有埋伏，不敢进城，就退兵了。这就是空城计。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-zgl-i2",
+    "theme": "history",
+    "subTheme": "zhugeliang",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "\"草船借箭\"是诸葛亮用草船向敌人\"借\"来了十万支箭。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！诸葛亮趁大雾用草船骗来敌人的箭，一支不用造。",
+    "cardName": "草船借箭",
+    "cardEmoji": "🚣",
+    "expansion": {
+      "title": "草船借箭",
+      "body": "故事里，诸葛亮趁大雾把扎满草人的船开到敌营前，敌人射箭，箭全扎在草人上，白白\"送\"给诸葛亮十万支箭。",
+      "source": "来源：百度百科·历史专题"
+    }
+  }
+]

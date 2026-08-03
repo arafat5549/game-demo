@@ -1,0 +1,310 @@
+[
+  {
+    "id": "minecraft-advanced-1",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "下界传送门要用什么搭建？",
+    "options": [
+      "黑曜石",
+      "钻石块",
+      "金块",
+      "冰块"
+    ],
+    "answer": 0,
+    "fact": "用黑曜石搭 4×5 的框，打火石点燃就能激活传送门。",
+    "cardName": "下界传送门",
+    "cardEmoji": "🌀",
+    "expansion": {
+      "title": "下界传送门",
+      "body": "下界传送门用黑曜石搭成 4×5 的竖框，用打火石点燃里面就出现紫色传送门，走进去就能到达下界。黑曜石要用钻石镐挖。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-2",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "紫珀块是末地特有的建筑方块。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！紫珀块只在末地的末地城生成。",
+    "cardName": "紫珀块",
+    "cardEmoji": "🟣",
+    "expansion": {
+      "title": "紫珀块",
+      "body": "紫珀块是末地城的建筑材料，颜色紫紫的，只能在末地找到。用紫珀块能合成紫珀台阶和柱子，装饰很有特色。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-3",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "远古残骸（Ancient Debris）是什么材料？",
+    "options": [
+      "下界合金的原材料",
+      "钻石的原材料",
+      "红石的原材料",
+      "金子的原材料"
+    ],
+    "answer": 0,
+    "fact": "远古残骸在下界深处，烧炼后得到下界合金碎片。",
+    "cardName": "远古残骸",
+    "cardEmoji": "🪨",
+    "expansion": {
+      "title": "远古残骸",
+      "body": "远古残骸只在下界深处生成，用钻石镐挖取。烧炼成碎片后与金锭合成下界合金锭，能做最强的下界合金装备。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-4",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "时运（Fortune）附魔能提高挖矿掉落的数量。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！时运 III 挖煤、钻石最多能掉 4 份。",
+    "cardName": "时运附魔",
+    "cardEmoji": "🍀",
+    "expansion": {
+      "title": "时运附魔",
+      "body": "时运是镐的附魔，等级越高，挖煤、钻石、红石等矿石掉落越多。时运 III 挖一颗钻石矿石最多能得 4 颗钻石。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-5",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "凋灵（Wither）是怎么召唤出来的？",
+    "options": [
+      "用灵魂沙和凋灵骷髅头摆成 T 形",
+      "用钻石摆成圈",
+      "用火药合成",
+      "在末地自动出现"
+    ],
+    "answer": 0,
+    "fact": "用 4 块灵魂沙和 3 个凋灵骷髅头摆成 T 形召唤。",
+    "cardName": "凋灵",
+    "cardEmoji": "💀",
+    "expansion": {
+      "title": "凋灵",
+      "body": "凋灵是玩家召唤的 Boss：用灵魂沙摆 T 形，顶部放 3 个凋灵骷髅头。它血厚还会发射凋灵之首，打败后掉落下界之星，能做信标。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-6",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "末影人被打中眼睛后会瞬移并攻击玩家。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！盯住末影人的眼睛或攻击它，它就会生气。",
+    "cardName": "末影人",
+    "cardEmoji": "👁️",
+    "expansion": {
+      "title": "末影人",
+      "body": "末影人是黑色的高个子生物，最怕被盯着眼睛看。玩家与它对视或攻击它，它就会瞬移过来反击。戴南瓜头可以安全地看它。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-7",
+    "theme": "minecraft",
+    "subTheme": "building",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "脚手架方块有什么用处？",
+    "options": [
+      "搭高时方便攀爬和拆除",
+      "当床睡",
+      "当燃料",
+      "当武器"
+    ],
+    "answer": 0,
+    "fact": "脚手架能快速向上搭，跳上去就能爬高。",
+    "cardName": "脚手架",
+    "cardEmoji": "🎋",
+    "expansion": {
+      "title": "脚手架",
+      "body": "脚手架用竹子和线合成。站在脚手架上按跳跃可以向上搭，按潜行向下，搭建筑时非常方便，拆起来也快。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-8",
+    "theme": "minecraft",
+    "subTheme": "building",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "避雷针可以保护周围的建筑不被雷劈。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！铜避雷针会把闪电引到自己身上。",
+    "cardName": "避雷针",
+    "cardEmoji": "⚡",
+    "expansion": {
+      "title": "避雷针",
+      "body": "避雷针用 3 个铜锭合成，插在建筑上，闪电就会劈向避雷针而不是房子，保护建筑和村民不被雷击。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-9",
+    "theme": "minecraft",
+    "subTheme": "crafting",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "信标（Beacon）有什么用？",
+    "options": [
+      "发射光柱并提供增益效果",
+      "照亮矿洞",
+      "召唤怪物",
+      "传送玩家"
+    ],
+    "answer": 0,
+    "fact": "信标能发射光柱，给附近玩家加速、跳跃提升等效果。",
+    "cardName": "信标",
+    "cardEmoji": "🔦",
+    "expansion": {
+      "title": "信标",
+      "body": "信标用下界之星合成，放在金字塔形方块上激活，能发射直冲天际的光柱，并给附近玩家提供急迫、跳跃等增益。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-10",
+    "theme": "minecraft",
+    "subTheme": "crafting",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "附魔台需要书、黑曜石和钻石合成。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！附魔台配方是 1 本书、4 块黑曜石和 2 颗钻石。",
+    "cardName": "附魔台",
+    "cardEmoji": "📖",
+    "expansion": {
+      "title": "附魔台",
+      "body": "附魔台用书、黑曜石和钻石合成。把工具放上去，消耗经验值和青金石就能附魔。周围摆上书架能提升附魔等级。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-11",
+    "theme": "minecraft",
+    "subTheme": "redstone",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "红石中继器有什么功能？",
+    "options": [
+      "增强信号并延时",
+      "发电",
+      "照亮方块",
+      "传送信号到天上"
+    ],
+    "answer": 0,
+    "fact": "红石中继器能延长信号 15 格以上，还能调延时。",
+    "cardName": "红石中继器",
+    "cardEmoji": "🔁",
+    "expansion": {
+      "title": "红石中继器",
+      "body": "红石信号最多传 15 格，中继器可以增强信号继续传，还能用右键调节信号延迟，是复杂红石电路的必备元件。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-12",
+    "theme": "minecraft",
+    "subTheme": "redstone",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "活塞可以把方块推出去，用于做机关门和电梯。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！活塞是红石机关最常用的动力元件。",
+    "cardName": "活塞",
+    "cardEmoji": "🫸",
+    "expansion": {
+      "title": "活塞",
+      "body": "活塞收到红石信号就会伸出，把方块或实体推出去。用活塞可以做自动门、隐藏楼梯、红石电梯甚至活塞虫。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-13",
+    "theme": "minecraft",
+    "subTheme": "ender",
+    "difficulty": "advanced",
+    "type": "choice",
+    "prompt": "鞘翅（Elytra）是什么？",
+    "options": [
+      "能滑翔的翅膀",
+      "一种武器",
+      "一种药水",
+      "一块矿石"
+    ],
+    "answer": 0,
+    "fact": "鞘翅在末地船里，穿上后能像鸟一样滑翔。",
+    "cardName": "鞘翅",
+    "cardEmoji": "🪽",
+    "expansion": {
+      "title": "鞘翅",
+      "body": "鞘翅在末地城的末地船里，穿上后跳起来按住跳跃键就能滑翔，配合烟花可以飞很远，是探索世界的神器。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "minecraft-advanced-14",
+    "theme": "minecraft",
+    "subTheme": "ender",
+    "difficulty": "advanced",
+    "type": "judge",
+    "prompt": "潜影贝（Shulker）会把自己藏在壳里，攻击它会反弹箭矢。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！潜影贝藏在紫珀块一样的壳里，很难打。",
+    "cardName": "潜影贝",
+    "cardEmoji": "🐚",
+    "expansion": {
+      "title": "潜影贝",
+      "body": "潜影贝像紫珀块一样伪装在末地城里，靠近它会打开壳射出子弹，子弹命中后让你飘起来。打败它掉落潜影壳，能做潜影盒（随身箱子）。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  }
+]

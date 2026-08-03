@@ -1,0 +1,524 @@
+[
+  {
+    "id": "history-ancient-1",
+    "theme": "history",
+    "subTheme": "ancient",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "很久以前，中国人是怎么取火的？",
+    "options": [
+      "钻木取火",
+      "用打火机",
+      "用火柴",
+      "用手电筒"
+    ],
+    "answer": 0,
+    "fact": "远古的人没有打火机，他们用木头使劲钻，钻出火星来生火。",
+    "cardName": "钻木取火",
+    "cardEmoji": "🔥",
+    "expansion": {
+      "title": "钻木取火",
+      "body": "远古的人发现，用一根尖尖的木棍在另一块木头上使劲钻，钻着钻着就会发热、冒烟，最后冒出小火苗。传说是一个叫\"燧人氏\"的人教会了大家钻木取火，所以人们叫他\"火祖\"。有了火，生活一下子变好了。",
+      "source": "来源：百度百科·钻木取火",
+      "links": [
+        {
+          "label": "百度百科：钻木取火",
+          "url": "https://baike.baidu.com/item/钻木取火"
+        }
+      ]
+    }
+  },
+  {
+    "id": "history-ancient-2",
+    "theme": "history",
+    "subTheme": "ancient",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "远古的中国人住在哪里？",
+    "options": [
+      "山洞里",
+      "高楼里",
+      "汽车里",
+      "学校里"
+    ],
+    "answer": 0,
+    "fact": "远古没有房子，大家住在山洞里，山洞能挡风挡雨还安全。",
+    "cardName": "山洞小屋",
+    "cardEmoji": "⛰️",
+    "expansion": {
+      "title": "山洞里的家",
+      "body": "远古的人没有房子，他们找到又大又深的山洞当作家。山洞能挡风、挡雨，还能挡住野兽。他们在山洞里生火、睡觉、吃饭。北京周口店就有著名的\"山顶洞人\"住过的山洞。",
+      "source": "来源：中国国家博物馆·远古中国展厅"
+    }
+  },
+  {
+    "id": "history-ancient-3",
+    "theme": "history",
+    "subTheme": "ancient",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "\"北京人\"生活在多少年以前？",
+    "options": [
+      "几十万年前",
+      "几十年前",
+      "一百年前",
+      "去年"
+    ],
+    "answer": 0,
+    "fact": "北京人生活在约 70 万年前，他们是古老的中国人。",
+    "cardName": "北京人",
+    "cardEmoji": "🧍",
+    "expansion": {
+      "title": "古老的北京人",
+      "body": "大约 70 万年前，在北京周口店的龙骨山，生活着一群远古的人，科学家叫他们\"北京人\"。他们用石头做工具，会打猎、会生火。他们的头骨化石是在 1929 年被发现的，是世界著名的考古发现。",
+      "source": "来源：百度百科·北京人",
+      "links": [
+        {
+          "label": "百度百科：北京人",
+          "url": "https://baike.baidu.com/item/北京人"
+        }
+      ]
+    }
+  },
+  {
+    "id": "history-ancient-4",
+    "theme": "history",
+    "subTheme": "ancient",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "远古的人用什么来打猎？",
+    "options": [
+      "石头和木棒",
+      "手枪",
+      "大炮",
+      "弓箭"
+    ],
+    "answer": 0,
+    "fact": "远古的人用石头和木棒打猎，后来才慢慢发明了更多工具。",
+    "cardName": "石头木棒",
+    "cardEmoji": "🪨",
+    "expansion": {
+      "title": "石头做的工具",
+      "body": "远古的人把石头敲一敲、磨一磨，做成尖尖的石头刀、石头斧头，再把石头绑在木棒上，就成了打猎的武器。用这些简单的工具，他们能猎到野鹿、野猪。考古学家把这些石头工具叫\"石器\"。",
+      "source": "来源：中国国家博物馆·远古中国展厅"
+    }
+  },
+  {
+    "id": "history-ancient-5",
+    "theme": "history",
+    "subTheme": "ancient",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "远古的中国人已经学会用火了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！学会用火以后，他们能取暖、能吓跑野兽、还能把食物烤熟。",
+    "cardName": "学会用火",
+    "cardEmoji": "🏕️",
+    "expansion": {
+      "title": "火带来的改变",
+      "body": "学会用火，是远古人类最了不起的大事。火能取暖，冬天不怕冷；火能赶走野兽，晚上睡得安稳；火还能把肉烤熟，烤熟的肉更好吃、更干净。有了火，人类才慢慢变得更聪明、更强壮。",
+      "source": "来源：百度百科·用火"
+    }
+  },
+  {
+    "id": "history-qin-1",
+    "theme": "history",
+    "subTheme": "qinshihuang",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "中国的万里长城是谁下令修建的？",
+    "options": [
+      "秦始皇",
+      "诸葛亮",
+      "李白",
+      "孙悟空"
+    ],
+    "answer": 0,
+    "fact": "两千多年前，秦始皇下令把很多段城墙连起来，修成了万里长城。",
+    "cardName": "万里长城",
+    "cardEmoji": "🧱",
+    "expansion": {
+      "title": "万里长城",
+      "body": "秦始皇统一中国后，把战国时期各国的旧城墙连接起来，又新建了很多，修成了一道长长的城墙。它从东边的山海关一直伸到西边的嘉峪关，有\"万里长城\"的美名。宇航员在太空都能看到它。",
+      "source": "来源：百度百科·万里长城",
+      "links": [
+        {
+          "label": "百度百科：万里长城",
+          "url": "https://baike.baidu.com/item/万里长城"
+        }
+      ]
+    }
+  },
+  {
+    "id": "history-qin-2",
+    "theme": "history",
+    "subTheme": "qinshihuang",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "修长城是用来干什么的？",
+    "options": [
+      "防御敌人",
+      "游泳",
+      "种菜",
+      "放风筝"
+    ],
+    "answer": 0,
+    "fact": "长城像一道长长的盾牌，保护国家不被外面的敌人攻打。",
+    "cardName": "大盾牌",
+    "cardEmoji": "🛡️",
+    "expansion": {
+      "title": "长城是盾牌",
+      "body": "长城建在高高的山上，又高又陡，敌人很难翻过去。城墙上还有烽火台，发现敌人就点起狼烟，一座接一座传下去，很快全国都知道有敌人来了。所以长城就像一道超级大盾牌，保护着中原的老百姓。",
+      "source": "来源：故宫博物院官网·长城专题"
+    }
+  },
+  {
+    "id": "history-qin-3",
+    "theme": "history",
+    "subTheme": "qinshihuang",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "秦始皇是中国第一个皇帝吗？",
+    "options": [
+      "是",
+      "不是"
+    ],
+    "answer": 0,
+    "fact": "是！秦始皇统一了中国，给自己取名\"始皇帝\"，意思是第一个皇帝。",
+    "cardName": "始皇帝",
+    "cardEmoji": "👑",
+    "expansion": {
+      "title": "第一个皇帝",
+      "body": "两千多年前，中国有很多小国家，打仗打个不停。秦王嬴政把他们都打败了，统一了天下，给自己取名\"始皇帝\"，意思是\"第一个皇帝\"。后来的人都叫他秦始皇。他统一了文字、钱币、度量衡，还修了长城。",
+      "source": "来源：百度百科·秦始皇",
+      "links": [
+        {
+          "label": "百度百科：秦始皇",
+          "url": "https://baike.baidu.com/item/秦始皇"
+        }
+      ]
+    }
+  },
+  {
+    "id": "history-qin-4",
+    "theme": "history",
+    "subTheme": "qinshihuang",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "长城是用什么材料建造的？",
+    "options": [
+      "石头和砖",
+      "木头",
+      "冰块",
+      "面包"
+    ],
+    "answer": 0,
+    "fact": "长城主要用石头和砖头建造，又高又结实，能守几千年。",
+    "cardName": "石砖长城",
+    "cardEmoji": "🏗️",
+    "expansion": {
+      "title": "石头和砖的长城",
+      "body": "长城主要用巨大的石头和烧制的砖头建成，中间填满土。一块城砖有几十斤重，古代没有起重机，工人们用肩膀一块一块扛上去。所以长城能站两千多年不倒，是古代劳动人民了不起的杰作。",
+      "source": "来源：百度百科·万里长城"
+    }
+  },
+  {
+    "id": "history-qin-5",
+    "theme": "history",
+    "subTheme": "qinshihuang",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "秦始皇统一了中国，还把文字和钱币也统一了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！统一文字和钱币后，全国各地的人交流就方便多了。",
+    "cardName": "大一统",
+    "cardEmoji": "🤝",
+    "expansion": {
+      "title": "统一文字和钱币",
+      "body": "秦始皇做了三件大事：统一文字，让全国各地都写一样的字；统一钱币，大家用一样的圆形方孔钱；统一度量衡，一尺、一斤都变得一样。这样全国的人做生意、写信都方便了。",
+      "source": "来源：百度百科·秦始皇"
+    }
+  },
+  {
+    "id": "history-zgl-1",
+    "theme": "history",
+    "subTheme": "zhugeliang",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "诸葛亮是哪个时代的人？",
+    "options": [
+      "三国",
+      "唐朝",
+      "清朝",
+      "现代"
+    ],
+    "answer": 0,
+    "fact": "诸葛亮生活在三国时期，是刘备身边最聪明的军师。",
+    "cardName": "三国军师",
+    "cardEmoji": "⚔️",
+    "expansion": {
+      "title": "三国时期",
+      "body": "三国时期是中国古代一个打打闹闹的时代，有魏、蜀、吴三个国家。诸葛亮是蜀国刘备的军师，帮刘备出主意打天下。小朋友们熟悉的关羽、张飞、赵云，都是这个时代的大英雄。",
+      "source": "来源：百度百科·三国"
+    }
+  },
+  {
+    "id": "history-zgl-2",
+    "theme": "history",
+    "subTheme": "zhugeliang",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "诸葛亮最出名的是什么？",
+    "options": [
+      "聪明智慧",
+      "力气大",
+      "跑得快",
+      "会游泳"
+    ],
+    "answer": 0,
+    "fact": "诸葛亮特别聪明，大家都叫他\"卧龙\"，意思是睡着的龙。",
+    "cardName": "卧龙",
+    "cardEmoji": "🐉",
+    "expansion": {
+      "title": "卧龙先生",
+      "body": "诸葛亮年轻的时候住在山里，一边种地一边读书。他特别聪明，什么事都难不倒他，大家都叫他\"卧龙\"——就是睡着的龙，一醒来就要飞上天。后来他成了历史上最有名的军师之一。",
+      "source": "来源：百度百科·诸葛亮",
+      "links": [
+        {
+          "label": "百度百科：诸葛亮",
+          "url": "https://baike.baidu.com/item/诸葛亮"
+        }
+      ]
+    }
+  },
+  {
+    "id": "history-zgl-3",
+    "theme": "history",
+    "subTheme": "zhugeliang",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "诸葛亮手里经常拿着什么？",
+    "options": [
+      "羽毛扇",
+      "大刀",
+      "毛笔",
+      "雨伞"
+    ],
+    "answer": 0,
+    "fact": "诸葛亮总拿着一把羽毛扇，轻轻一摇，就有了好主意。",
+    "cardName": "羽毛扇",
+    "cardEmoji": "🪶",
+    "expansion": {
+      "title": "羽毛扇的秘密",
+      "body": "传说诸葛亮手里总拿着一把鹅毛扇，不管天多热都不离手。有人说是他妻子送他的定情礼物，有人说是他思考问题的\"法宝\"。在故事里，他轻轻一摇扇子，就能想出妙计，打败敌人。",
+      "source": "来源：《三国演义》"
+    }
+  },
+  {
+    "id": "history-zgl-5",
+    "theme": "history",
+    "subTheme": "zhugeliang",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "\"神机妙算\"是夸诸葛亮算得又准又聪明。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！\"神机妙算\"就是说诸葛亮聪明极了，什么都能算到。",
+    "cardName": "神机妙算",
+    "cardEmoji": "🧠",
+    "expansion": {
+      "title": "神机妙算",
+      "body": "\"神机妙算\"这个成语就是用来夸诸葛亮的：像神仙一样有办法，算得又准又灵。诸葛亮用空城计吓跑敌人、借东风火烧战船，故事里的他好像什么都能算到，所以人们都说他\"神机妙算\"。",
+      "source": "来源：成语词典"
+    }
+  },
+  {
+    "id": "history-inventions-b1",
+    "theme": "history",
+    "subTheme": "inventions",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "指南针的指针总是指向哪边？",
+    "options": [
+      "南方",
+      "北方",
+      "东方",
+      "西方"
+    ],
+    "answer": 0,
+    "fact": "指南针的指针总是指向南方，所以叫\"指南针\"。",
+    "cardName": "指南方",
+    "cardEmoji": "🧭",
+    "expansion": {
+      "title": "指南针指南方",
+      "body": "指南针的磁针总是指向南方。古代人坐船出海，靠着它就不会迷路。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-inventions-b2",
+    "theme": "history",
+    "subTheme": "inventions",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "纸是中国人最先发明并改进的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！蔡伦改进造纸术后，纸传遍了全世界。",
+    "cardName": "中国纸",
+    "cardEmoji": "📄",
+    "expansion": {
+      "title": "中国人发明纸",
+      "body": "中国东汉的蔡伦用树皮、破布造出了便宜好用的纸。纸的技术后来传遍全世界，人们才不用在竹简上写字。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-zhenghe-b1",
+    "theme": "history",
+    "subTheme": "zhenghe",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "郑和是坐着大船出海远航的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！郑和的宝船特别大，是当时世界上最大的船。",
+    "cardName": "大宝船",
+    "cardEmoji": "⛵",
+    "expansion": {
+      "title": "郑和的大船",
+      "body": "郑和下西洋坐的宝船又大又稳，船上能装几百人，还有粮食、淡水和送给别国的礼物。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-zhenghe-b2",
+    "theme": "history",
+    "subTheme": "zhenghe",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "郑和的船队去过很远的地方吗？",
+    "options": [
+      "去过很多国家",
+      "只在家门口转",
+      "没出过海",
+      "只去月球"
+    ],
+    "answer": 0,
+    "fact": "郑和的船队到过东南亚、印度，最远到了非洲。",
+    "cardName": "远航",
+    "cardEmoji": "🌍",
+    "expansion": {
+      "title": "郑和去多远",
+      "body": "郑和的船队七次远航，走过三十多个国家，最远到达非洲东海岸，比欧洲的航海家还早近百年。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-relics-b1",
+    "theme": "history",
+    "subTheme": "relics",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "兵马俑在哪个城市可以看到？",
+    "options": [
+      "西安",
+      "北京",
+      "上海",
+      "成都"
+    ],
+    "answer": 0,
+    "fact": "兵马俑在西安，是著名的世界奇迹。",
+    "cardName": "西安兵马俑",
+    "cardEmoji": "🗿",
+    "expansion": {
+      "title": "去西安看兵马俑",
+      "body": "西安的秦始皇陵兵马俑博物馆里，站着成千上万个和真人一样大的陶土士兵，全世界的人都来看。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-relics-b2",
+    "theme": "history",
+    "subTheme": "relics",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "竹简是用竹子做的，可以在上面写字。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！纸发明以前，古人把字写在竹片上，串起来就是\"册\"。",
+    "cardName": "竹简",
+    "cardEmoji": "🎋",
+    "expansion": {
+      "title": "竹子做的书",
+      "body": "古人把竹子削成一片片，在上面写字，再用绳子串起来，就成了\"竹简\"，是古代的书。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-festivals-b1",
+    "theme": "history",
+    "subTheme": "festivals",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "中秋节要吃什么？",
+    "options": [
+      "月饼",
+      "粽子",
+      "饺子",
+      "汤圆"
+    ],
+    "answer": 0,
+    "fact": "中秋节吃月饼，全家人一起赏月。",
+    "cardName": "中秋月饼",
+    "cardEmoji": "🥮",
+    "expansion": {
+      "title": "中秋吃月饼",
+      "body": "中秋节是农历八月十五，月亮最圆。全家人围在一起吃圆圆的月饼，代表团团圆圆。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-festivals-b2",
+    "theme": "history",
+    "subTheme": "festivals",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "端午节人们会举行什么比赛？",
+    "options": [
+      "赛龙舟",
+      "赛跑",
+      "游泳",
+      "跳绳"
+    ],
+    "answer": 0,
+    "fact": "端午节人们划着龙船比赛，叫赛龙舟。",
+    "cardName": "赛龙舟",
+    "cardEmoji": "🐲",
+    "expansion": {
+      "title": "赛龙舟",
+      "body": "端午节，河面上一条条龙船飞快地划，鼓声咚咚响，大家齐声喊着加油，这就是赛龙舟。",
+      "source": "来源：百度百科·历史专题"
+    }
+  }
+]

@@ -1,0 +1,543 @@
+[
+  {
+    "id": "mc-blocks-1",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "我的世界里最常见的地面方块是什么？",
+    "options": [
+      "草方块",
+      "钻石块",
+      "金块",
+      "冰块"
+    ],
+    "answer": 0,
+    "fact": "一出生，脚下全是绿绿的草方块，它就是世界的地毯。",
+    "cardName": "草方块",
+    "cardEmoji": "🌱",
+    "expansion": {
+      "title": "草方块",
+      "body": "草方块是方块世界最普通也最重要的方块，你出生的地方到处都是它。用铲子可以挖到泥土，用锄头可以把草方块变成农田种小麦。草方块上的绿色小草，还会慢慢长到旁边的泥土上呢。",
+      "source": "来源：我的世界中文 Wiki·草方块",
+      "links": [
+        {
+          "label": "中文 Wiki：草方块",
+          "url": "https://minecraft.fandom.com/zh/wiki/草方块"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc-blocks-2",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "用什么东西能打破方块？",
+    "options": [
+      "手或工具",
+      "食物",
+      "药水",
+      "花朵"
+    ],
+    "answer": 0,
+    "fact": "用手就能挖方块，用镐和斧头会挖得更快。",
+    "cardName": "万能的手",
+    "cardEmoji": "✋",
+    "expansion": {
+      "title": "挖方块的方法",
+      "body": "在方块世界里，空手也能挖方块，但是很慢。用正确的工具会快很多：挖石头和矿石用镐，砍树用斧头，挖泥土和沙子用铲子。而且有些宝贝方块，比如钻石矿石，必须用铁镐或更好的镐才能挖到。",
+      "source": "来源：我的世界中文 Wiki·挖掘"
+    }
+  },
+  {
+    "id": "mc-blocks-3",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "我的世界里的人物叫什么名字？",
+    "options": [
+      "史蒂夫",
+      "汤姆",
+      "杰瑞",
+      "小明"
+    ],
+    "answer": 0,
+    "fact": "大家最熟悉的角色叫史蒂夫，他陪无数玩家挖过方块。",
+    "cardName": "史蒂夫",
+    "cardEmoji": "🧑‍🌾",
+    "expansion": {
+      "title": "方块人史蒂夫",
+      "body": "史蒂夫是方块世界最出名的角色，蓝色的眼睛、棕色的头发，全身都是方块做的。他是游戏默认的人物形象，陪伴了全世界几亿玩家。他还会说话：\"嗨，大家好！\"（这是许多玩家喜欢他的原因）。",
+      "source": "来源：我的世界中文 Wiki·史蒂夫"
+    }
+  },
+  {
+    "id": "mc-blocks-4",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "我的世界里所有的东西都是方块形的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！草、树、羊、猪……连云都是方块做的，这就是方块世界。",
+    "cardName": "方块世界",
+    "cardEmoji": "🧊",
+    "expansion": {
+      "title": "一切都是方块",
+      "body": "在方块世界里，太阳是方块的，云是方块的，羊和猪也是方块做的。这个世界的每个东西都是由小方块组成的，就像用积木搭成的世界。这也是它名字\"我的世界\"的由来——整个世界都由你摆弄。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-blocks-5",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "木头可以做成木板，木板可以做成工具。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！先砍树，再把木头做成木板，就能合成工作台和各种工具。",
+    "cardName": "木头变工具",
+    "cardEmoji": "🪓",
+    "expansion": {
+      "title": "木头变工具",
+      "body": "在方块世界里，第一步永远是砍树！把原木做成木板，再用木板做成工作台。有了工作台，就能合成镐、斧头、铲子、剑……几乎所有工具都从一块木头开始。所以老玩家常说：\"要致富，先撸树。\"",
+      "source": "来源：我的世界中文 Wiki·木板",
+      "links": [
+        {
+          "label": "中文 Wiki：木板",
+          "url": "https://minecraft.fandom.com/zh/wiki/木板"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc-mining-1",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "钻石一般在什么地方才能挖到？",
+    "options": [
+      "地下深处",
+      "天上",
+      "水面",
+      "树梢"
+    ],
+    "answer": 0,
+    "fact": "钻石藏在地下很深的地方，要一直往下挖才找得到。",
+    "cardName": "地下宝藏",
+    "cardEmoji": "⛏️",
+    "expansion": {
+      "title": "地下的宝藏",
+      "body": "钻石矿石藏在地下很深的地方，大约在地底 15 层以下才能找到。要挖到那里，你得先挖一条长长的竖井，还要小心岩浆。当你在黑暗里看到一颗颗亮蓝色的星星，那就是钻石在向你招手！",
+      "source": "来源：我的世界中文 Wiki·钻石矿石"
+    }
+  },
+  {
+    "id": "mc-mining-2",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "挖钻石用什么工具最好？",
+    "options": [
+      "铁镐",
+      "木棍",
+      "铲子",
+      "钓鱼竿"
+    ],
+    "answer": 0,
+    "fact": "用铁镐或更高级的镐才能挖到钻石，木棍可不行。",
+    "cardName": "铁镐",
+    "cardEmoji": "🪛",
+    "expansion": {
+      "title": "铁镐才挖得动",
+      "body": "钻石矿石很硬，木镐和石镐都挖不动，必须用铁镐、钻石镐或下界合金镐才能挖到钻石。所以挖钻石之前，要先挖铁矿、烧铁锭、做铁镐。想要好宝贝，先得有好工具，这是方块世界的规矩。",
+      "source": "来源：我的世界中文 Wiki·镐"
+    }
+  },
+  {
+    "id": "mc-mining-3",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "钻石是什么颜色的？",
+    "options": [
+      "亮蓝色",
+      "红色",
+      "黑色",
+      "绿色"
+    ],
+    "answer": 0,
+    "fact": "钻石亮晶晶的，闪着蓝色光芒，是最珍贵的宝贝。",
+    "cardName": "亮晶晶",
+    "cardEmoji": "💎",
+    "expansion": {
+      "title": "亮晶晶的钻石",
+      "body": "方块世界的钻石是青蓝色的，亮晶晶的，是游戏里最珍贵的宝贝之一。钻石能做最结实的工具和盔甲，还能做附魔台。在现实世界里，钻石也很珍贵，是闪闪发光的宝石，常被做成戒指和项链。",
+      "source": "来源：我的世界中文 Wiki·钻石"
+    }
+  },
+  {
+    "id": "mc-mining-4",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "挖到煤可以干什么？",
+    "options": [
+      "烧火照明",
+      "当饭吃",
+      "当衣服穿",
+      "当床睡"
+    ],
+    "answer": 0,
+    "fact": "煤可以放进火炉烧，还能做成火把，晚上就不怕黑了。",
+    "cardName": "小煤块",
+    "cardEmoji": "🪨",
+    "expansion": {
+      "title": "煤炭用处大",
+      "body": "煤是方块世界最好找的燃料：放进火炉，能把铁矿石烧成铁锭、把生肉烤成熟肉。煤加木棍还能合成火把，插在矿洞里，怪物就不敢靠近。一根火把能照亮一大片，是挖矿探险的好朋友。",
+      "source": "来源：我的世界中文 Wiki·煤炭"
+    }
+  },
+  {
+    "id": "mc-mining-5",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "挖矿的时候最要小心什么？",
+    "options": [
+      "岩浆和怪物",
+      "太阳",
+      "下雨",
+      "刮风"
+    ],
+    "answer": 0,
+    "fact": "地下有滚烫的岩浆，还有怪物，挖矿一定要小心。",
+    "cardName": "小心岩浆",
+    "cardEmoji": "🌋",
+    "expansion": {
+      "title": "矿洞里的危险",
+      "body": "矿洞里有两样东西最危险：一是岩浆，掉进去会着火，辛辛苦苦挖到的东西全没了；二是怪物，洞穴蜘蛛、骷髅、苦力怕都喜欢躲在黑暗的角落。所以挖矿要带够火把、食物，还要小心脚下。",
+      "source": "来源：我的世界中文 Wiki·岩浆",
+      "links": [
+        {
+          "label": "中文 Wiki：岩浆",
+          "url": "https://minecraft.fandom.com/zh/wiki/岩浆"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc-mobs-1",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "苦力怕靠近你的时候会怎么样？",
+    "options": [
+      "爆炸",
+      "唱歌",
+      "跳舞",
+      "送礼物"
+    ],
+    "answer": 0,
+    "fact": "苦力怕\"嘶嘶\"响着靠近你，然后\"砰\"地爆炸，快跑！",
+    "cardName": "嘶嘶怪",
+    "cardEmoji": "💥",
+    "expansion": {
+      "title": "会爆炸的苦力怕",
+      "body": "苦力怕是方块世界最有名的怪物，它不会咬人，但会爆炸！它悄悄靠近你，发出\"嘶嘶\"的声音，身体开始发光变大，然后\"砰\"——把自己炸掉，还会炸坏周围的方块和房子。所以听到\"嘶嘶\"声，快跑！",
+      "source": "来源：我的世界中文 Wiki·苦力怕",
+      "links": [
+        {
+          "label": "中文 Wiki：苦力怕",
+          "url": "https://minecraft.fandom.com/zh/wiki/苦力怕"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mc-mobs-2",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "苦力怕是什么颜色的？",
+    "options": [
+      "绿色",
+      "红色",
+      "蓝色",
+      "黄色"
+    ],
+    "answer": 0,
+    "fact": "苦力怕是绿色的，看起来像一片会走路的树叶。",
+    "cardName": "小绿怪",
+    "cardEmoji": "🍃",
+    "expansion": {
+      "title": "绿色的小怪物",
+      "body": "苦力怕是绿色的，没有手臂，只有四条短短的小腿，看起来像一片会走路的树叶。它白天晚上都会出现，喜欢悄悄溜到你身后。虽然它很可怕，但是它的样子又有点可爱，是方块世界的人气明星。",
+      "source": "来源：我的世界中文 Wiki·苦力怕"
+    }
+  },
+  {
+    "id": "mc-mobs-3",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "到了晚上，什么会从黑暗里冒出来？",
+    "options": [
+      "僵尸和骷髅",
+      "小鸡",
+      "奶牛",
+      "小羊"
+    ],
+    "answer": 0,
+    "fact": "晚上僵尸、骷髅、蜘蛛都会出来，所以要快快回家睡觉。",
+    "cardName": "夜晚怪物",
+    "cardEmoji": "🧟",
+    "expansion": {
+      "title": "夜晚的怪物们",
+      "body": "方块世界的夜晚很危险：僵尸摇摇晃晃地走过来，骷髅躲在暗处射箭，蜘蛛从墙上扑下来，还有会爆炸的苦力怕。所以天黑前最好回家睡觉，或者把自己关在亮堂堂的房子里。太阳一出来，它们就会躲起来。",
+      "source": "来源：我的世界中文 Wiki·僵尸"
+    }
+  },
+  {
+    "id": "mc-mobs-4",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "苦力怕要爆炸了，你该怎么办？",
+    "options": [
+      "赶紧跑远",
+      "摸摸它",
+      "喂它吃草",
+      "和它说话"
+    ],
+    "answer": 0,
+    "fact": "看到苦力怕发亮变大，马上跑开，离得远它炸不到你。",
+    "cardName": "快跑！",
+    "cardEmoji": "🏃",
+    "expansion": {
+      "title": "对付苦力怕的办法",
+      "body": "听到\"嘶嘶\"声、看到苦力怕发亮变大，第一件事就是快跑！跑出爆炸范围，它就白炸了。也可以用盾牌挡住爆炸，或者用弓箭在远处消灭它。老玩家还有一个妙招：用猫来赶走苦力怕——它们特别怕猫。",
+      "source": "来源：我的世界中文 Wiki·苦力怕"
+    }
+  },
+  {
+    "id": "mc-mobs-5",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "僵尸在白天太阳底下会着火。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！僵尸怕太阳，白天一到它们就会被晒得着火。",
+    "cardName": "怕太阳",
+    "cardEmoji": "☀️",
+    "expansion": {
+      "title": "僵尸怕太阳",
+      "body": "僵尸和骷髅都怕太阳：太阳一出来，它们就会被晒得着火，慢慢烧成灰。所以只要熬到天亮，怪物们就自己遭殃了。但要注意：下雨天太阳被挡住，僵尸就不会着火，下雨的白天也要小心哦。",
+      "source": "来源：我的世界中文 Wiki·僵尸"
+    }
+  },
+  {
+    "id": "mc-building-b1",
+    "theme": "minecraft",
+    "subTheme": "building",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "盖好的房子一定要装门。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！不装门，晚上的怪物会走进来。",
+    "cardName": "要装门",
+    "cardEmoji": "🚪",
+    "expansion": {
+      "title": "房子要有门",
+      "body": "房子没有门，僵尸晚上就会溜进来。用 6 块木板就能合成木门，出门探险记得关门。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-building-b2",
+    "theme": "minecraft",
+    "subTheme": "building",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "用什么方块做透明的窗户？",
+    "options": [
+      "玻璃",
+      "石头",
+      "泥土",
+      "钻石"
+    ],
+    "answer": 0,
+    "fact": "玻璃是透明的，做窗户最合适。",
+    "cardName": "玻璃窗",
+    "cardEmoji": "🪟",
+    "expansion": {
+      "title": "玻璃窗户",
+      "body": "把沙子放进熔炉烧一烧，就变成透明的玻璃。用玻璃做窗户，屋里亮堂堂，还能看风景。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-crafting-b1",
+    "theme": "minecraft",
+    "subTheme": "crafting",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "工作台要用几个木板合成？",
+    "options": [
+      "4 个",
+      "8 个",
+      "2 个",
+      "64 个"
+    ],
+    "answer": 0,
+    "fact": "4 块木板摆成正方形，就是工作台。",
+    "cardName": "四块木板",
+    "cardEmoji": "🔨",
+    "expansion": {
+      "title": "工作台",
+      "body": "把 4 块木板摆成 2×2 的正方形，就能合成工作台。工作台有 9 个格子，能合成各种工具。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-crafting-b2",
+    "theme": "minecraft",
+    "subTheme": "crafting",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "熔炉能把铁矿石烧成什么？",
+    "options": [
+      "铁锭",
+      "钻石",
+      "面包",
+      "石头"
+    ],
+    "answer": 0,
+    "fact": "铁矿石放进熔炉烧，就变成能用的铁锭。",
+    "cardName": "铁锭",
+    "cardEmoji": "🧱",
+    "expansion": {
+      "title": "熔炉烧铁",
+      "body": "把铁矿石放进熔炉，加上燃料（煤或木炭），就能烧出铁锭。铁锭能做铁镐、铁剑和盔甲。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-redstone-b1",
+    "theme": "minecraft",
+    "subTheme": "redstone",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "红石粉铺在地上像电线一样传递信号。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！红石粉就是方块世界的\"电线\"。",
+    "cardName": "红石电线",
+    "cardEmoji": "🔴",
+    "expansion": {
+      "title": "红石像电线",
+      "body": "红石粉撒在地上，信号就能沿着它传递，像电线一样。拉一下开关，远处的东西就能动起来。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-redstone-b2",
+    "theme": "minecraft",
+    "subTheme": "redstone",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "用红石可以做出什么？",
+    "options": [
+      "自动门",
+      "面包",
+      "羊毛衫",
+      "小船"
+    ],
+    "answer": 0,
+    "fact": "红石能做出自动门、陷阱等各种机关。",
+    "cardName": "红石机关",
+    "cardEmoji": "🎛️",
+    "expansion": {
+      "title": "红石机关",
+      "body": "红石能做超酷的机关：按按钮自动开的门、踩上去就亮的灯、自动收割的农场。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-ender-b1",
+    "theme": "minecraft",
+    "subTheme": "ender",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "末影龙是一条会喷火的巨龙。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！末影龙是末地的 Boss，会喷龙息攻击。",
+    "cardName": "末影龙",
+    "cardEmoji": "🐉",
+    "expansion": {
+      "title": "末影龙",
+      "body": "末影龙是一条紫黑色的大龙，住在末地。它是方块世界的最终 Boss，打败它就能看到通关画面。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-ender-b2",
+    "theme": "minecraft",
+    "subTheme": "ender",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "末影珍珠可以用来做什么？",
+    "options": [
+      "传送",
+      "吃",
+      "种树",
+      "做衣服"
+    ],
+    "answer": 0,
+    "fact": "扔出末影珍珠，人就会传送到落点。",
+    "cardName": "传送珍珠",
+    "cardEmoji": "🟣",
+    "expansion": {
+      "title": "末影珍珠",
+      "body": "末影珍珠是打败末影人掉落的宝贝。把它扔出去，你就会被传送到珍珠落地的地方，非常神奇。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  }
+]
