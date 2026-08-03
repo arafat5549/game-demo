@@ -199,10 +199,9 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
         )
       })()}
 
-      {/* 题目卡片 */}
+      {/* 题目卡片（不显示 cardName/cardEmoji，避免泄露答案） */}
       <div className="mx-auto mt-4 w-full max-w-md rounded-3xl bg-white p-5 shadow-xl">
         <div className="flex items-start justify-between gap-2">
-          <div className="text-center text-4xl">{q.cardEmoji}</div>
           <h2 className="flex-1 text-center text-2xl font-black leading-snug text-slate-800">
             {q.prompt}
           </h2>
@@ -221,8 +220,7 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
             {DIFFICULTIES.find((d) => d.id === q.difficulty)?.emoji}{' '}
             {DIFFICULTIES.find((d) => d.id === q.difficulty)?.label ?? q.difficulty}
           </span>
-          {/* 当前题目卡片名 */}
-          <span>📖 {q.cardName}</span>
+          {/* 不显示 cardName：会泄露答案（如“巴伐利亚”），答题结束后图鉴/扩展页再看 */}
         </div>
       </div>
 
