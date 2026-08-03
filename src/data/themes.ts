@@ -165,17 +165,18 @@ export function miniGameCardId(id: MiniGameId): string {
   return id === 'race' ? 'mg-race' : `mg-${id}`
 }
 
-// ── 难度元数据（ADR-0015）：4 档年级制 ──
+// ── 难度元数据（ADR-0016）：4 档年级制 ──
 export interface DifficultyMeta {
   id: Difficulty
   label: string
   emoji: string
   age: string
+  color: string // 徽章配色（Tailwind 类）
 }
 
 export const DIFFICULTIES: DifficultyMeta[] = [
-  { id: 'starter', label: '启蒙', emoji: '🌱', age: '大班~1年级' },
-  { id: 'beginner', label: '初级', emoji: '⭐', age: '2年级' },
-  { id: 'intermediate', label: '中级', emoji: '🚀', age: '3-4年级' },
-  { id: 'advanced', label: '高级', emoji: '👑', age: '5-6年级' },
+  { id: 'starter', label: '启蒙', emoji: '🌱', age: '大班~1年级', color: 'border-green-300 bg-green-100 text-green-700' },
+  { id: 'beginner', label: '初级', emoji: '⭐', age: '2年级', color: 'border-sky-300 bg-sky-100 text-sky-700' },
+  { id: 'intermediate', label: '中级', emoji: '🚀', age: '3-4年级', color: 'border-orange-300 bg-orange-100 text-orange-700' },
+  { id: 'advanced', label: '高级', emoji: '👑', age: '5-6年级', color: 'border-rose-300 bg-rose-100 text-rose-700' },
 ]

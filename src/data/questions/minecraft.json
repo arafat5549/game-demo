@@ -994,5 +994,315 @@
       "body": "史蒂夫是方块世界的主角，蓝色眼睛、棕色头发。玩家们控制他去砍树、挖矿、打怪物、建房子。",
       "source": "来源：启蒙题库（改编自主题知识）"
     }
+  },
+  {
+    "id": "mc-blocks-i1",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "基岩是什么？",
+    "options": [
+      "挖不掉的底层方块",
+      "最贵的方块",
+      "会飞的方块",
+      "能吃的方块"
+    ],
+    "answer": 0,
+    "fact": "基岩是世界最底层的方块，用什么工具都挖不掉。",
+    "cardName": "基岩",
+    "cardEmoji": "🪨",
+    "expansion": {
+      "title": "基岩",
+      "body": "基岩是方块世界最底层的方块，像大地的\"地板\"。不管多好的镐都挖不动它，玩家掉到基岩层就到底了。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-blocks-i2",
+    "theme": "minecraft",
+    "subTheme": "blocks",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "用 8 块圆石围一圈就能合成熔炉。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！熔炉的配方就是 8 块圆石，中间留空。",
+    "cardName": "熔炉配方",
+    "cardEmoji": "🔥",
+    "expansion": {
+      "title": "熔炉怎么合成",
+      "body": "打开工作台，把 8 块圆石摆成一圈（中间空着），就能得到熔炉。熔炉能烧矿石、烤食物。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-mining-i1",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "钻石最喜欢在哪一层附近出现？",
+    "options": [
+      "地下 15 层左右",
+      "地面上",
+      "山顶",
+      "海底"
+    ],
+    "answer": 0,
+    "fact": "钻石主要生成在地底 15 层附近，要一直往下挖。",
+    "cardName": "15 层",
+    "cardEmoji": "⛏️",
+    "expansion": {
+      "title": "钻石的层数",
+      "body": "方块世界的地底从 0 层开始数，钻石矿石主要生成在 15 层左右。按 F3 或看坐标，找到 15 层再挖效率最高。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-mining-i2",
+    "theme": "minecraft",
+    "subTheme": "mining",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "\"鱼骨挖矿法\"是一条主通道两边挖分支的挖矿技巧。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！鱼骨挖矿像鱼骨头，又安全又能挖到很多矿。",
+    "cardName": "鱼骨挖矿",
+    "cardEmoji": "🐟",
+    "expansion": {
+      "title": "鱼骨挖矿法",
+      "body": "鱼骨挖矿法是先挖一条主通道，再每隔几格向两边挖分支，像鱼骨头一样。这样能覆盖很大范围，还方便躲怪物。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-mobs-i1",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "铁傀儡是用来保护什么的？",
+    "options": [
+      "保护村民",
+      "保护怪物",
+      "保护钻石",
+      "保护天空"
+    ],
+    "answer": 0,
+    "fact": "铁傀儡是村民的保护者，会打跑怪物。",
+    "cardName": "铁傀儡",
+    "cardEmoji": "🤖",
+    "expansion": {
+      "title": "铁傀儡",
+      "body": "铁傀儡是村民的铁疙瘩保镖，又高又壮。它看见僵尸、掠夺者就会冲上去打跑，还会送给小朋友虞美人花。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-mobs-i2",
+    "theme": "minecraft",
+    "subTheme": "mobs",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "蜘蛛在白天不会主动攻击玩家（除非被打）。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！白天蜘蛛是\"和平模式\"，晚上才会凶起来。",
+    "cardName": "白天蜘蛛",
+    "cardEmoji": "🕷️",
+    "expansion": {
+      "title": "蜘蛛的白天",
+      "body": "蜘蛛在白天不会主动攻击，到了晚上才变得凶猛。而且蜘蛛能爬墙，晚上要小心它们从房顶扑下来。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-building-b1",
+    "theme": "minecraft",
+    "subTheme": "building",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "盖好的房子一定要装门。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！不装门，晚上的怪物会走进来。",
+    "cardName": "要装门",
+    "cardEmoji": "🚪",
+    "expansion": {
+      "title": "房子要有门",
+      "body": "房子没有门，僵尸晚上就会溜进来。用 6 块木板就能合成木门，出门探险记得关门。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-building-b2",
+    "theme": "minecraft",
+    "subTheme": "building",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "用什么方块做透明的窗户？",
+    "options": [
+      "玻璃",
+      "石头",
+      "泥土",
+      "钻石"
+    ],
+    "answer": 0,
+    "fact": "玻璃是透明的，做窗户最合适。",
+    "cardName": "玻璃窗",
+    "cardEmoji": "🪟",
+    "expansion": {
+      "title": "玻璃窗户",
+      "body": "把沙子放进熔炉烧一烧，就变成透明的玻璃。用玻璃做窗户，屋里亮堂堂，还能看风景。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-crafting-b1",
+    "theme": "minecraft",
+    "subTheme": "crafting",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "工作台要用几个木板合成？",
+    "options": [
+      "4 个",
+      "8 个",
+      "2 个",
+      "64 个"
+    ],
+    "answer": 0,
+    "fact": "4 块木板摆成正方形，就是工作台。",
+    "cardName": "四块木板",
+    "cardEmoji": "🔨",
+    "expansion": {
+      "title": "工作台",
+      "body": "把 4 块木板摆成 2×2 的正方形，就能合成工作台。工作台有 9 个格子，能合成各种工具。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-crafting-b2",
+    "theme": "minecraft",
+    "subTheme": "crafting",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "熔炉能把铁矿石烧成什么？",
+    "options": [
+      "铁锭",
+      "钻石",
+      "面包",
+      "石头"
+    ],
+    "answer": 0,
+    "fact": "铁矿石放进熔炉烧，就变成能用的铁锭。",
+    "cardName": "铁锭",
+    "cardEmoji": "🧱",
+    "expansion": {
+      "title": "熔炉烧铁",
+      "body": "把铁矿石放进熔炉，加上燃料（煤或木炭），就能烧出铁锭。铁锭能做铁镐、铁剑和盔甲。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-redstone-b1",
+    "theme": "minecraft",
+    "subTheme": "redstone",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "红石粉铺在地上像电线一样传递信号。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！红石粉就是方块世界的\"电线\"。",
+    "cardName": "红石电线",
+    "cardEmoji": "🔴",
+    "expansion": {
+      "title": "红石像电线",
+      "body": "红石粉撒在地上，信号就能沿着它传递，像电线一样。拉一下开关，远处的东西就能动起来。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-redstone-b2",
+    "theme": "minecraft",
+    "subTheme": "redstone",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "用红石可以做出什么？",
+    "options": [
+      "自动门",
+      "面包",
+      "羊毛衫",
+      "小船"
+    ],
+    "answer": 0,
+    "fact": "红石能做出自动门、陷阱等各种机关。",
+    "cardName": "红石机关",
+    "cardEmoji": "🎛️",
+    "expansion": {
+      "title": "红石机关",
+      "body": "红石能做超酷的机关：按按钮自动开的门、踩上去就亮的灯、自动收割的农场。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-ender-b1",
+    "theme": "minecraft",
+    "subTheme": "ender",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "末影龙是一条会喷火的巨龙。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！末影龙是末地的 Boss，会喷龙息攻击。",
+    "cardName": "末影龙",
+    "cardEmoji": "🐉",
+    "expansion": {
+      "title": "末影龙",
+      "body": "末影龙是一条紫黑色的大龙，住在末地。它是方块世界的最终 Boss，打败它就能看到通关画面。",
+      "source": "来源：我的世界中文 Wiki"
+    }
+  },
+  {
+    "id": "mc-ender-b2",
+    "theme": "minecraft",
+    "subTheme": "ender",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "末影珍珠可以用来做什么？",
+    "options": [
+      "传送",
+      "吃",
+      "种树",
+      "做衣服"
+    ],
+    "answer": 0,
+    "fact": "扔出末影珍珠，人就会传送到落点。",
+    "cardName": "传送珍珠",
+    "cardEmoji": "🟣",
+    "expansion": {
+      "title": "末影珍珠",
+      "body": "末影珍珠是打败末影人掉落的宝贝。把它扔出去，你就会被传送到珍珠落地的地方，非常神奇。",
+      "source": "来源：我的世界中文 Wiki"
+    }
   }
 ]

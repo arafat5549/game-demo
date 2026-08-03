@@ -14,6 +14,7 @@ import { MiniGameHallScreen } from './ui/MiniGameHallScreen'
 import { CarAssemblyGame } from './ui/minigames/CarAssemblyGame'
 import { RelicPuzzleGame } from './ui/minigames/RelicPuzzleGame'
 import { MiningGame } from './ui/minigames/MiningGame'
+import { MotorbikeRushGame } from './ui/minigames/MotorbikeRushGame'
 // TODO(协调者): race 分发将在此 import MotorbikeRushGame（src/ui/minigames/MotorbikeRushGame.tsx，
 // 由另一个任务创建，本任务不创建/不引入，仅留接口）
 
@@ -142,19 +143,7 @@ function Shell() {
     ) : screen.theme === 'minecraft' ? (
       <MiningGame theme={screen.theme} onExit={back} />
     ) : (
-      // TODO(协调者): race 引擎接入处——将替换为 <MotorbikeRushGame onExit={back} />
-      // 引擎组件（src/ui/minigames/MotorbikeRushGame.tsx）由另一个任务创建，此处先渲染占位提示
-      <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-gradient-to-b from-sky-400 to-indigo-500 p-4 text-center text-white">
-        <div className="text-7xl drop-shadow">🏍️</div>
-        <div className="text-2xl font-black drop-shadow">摩托大乱斗</div>
-        <p className="text-sm text-white/90">3 车道竞速，撞开对手冲第一！（引擎接入中…）</p>
-        <button
-          onClick={back}
-          className="mt-2 rounded-full bg-white/90 px-4 py-1.5 font-bold text-slate-600 shadow"
-        >
-          ← 返回小游戏厅
-        </button>
-      </div>
+      <MotorbikeRushGame onExit={back} />
     )
   } else {
     content = <ParentZone onBack={goHome} />

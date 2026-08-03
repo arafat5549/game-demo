@@ -998,5 +998,315 @@
       "body": "中秋节是农历八月十五，那天晚上的月亮最圆最亮。全家人坐在一起吃月饼、看月亮，团团圆圆。",
       "source": "来源：启蒙题库（改编自主题知识）"
     }
+  },
+  {
+    "id": "history-ancient-i1",
+    "theme": "history",
+    "subTheme": "ancient",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "山顶洞人住在哪里？",
+    "options": [
+      "北京周口店的山洞里",
+      "上海的高楼里",
+      "广州的地铁里",
+      "哈尔滨的冰屋里"
+    ],
+    "answer": 0,
+    "fact": "山顶洞人住在北京周口店龙骨山的山洞里。",
+    "cardName": "山顶洞人",
+    "cardEmoji": "⛰️",
+    "expansion": {
+      "title": "山顶洞人",
+      "body": "山顶洞人生活在约一万八千年前，住在北京周口店的山顶洞里。他们已经会缝衣服、戴装饰品了。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-ancient-i2",
+    "theme": "history",
+    "subTheme": "ancient",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "河姆渡人已经会种水稻了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！河姆渡人约七千年前就开始种水稻，是最早的农民之一。",
+    "cardName": "种水稻",
+    "cardEmoji": "🌾",
+    "expansion": {
+      "title": "河姆渡人种水稻",
+      "body": "浙江的河姆渡遗址告诉我们，约七千年前那里的人已经开始种水稻、养牲畜、住木头房子，比许多地方都早。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-qin-i1",
+    "theme": "history",
+    "subTheme": "qinshihuang",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "兵马俑一共有几个大坑？",
+    "options": [
+      "三个大坑",
+      "一百个坑",
+      "一个坑",
+      "没有坑"
+    ],
+    "answer": 0,
+    "fact": "兵马俑有三个大坑，里面埋着几千个陶土士兵。",
+    "cardName": "三大坑",
+    "cardEmoji": "🕳️",
+    "expansion": {
+      "title": "兵马俑的三个坑",
+      "body": "秦始皇陵的兵马俑有三个大坑：一号坑最大，是步兵方阵；二号坑有战车和骑兵；三号坑是指挥部。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-qin-i2",
+    "theme": "history",
+    "subTheme": "qinshihuang",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "秦始皇还下令统一了马车车轮的宽度。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！车同轨，车轮一样宽，马车才能在同一条路上跑。",
+    "cardName": "车同轨",
+    "cardEmoji": "🛞",
+    "expansion": {
+      "title": "车同轨",
+      "body": "秦始皇统一天下后，规定车轮的宽度必须一样（车同轨），这样全国的大路都能走同一辆马车，交通方便多了。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-zgl-i1",
+    "theme": "history",
+    "subTheme": "zhugeliang",
+    "difficulty": "intermediate",
+    "type": "choice",
+    "prompt": "\"空城计\"讲的是诸葛亮用什么吓退敌人？",
+    "options": [
+      "弹琴和空城",
+      "大炮",
+      "飞机",
+      "石头"
+    ],
+    "answer": 0,
+    "fact": "诸葛亮坐在空城上弹琴，敌人以为有埋伏就退兵了。",
+    "cardName": "空城计",
+    "cardEmoji": "🎹",
+    "expansion": {
+      "title": "空城计",
+      "body": "故事里，诸葛亮城里没兵，却打开城门坐在城头弹琴。敌人怕有埋伏，不敢进城，就退兵了。这就是空城计。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-zgl-i2",
+    "theme": "history",
+    "subTheme": "zhugeliang",
+    "difficulty": "intermediate",
+    "type": "judge",
+    "prompt": "\"草船借箭\"是诸葛亮用草船向敌人\"借\"来了十万支箭。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！诸葛亮趁大雾用草船骗来敌人的箭，一支不用造。",
+    "cardName": "草船借箭",
+    "cardEmoji": "🚣",
+    "expansion": {
+      "title": "草船借箭",
+      "body": "故事里，诸葛亮趁大雾把扎满草人的船开到敌营前，敌人射箭，箭全扎在草人上，白白\"送\"给诸葛亮十万支箭。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-inventions-b1",
+    "theme": "history",
+    "subTheme": "inventions",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "指南针的指针总是指向哪边？",
+    "options": [
+      "南方",
+      "北方",
+      "东方",
+      "西方"
+    ],
+    "answer": 0,
+    "fact": "指南针的指针总是指向南方，所以叫\"指南针\"。",
+    "cardName": "指南方",
+    "cardEmoji": "🧭",
+    "expansion": {
+      "title": "指南针指南方",
+      "body": "指南针的磁针总是指向南方。古代人坐船出海，靠着它就不会迷路。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-inventions-b2",
+    "theme": "history",
+    "subTheme": "inventions",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "纸是中国人最先发明并改进的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！蔡伦改进造纸术后，纸传遍了全世界。",
+    "cardName": "中国纸",
+    "cardEmoji": "📄",
+    "expansion": {
+      "title": "中国人发明纸",
+      "body": "中国东汉的蔡伦用树皮、破布造出了便宜好用的纸。纸的技术后来传遍全世界，人们才不用在竹简上写字。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-zhenghe-b1",
+    "theme": "history",
+    "subTheme": "zhenghe",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "郑和是坐着大船出海远航的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！郑和的宝船特别大，是当时世界上最大的船。",
+    "cardName": "大宝船",
+    "cardEmoji": "⛵",
+    "expansion": {
+      "title": "郑和的大船",
+      "body": "郑和下西洋坐的宝船又大又稳，船上能装几百人，还有粮食、淡水和送给别国的礼物。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-zhenghe-b2",
+    "theme": "history",
+    "subTheme": "zhenghe",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "郑和的船队去过很远的地方吗？",
+    "options": [
+      "去过很多国家",
+      "只在家门口转",
+      "没出过海",
+      "只去月球"
+    ],
+    "answer": 0,
+    "fact": "郑和的船队到过东南亚、印度，最远到了非洲。",
+    "cardName": "远航",
+    "cardEmoji": "🌍",
+    "expansion": {
+      "title": "郑和去多远",
+      "body": "郑和的船队七次远航，走过三十多个国家，最远到达非洲东海岸，比欧洲的航海家还早近百年。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-relics-b1",
+    "theme": "history",
+    "subTheme": "relics",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "兵马俑在哪个城市可以看到？",
+    "options": [
+      "西安",
+      "北京",
+      "上海",
+      "成都"
+    ],
+    "answer": 0,
+    "fact": "兵马俑在西安，是著名的世界奇迹。",
+    "cardName": "西安兵马俑",
+    "cardEmoji": "🗿",
+    "expansion": {
+      "title": "去西安看兵马俑",
+      "body": "西安的秦始皇陵兵马俑博物馆里，站着成千上万个和真人一样大的陶土士兵，全世界的人都来看。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-relics-b2",
+    "theme": "history",
+    "subTheme": "relics",
+    "difficulty": "beginner",
+    "type": "judge",
+    "prompt": "竹简是用竹子做的，可以在上面写字。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": 0,
+    "fact": "对！纸发明以前，古人把字写在竹片上，串起来就是\"册\"。",
+    "cardName": "竹简",
+    "cardEmoji": "🎋",
+    "expansion": {
+      "title": "竹子做的书",
+      "body": "古人把竹子削成一片片，在上面写字，再用绳子串起来，就成了\"竹简\"，是古代的书。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-festivals-b1",
+    "theme": "history",
+    "subTheme": "festivals",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "中秋节要吃什么？",
+    "options": [
+      "月饼",
+      "粽子",
+      "饺子",
+      "汤圆"
+    ],
+    "answer": 0,
+    "fact": "中秋节吃月饼，全家人一起赏月。",
+    "cardName": "中秋月饼",
+    "cardEmoji": "🥮",
+    "expansion": {
+      "title": "中秋吃月饼",
+      "body": "中秋节是农历八月十五，月亮最圆。全家人围在一起吃圆圆的月饼，代表团团圆圆。",
+      "source": "来源：百度百科·历史专题"
+    }
+  },
+  {
+    "id": "history-festivals-b2",
+    "theme": "history",
+    "subTheme": "festivals",
+    "difficulty": "beginner",
+    "type": "choice",
+    "prompt": "端午节人们会举行什么比赛？",
+    "options": [
+      "赛龙舟",
+      "赛跑",
+      "游泳",
+      "跳绳"
+    ],
+    "answer": 0,
+    "fact": "端午节人们划着龙船比赛，叫赛龙舟。",
+    "cardName": "赛龙舟",
+    "cardEmoji": "🐲",
+    "expansion": {
+      "title": "赛龙舟",
+      "body": "端午节，河面上一条条龙船飞快地划，鼓声咚咚响，大家齐声喊着加油，这就是赛龙舟。",
+      "source": "来源：百度百科·历史专题"
+    }
   }
 ]

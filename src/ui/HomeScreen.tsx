@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion'
+import { useRef, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import type { Difficulty, ThemeId } from '../types'
 import { DIFFICULTIES, THEMES } from '../data/themes'
 import { useSave } from '../store/save'
@@ -15,6 +16,8 @@ interface Props {
 
 export function HomeScreen({ onEnterTheme, onOpenParent, onOpenMiniHall, onOpenBonusCollection, overLimit }: Props) {
   const { save, updateSettings } = useSave()
+  const [toast, setToast] = useState<string | null>(null)
+  const toastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   // 有主题通关但对应小游戏还没玩过 → 红点提醒
   const miniGamePending = (['car', 'history', 'minecraft'] as ThemeId[]).some(
     (t) => save.themeProgress[t].medal && !save.miniGames[t].played,
@@ -24,6 +27,12 @@ export function HomeScreen({ onEnterTheme, onOpenParent, onOpenMiniHall, onOpenB
     (t) => save.themeProgress[t].medal,
   )
   const bonusPending = bonusUnlocked && !save.miniGames.race.played
+
+  const showToast = (msg: string) => {
+    setToast(msg)
+    clearTimeout(toastTimer.current)
+    toastTimer.current = setTimeout(() => setToast(null), 2200)
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-400 via-indigo-300 to-violet-300 p-4">
@@ -74,22 +83,41 @@ export function HomeScreen({ onEnterTheme, onOpenParent, onOpenMiniHall, onOpenB
                   playClick()
                   updateSettings({ difficulty: d.id as Difficulty })
                   speak(`${d.emoji}${d.label}，${d.age}`)
+                  showToast(`已切换到 ${d.emoji} ${d.label}（${d.age}）`)
                 }}
-                className={`flex flex-col items-center rounded-2xl border-b-4 px-1 py-2 shadow transition active:scale-95 ${
+                className={`relative flex flex-col items-center rounded-2xl border-2 px-1 py-2 shadow transition active:scale-95 ${
                   active
-                    ? 'border-white bg-white text-indigo-600'
+                    ? `scale-105 border-yellow-300 bg-white text-indigo-600 ring-4 ring-yellow-200 ${d.color}`
                     : 'border-white/40 bg-white/30 text-white'
                 }`}
               >
+                {active && (
+                  <span className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-yellow-400 text-[11px] font-black text-white shadow">
+                    ✓
+                  </span>
+                )}
                 <span className="text-2xl">{d.emoji}</span>
                 <span className="text-sm font-black">{d.label}</span>
-                <span className={`text-[10px] ${active ? 'text-indigo-400' : 'text-white/70'}`}>
+                <span className={`text-[10px] ${active ? 'text-slate-400' : 'text-white/70'}`}>
                   {d.age}
                 </span>
               </button>
             )
           })}
         </div>
+        {/* 切换确认提示 */}
+        <AnimatePresence>
+          {toast && (
+            <motion.div
+              initial={{ opacity: 0, y: -6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              className="mt-2 text-center text-sm font-black text-white drop-shadow"
+            >
+              {toast}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* 时长锁定遮罩 */}

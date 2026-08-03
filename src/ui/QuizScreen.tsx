@@ -174,6 +174,24 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
         )}
       </AnimatePresence>
 
+      {/* 全局难度标识 + 回退提示（ADR-0016） */}
+      {(() => {
+        const g = DIFFICULTIES.find((d) => d.id === save.settings.difficulty)
+        const hasFallback = questions.some((q) => q.difficulty !== save.settings.difficulty)
+        return (
+          <div className="mx-auto mt-2 flex w-full max-w-md flex-wrap items-center justify-center gap-1.5 text-xs font-bold">
+            <span className={`rounded-full border-2 px-2.5 py-0.5 shadow-sm ${g?.color ?? 'border-slate-300 bg-slate-100 text-slate-600'}`}>
+              {g?.emoji} 难度：{g?.label}
+            </span>
+            {hasFallback && (
+              <span className="rounded-full bg-white/80 px-2.5 py-0.5 text-slate-500 shadow-sm">
+                ℹ️ 本关含相邻难度题（{g?.label}题库补充中）
+              </span>
+            )}
+          </div>
+        )
+      })()}
+
       {/* 题目卡片 */}
       <div className="mx-auto mt-4 w-full max-w-md rounded-3xl bg-white p-5 shadow-xl">
         <div className="flex items-start justify-between gap-2">
@@ -190,7 +208,9 @@ export function QuizScreen({ theme, node, questions, onFinish, onAbort }: Props)
           </button>
         </div>
         <div className="mt-1 flex items-center justify-center gap-2 text-xs text-slate-400">
-          <span className="rounded-full bg-slate-100 px-2 py-0.5 font-bold text-slate-500">
+          <span className={`rounded-full border-2 px-2 py-0.5 font-bold ${
+            DIFFICULTIES.find((d) => d.id === q.difficulty)?.color ?? 'border-slate-200 bg-slate-100 text-slate-500'
+          }`}>
             {DIFFICULTIES.find((d) => d.id === q.difficulty)?.emoji}{' '}
             {DIFFICULTIES.find((d) => d.id === q.difficulty)?.label ?? q.difficulty}
           </span>
