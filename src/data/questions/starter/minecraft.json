@@ -19,7 +19,8 @@
     "expansion": {
       "title": "方块世界",
       "body": "我的世界里，地是方块、树是方块、羊也是方块，整个世界都是用方块搭起来的。",
-      "source": "来源：启蒙题库（改编自主题知识）"
+      "source": "来源：启蒙题库（改编自主题知识）",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/草方块"
     }
   },
   {
@@ -42,7 +43,8 @@
     "expansion": {
       "title": "夜晚的怪物",
       "body": "我的世界到了晚上，怪物们就出来了。所以天黑前要回家，关好门，点起火把。",
-      "source": "来源：启蒙题库（改编自主题知识）"
+      "source": "来源：启蒙题库（改编自主题知识）",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/苦力怕"
     }
   },
   {
@@ -63,7 +65,8 @@
     "expansion": {
       "title": "钻石宝贝",
       "body": "钻石在很深很深的地下，要挖很久才能找到。它亮晶晶的，能做最厉害的工具，特别珍贵。",
-      "source": "来源：启蒙题库（改编自主题知识）"
+      "source": "来源：启蒙题库（改编自主题知识）",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/钻石矿石"
     }
   },
   {
@@ -86,7 +89,8 @@
     "expansion": {
       "title": "苦力怕",
       "body": "苦力怕是绿色的怪物，它不咬人，但是会\"砰\"地爆炸。听到它\"嘶嘶\"响，就要快快跑开。",
-      "source": "来源：启蒙题库（改编自主题知识）"
+      "source": "来源：启蒙题库（改编自主题知识）",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/苦力怕"
     }
   },
   {
@@ -109,7 +113,8 @@
     "expansion": {
       "title": "砍树",
       "body": "在方块世界里，第一件事就是砍树。砍倒大树，得到木头，木头能做木板、工具和房子。",
-      "source": "来源：启蒙题库（改编自主题知识）"
+      "source": "来源：启蒙题库（改编自主题知识）",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/草方块"
     }
   },
   {
@@ -130,7 +135,8 @@
     "expansion": {
       "title": "火把",
       "body": "火把像小路灯，插在地上就能照亮一大片。亮亮的地方怪物不会出现，所以晚上要多多点火把。",
-      "source": "来源：启蒙题库（改编自主题知识）"
+      "source": "来源：启蒙题库（改编自主题知识）",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/木门"
     }
   },
   {
@@ -153,7 +159,8 @@
     "expansion": {
       "title": "主角史蒂夫",
       "body": "史蒂夫是方块世界的主角，蓝色眼睛、棕色头发。玩家们控制他去砍树、挖矿、打怪物、建房子。",
-      "source": "来源：启蒙题库（改编自主题知识）"
+      "source": "来源：启蒙题库（改编自主题知识）",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/末影龙"
     }
   },
   {
@@ -176,7 +183,8 @@
     "expansion": {
       "title": "工作台",
       "body": "工作台像小桌子，把材料放上去，就能做出镐、斧头、剑和各种工具。",
-      "source": "来源：启蒙题库（改编自主题知识）"
+      "source": "来源：启蒙题库（改编自主题知识）",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/工作台"
     }
   },
   {
@@ -197,7 +205,8 @@
     "expansion": {
       "title": "红石魔法",
       "body": "红石是方块世界的魔法粉，用它做机关，按一下按钮，门就自己打开，灯就自己亮。",
-      "source": "来源：启蒙题库（改编自主题知识）"
+      "source": "来源：启蒙题库（改编自主题知识）",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/红石"
     }
   }
 ]

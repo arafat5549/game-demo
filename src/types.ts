@@ -26,8 +26,9 @@ export interface Question {
 export interface Expansion {
   title: string // 大字标题
   body: string // 2-4 句正文（50-80 字，可朗读）
-  image?: string // 预留：插图 URL/素材 key（MVP 用 emoji 占位）
+  image?: string // 插图 URL（为空时用来源页面截图）
   source: string // 来源文本（保证史实可溯）
+  sourceUrl?: string // 来源链接（扩展页完整展示，可点击）
   links?: { label: string; url: string }[] // https 白名单外链
 }
 

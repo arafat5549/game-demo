@@ -19,7 +19,8 @@
     "expansion": {
       "title": "下界传送门",
       "body": "下界传送门用黑曜石搭成 4×5 的竖框，用打火石点燃里面就出现紫色传送门，走进去就能到达下界。黑曜石要用钻石镐挖。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/草方块"
     }
   },
   {
@@ -40,7 +41,8 @@
     "expansion": {
       "title": "紫珀块",
       "body": "紫珀块是末地城的建筑材料，颜色紫紫的，只能在末地找到。用紫珀块能合成紫珀台阶和柱子，装饰很有特色。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/草方块"
     }
   },
   {
@@ -63,7 +65,8 @@
     "expansion": {
       "title": "远古残骸",
       "body": "远古残骸只在下界深处生成，用钻石镐挖取。烧炼成碎片后与金锭合成下界合金锭，能做最强的下界合金装备。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/钻石矿石"
     }
   },
   {
@@ -84,7 +87,8 @@
     "expansion": {
       "title": "时运附魔",
       "body": "时运是镐的附魔，等级越高，挖煤、钻石、红石等矿石掉落越多。时运 III 挖一颗钻石矿石最多能得 4 颗钻石。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/钻石矿石"
     }
   },
   {
@@ -107,7 +111,8 @@
     "expansion": {
       "title": "凋灵",
       "body": "凋灵是玩家召唤的 Boss：用灵魂沙摆 T 形，顶部放 3 个凋灵骷髅头。它血厚还会发射凋灵之首，打败后掉落下界之星，能做信标。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/苦力怕"
     }
   },
   {
@@ -128,7 +133,8 @@
     "expansion": {
       "title": "末影人",
       "body": "末影人是黑色的高个子生物，最怕被盯着眼睛看。玩家与它对视或攻击它，它就会瞬移过来反击。戴南瓜头可以安全地看它。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/苦力怕"
     }
   },
   {
@@ -151,7 +157,8 @@
     "expansion": {
       "title": "脚手架",
       "body": "脚手架用竹子和线合成。站在脚手架上按跳跃可以向上搭，按潜行向下，搭建筑时非常方便，拆起来也快。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/木门"
     }
   },
   {
@@ -172,7 +179,8 @@
     "expansion": {
       "title": "避雷针",
       "body": "避雷针用 3 个铜锭合成，插在建筑上，闪电就会劈向避雷针而不是房子，保护建筑和村民不被雷击。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/木门"
     }
   },
   {
@@ -195,7 +203,8 @@
     "expansion": {
       "title": "信标",
       "body": "信标用下界之星合成，放在金字塔形方块上激活，能发射直冲天际的光柱，并给附近玩家提供急迫、跳跃等增益。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/工作台"
     }
   },
   {
@@ -216,7 +225,8 @@
     "expansion": {
       "title": "附魔台",
       "body": "附魔台用书、黑曜石和钻石合成。把工具放上去，消耗经验值和青金石就能附魔。周围摆上书架能提升附魔等级。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/工作台"
     }
   },
   {
@@ -239,7 +249,8 @@
     "expansion": {
       "title": "红石中继器",
       "body": "红石信号最多传 15 格，中继器可以增强信号继续传，还能用右键调节信号延迟，是复杂红石电路的必备元件。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/红石"
     }
   },
   {
@@ -260,7 +271,8 @@
     "expansion": {
       "title": "活塞",
       "body": "活塞收到红石信号就会伸出，把方块或实体推出去。用活塞可以做自动门、隐藏楼梯、红石电梯甚至活塞虫。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/红石"
     }
   },
   {
@@ -283,7 +295,8 @@
     "expansion": {
       "title": "鞘翅",
       "body": "鞘翅在末地城的末地船里，穿上后跳起来按住跳跃键就能滑翔，配合烟花可以飞很远，是探索世界的神器。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/末影龙"
     }
   },
   {
@@ -304,7 +317,8 @@
     "expansion": {
       "title": "潜影贝",
       "body": "潜影贝像紫珀块一样伪装在末地城里，靠近它会打开壳射出子弹，子弹命中后让你飘起来。打败它掉落潜影壳，能做潜影盒（随身箱子）。",
-      "source": "来源：我的世界中文 Wiki"
+      "source": "来源：我的世界中文 Wiki",
+      "sourceUrl": "https://minecraft.fandom.com/zh/wiki/末影龙"
     }
   }
 ]

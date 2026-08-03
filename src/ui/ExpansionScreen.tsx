@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import type { Question, ThemeId } from '../types'
 import { THEMES } from '../data/themes'
@@ -12,11 +12,20 @@ interface Props {
   onBack: () => void
 }
 
+/** 来源页面截图（图片为空时从来源 URL 获取，ADR-0013） */
+function sourceScreenshotUrl(sourceUrl?: string): string | undefined {
+  if (!sourceUrl) return undefined
+  return `https://api.microlink.io/?url=${encodeURIComponent(sourceUrl)}&screenshot=true&meta=false&embed=screenshot.url`
+}
+
 /** 知识扩展页（ADR-0013）：大字标题 + 短图文正文 + 来源 + https 白名单外链 */
 export function ExpansionScreen({ theme, question, onBack }: Props) {
   const meta = THEMES[theme]
   const { save } = useSave()
   const exp = question.expansion
+  // 图片：显式 image URL 优先；为空则用来源页面截图；截图失败回退 emoji
+  const [imgFailed, setImgFailed] = useState(false)
+  const imgSrc = exp?.image ?? (!imgFailed ? sourceScreenshotUrl(exp?.sourceUrl) : undefined)
 
   // 进入自动朗读正文（孩子识字量有限）
   useEffect(() => {
@@ -63,12 +72,17 @@ export function ExpansionScreen({ theme, question, onBack }: Props) {
           animate={{ y: 0, opacity: 1 }}
           className="mt-4 overflow-hidden rounded-3xl bg-white shadow-xl"
         >
-          {/* 插图区：MVP 用 emoji + 渐变底（预留 image 字段，ADR-0013） */}
+          {/* 插图区：显式 image URL 优先，为空用来源页面截图，失败回退 emoji（ADR-0013） */}
           <div
             className={`flex h-44 items-center justify-center bg-gradient-to-br ${meta.gradient}`}
           >
-            {exp.image ? (
-              <img src={exp.image} alt={exp.title} className="h-full w-full object-cover" />
+            {imgSrc ? (
+              <img
+                src={imgSrc}
+                alt={exp.title}
+                onError={() => setImgFailed(true)}
+                className="h-full w-full object-cover"
+              />
             ) : (
               <motion.div
                 animate={{ y: [0, -8, 0] }}
@@ -94,9 +108,19 @@ export function ExpansionScreen({ theme, question, onBack }: Props) {
 
             <p className="mt-3 text-lg font-bold leading-relaxed text-slate-700">{exp.body}</p>
 
-            {/* 来源 */}
-            <div className="mt-4 rounded-2xl bg-slate-50 px-4 py-2.5 text-sm font-bold text-slate-500">
-              📚 {exp.source}
+            {/* 来源：文本 + 完整 URL（ADR-0013） */}
+            <div className="mt-4 rounded-2xl bg-slate-50 px-4 py-2.5">
+              <div className="text-sm font-bold text-slate-500">📚 {exp.source}</div>
+              {exp.sourceUrl && (
+                <a
+                  href={exp.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 block break-all text-xs font-bold text-indigo-500 hover:underline"
+                >
+                  🔗 {exp.sourceUrl}
+                </a>
+              )}
             </div>
 
             {/* 外链（https 白名单，rel=noopener，ADR-0013） */}

@@ -25,7 +25,8 @@
           "label": "百度百科：卡尔·本茨",
           "url": "https://baike.baidu.com/item/卡尔·本茨"
         }
-      ]
+      ],
+      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
     }
   },
   {
@@ -54,7 +55,8 @@
           "label": "百度百科：奔驰一号",
           "url": "https://baike.baidu.com/item/奔驰一号"
         }
-      ]
+      ],
+      "sourceUrl": "https://baike.baidu.com/item/奔驰一号"
     }
   },
   {
@@ -77,7 +79,8 @@
     "expansion": {
       "title": "汽车王国——德国",
       "body": "德国被称为\"汽车王国\"，因为世界上第一辆汽车就诞生在这里。奔驰、宝马、奥迪、大众、保时捷……好多有名的汽车品牌都是德国的。德国的斯图加特市还有一座巨大的奔驰博物馆，像宇宙飞船一样漂亮。",
-      "source": "来源：百度百科·德国汽车工业"
+      "source": "来源：百度百科·德国汽车工业",
+      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
     }
   },
   {
@@ -100,7 +103,8 @@
     "expansion": {
       "title": "闪闪的三叉星",
       "body": "奔驰的三叉星标志像一个三叉的星星。传说奔驰公司的创始人希望自己的汽车在海上、陆地上和天空中都是最棒的，所以画了三个尖角，分别代表海、陆、空。这个标志已经闪闪发光了一百多年。",
-      "source": "来源：百度百科·梅赛德斯-奔驰"
+      "source": "来源：百度百科·梅赛德斯-奔驰",
+      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
     }
   },
   {
@@ -121,7 +125,8 @@
     "expansion": {
       "title": "汽车的生日",
       "body": "1886 年 1 月 29 日，卡尔·本茨的汽车获得了专利，这一天后来被全世界定为\"汽车诞生日\"。到今天，汽车已经 100 多岁了，从三个轮子的小车子，变成了各种各样的汽车、卡车和赛车。",
-      "source": "来源：百度百科·卡尔·本茨"
+      "source": "来源：百度百科·卡尔·本茨",
+      "sourceUrl": "https://baike.baidu.com/item/卡尔·本茨"
     }
   },
   {
@@ -144,7 +149,8 @@
     "expansion": {
       "title": "圆滚滚的甲壳虫",
       "body": "甲壳虫汽车诞生于 1938 年，它圆圆的脑袋、胖胖的身子，跟小甲虫一模一样，所以大家都叫它\"甲壳虫\"。它是历史上卖得最多的汽车之一，全世界卖出了两千多万辆，好多家庭的第一辆车就是它。",
-      "source": "来源：百度百科·大众甲壳虫"
+      "source": "来源：百度百科·大众甲壳虫",
+      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
     }
   },
   {
@@ -173,7 +179,8 @@
           "label": "百度百科：大众汽车",
           "url": "https://baike.baidu.com/item/大众汽车"
         }
-      ]
+      ],
+      "sourceUrl": "https://baike.baidu.com/item/大众汽车"
     }
   },
   {
@@ -196,7 +203,8 @@
     "expansion": {
       "title": "VW 是什么意思",
       "body": "大众汽车在德语里叫 Volkswagen。\"Volk\"是人民的意思，\"Wagen\"是汽车，合起来就是\"人民的汽车\"。它的车标 VW 就是这两个词的开头字母，意思是\"让普通人都买得起的汽车\"。",
-      "source": "来源：大众汽车官网"
+      "source": "来源：大众汽车官网",
+      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
     }
   },
   {
@@ -217,7 +225,8 @@
     "expansion": {
       "title": "人民的汽车",
       "body": "很久以前，汽车是很贵的，只有大富翁才买得起。大众汽车想了一个办法：做一辆又便宜又结实的小汽车，让每家每户都买得起。于是就有了甲壳虫。这个梦想真的实现了，甲壳虫成了很多家庭的第一辆车。",
-      "source": "来源：大众汽车官网"
+      "source": "来源：大众汽车官网",
+      "sourceUrl": "https://baike.baidu.com/item/大众甲壳虫"
     }
   },
   {
@@ -246,7 +255,8 @@
           "label": "百度百科：奥迪",
           "url": "https://baike.baidu.com/item/奥迪"
         }
-      ]
+      ],
+      "sourceUrl": "https://baike.baidu.com/item/奥迪"
     }
   },
   {
@@ -269,7 +279,8 @@
     "expansion": {
       "title": "蓝天白云车标",
       "body": "宝马来自德国巴伐利亚州，车标的蓝白色就是巴伐利亚州旗帜的颜色。蓝白相间的小圆圈，看起来像旋转的螺旋桨，也像蓝天白云，特别好看。宝马的德文缩写是 BMW。",
-      "source": "来源：百度百科·宝马"
+      "source": "来源：百度百科·宝马",
+      "sourceUrl": "https://baike.baidu.com/item/奔驰"
     }
   },
   {
@@ -298,7 +309,8 @@
           "label": "百度百科：保时捷",
           "url": "https://baike.baidu.com/item/保时捷"
         }
-      ]
+      ],
+      "sourceUrl": "https://baike.baidu.com/item/保时捷"
     }
   },
   {
@@ -319,7 +331,8 @@
     "expansion": {
       "title": "德国三巨头",
       "body": "奔驰、宝马、奥迪是德国最有名的三个汽车品牌，人们叫它们\"德国三巨头\"。它们一个比一个厉害：奔驰发明了汽车，宝马从飞机发动机起家，奥迪用四个圆圈手拉手。德国还出产大众和保时捷，真是汽车王国。",
-      "source": "来源：百度百科·德国汽车工业"
+      "source": "来源：百度百科·德国汽车工业",
+      "sourceUrl": "https://baike.baidu.com/item/奔驰"
     }
   },
   {
@@ -340,7 +353,8 @@
     "expansion": {
       "title": "奥迪来自德国",
       "body": "奥迪的工厂在德国，是德国最有名的汽车品牌之一。德国还出产奔驰、宝马和大众。",
-      "source": "来源：百度百科·汽车专题"
+      "source": "来源：百度百科·汽车专题",
+      "sourceUrl": "https://baike.baidu.com/item/奥迪"
     }
   },
   {
@@ -363,7 +377,8 @@
     "expansion": {
       "title": "BMW 三个字母",
       "body": "BMW 全称是 Bayerische Motoren Werke，意思是\"巴伐利亚发动机工厂\"。现在大家都叫它宝马。",
-      "source": "来源：百度百科·汽车专题"
+      "source": "来源：百度百科·汽车专题",
+      "sourceUrl": "https://baike.baidu.com/item/奥迪"
     }
   },
   {
@@ -386,7 +401,8 @@
     "expansion": {
       "title": "救护车救人",
       "body": "救护车是\"移动的医院\"，里面躺着生病或受伤的人，医生和护士在车上照顾他们。",
-      "source": "来源：百度百科·汽车专题"
+      "source": "来源：百度百科·汽车专题",
+      "sourceUrl": "https://baike.baidu.com/item/消防车"
     }
   },
   {
@@ -407,7 +423,8 @@
     "expansion": {
       "title": "给警车让路",
       "body": "警车闪着红蓝灯、响着警笛，说明警察有紧急任务。其他车要让路，帮助警察快点到达。",
-      "source": "来源：百度百科·汽车专题"
+      "source": "来源：百度百科·汽车专题",
+      "sourceUrl": "https://baike.baidu.com/item/消防车"
     }
   },
   {
@@ -428,7 +445,8 @@
     "expansion": {
       "title": "超级快的布加迪",
       "body": "布加迪是法国超级跑车品牌，它的车能跑到每小时 400 公里以上，比高铁还快。",
-      "source": "来源：百度百科·汽车专题"
+      "source": "来源：百度百科·汽车专题",
+      "sourceUrl": "https://baike.baidu.com/item/布加迪"
     }
   },
   {
@@ -451,7 +469,8 @@
     "expansion": {
       "title": "大卡车",
       "body": "大卡车能装几十吨货物，把水果、玩具、机器送到全国各地，是公路上的\"大力士\"。",
-      "source": "来源：百度百科·汽车专题"
+      "source": "来源：百度百科·汽车专题",
+      "sourceUrl": "https://baike.baidu.com/item/布加迪"
     }
   },
   {
@@ -472,7 +491,8 @@
     "expansion": {
       "title": "安静的电动车",
       "body": "电动汽车靠电动机转动，没有轰隆隆的发动机声，开起来安安静静，还不冒黑烟。",
-      "source": "来源：百度百科·汽车专题"
+      "source": "来源：百度百科·汽车专题",
+      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
     }
   },
   {
@@ -495,7 +515,8 @@
     "expansion": {
       "title": "太阳能汽车",
       "body": "太阳能汽车的车顶装着太阳能板，太阳光照在上面就变成电，汽车就能跑了，不用加油也不用充电。",
-      "source": "来源：百度百科·汽车专题"
+      "source": "来源：百度百科·汽车专题",
+      "sourceUrl": "https://baike.baidu.com/item/电动汽车"
     }
   }
 ]
