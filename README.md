@@ -16,6 +16,14 @@ npm run build    # 构建：产物在 dist/，可部署到 GitHub Pages / Vercel
 > 在项目根目录建 `.env` 文件，写入 `VITE_UNLOCK_MINI_GAMES=false` 后重启 `npm run dev`。
 > 生产构建（`npm run build`）始终按正常规则（通关解锁），不受影响。
 
+## 版本号机制
+
+- 版本号存于 `src/version.json`，格式 `X.YYY`（主版本.三位子版本，初始 `1.001`）
+- **每次 git 提交自动 +0.001**：由 `.githooks/pre-commit` 钩子完成，`core.hooksPath` 在 `npm install` 时自动配置
+- **指定大版本**：commit 消息开头带版本号即直接使用，如 `git commit -m "2.001: 大版本更新"`；普通消息则自动 +0.001
+- 子版本满 1000 自动进位：`1.999` → `2.001`
+- 版本显示位置：主界面（HomeScreen）底部小字 + PWA manifest 的 `version` 字段
+
 ## 安装到手机（PWA）
 
 游戏已支持 PWA：可以像 App 一样装到手机/平板主屏幕，**离线也能玩**。

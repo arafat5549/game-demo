@@ -1,0 +1,4 @@
+#!/bin/sh
+# 提交前自动维护 src/version.json（版本号 X.YYY）
+# Git for Windows 下由 sh 执行本脚本；跨平台逻辑放在 node 脚本里
+node "$(dirname "$0")/bump-version.mjs"

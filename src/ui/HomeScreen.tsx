@@ -5,6 +5,7 @@ import { DIFFICULTIES, THEMES } from '../data/themes'
 import { useSave } from '../store/save'
 import { playClick } from '../audio/sfx'
 import { speak } from '../audio/tts'
+import versionJson from '../version.json'
 
 interface Props {
   onEnterTheme: (t: ThemeId) => void
@@ -218,6 +219,9 @@ export function HomeScreen({ onEnterTheme, onOpenParent, onOpenMiniHall, onOpenB
           <div className="text-3xl">{bonusUnlocked ? '▶️' : '🔒'}</div>
         </motion.button>
       </div>
+
+      {/* 版本号（由 .githooks/pre-commit 自动维护，格式 X.YYY） */}
+      <p className="mt-6 pb-2 text-center text-xs text-white/60">v{versionJson.version}</p>
     </div>
   )
 }

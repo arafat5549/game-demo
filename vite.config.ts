@@ -2,6 +2,13 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import type { ManifestOptions } from 'vite-plugin-pwa'
+import { readFileSync } from 'node:fs'
+
+// 从版本文件读取版本号（格式 X.YYY，由 .githooks/pre-commit 自动维护）
+const { version: appVersion } = JSON.parse(
+  readFileSync(new URL('./src/version.json', import.meta.url), 'utf-8'),
+) as { version: string }
 
 export default defineConfig({
   // GitHub Pages 部署在 /game-demo/ 子路径；本地/Vercel 用根路径
@@ -27,7 +34,8 @@ export default defineConfig({
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
           { src: 'icons/icon-512-maskable.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
-      },
+        version: appVersion,
+      } as ManifestOptions & { version: string },
       workbox: {
         globPatterns: ['**/*.{js,css,html,json,png,svg,ico,woff2}'],
         navigateFallback: '/index.html',
