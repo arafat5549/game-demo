@@ -97,5 +97,5 @@ MVP ──────► 三主题各 2-3 关 + 核心双循环 + 简单家长�
 - [ADR-0012 关卡树设计](./adr/0012-level-tree-design.md)
 - [ADR-0013 知识扩展](./adr/0013-knowledge-expansion.md)
 - [ADR-0014 主题小游戏](./adr/0014-mini-games.md)
-- [ADR-0015 难度系统](./adr/0015-difficulty-system.md)
+- [ADR-0016 难度系统](./adr/0016-difficulty-system.md)
 - [词汇表](./glossary.md)

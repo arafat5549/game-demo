@@ -41,7 +41,7 @@ function Shell() {
         node,
         mistakePool,
         loadCustomBank(),
-        save.settings.difficulty, // 全局难度（ADR-0015）
+        save.settings.difficulty, // 全局难度（ADR-0016）
       )
       quizStartRef.current = Date.now()
       setScreen({ name: 'quiz', theme, node, questions })
